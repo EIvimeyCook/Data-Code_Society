@@ -1,4 +1,4 @@
-# 🐉 SORTEE 2026 Hackathon — Data & Code Assessment Form: FAQ and Guide
+# 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
 > **Quick links:** [Introduction](#introduction) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments) · [General FAQ](#general-faq) · [Contributions (Dragon Kill Points)](#contributions-dragon-kill-points)
 
@@ -7,8 +7,8 @@
 ## Introduction
 
 <!--
-TODO (organisers): Add the introduction here. Suggested content:
-- What the hackathon is and why we are doing it
+TODO (organisers): Extend the introduction. Still to add:
+- Which journals/societies are included and why
 - What the assessments will be used for (e.g. a paper / report)
 - Date, time and location/format at the SORTEE 2026 conference
 - Who to contact during the event (names, Slack/Discord channel)
@@ -16,7 +16,9 @@ TODO (organisers): Add the introduction here. Suggested content:
 - Code of conduct link
 -->
 
-_Introduction to be added._
+This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require authors to share the data and code behind their papers, but how well that works in practice varies.
+
+Working through a shared set of recently published papers, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases.
 
 ---
 

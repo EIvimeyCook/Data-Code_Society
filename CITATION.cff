@@ -1,23 +1,65 @@
 cff-version: 1.2.0
-title: "SORTEE 2026 Hackathon: Data & Code Assessment FAQ"
+title: "SORTEE 2026 Hackathon: Data & Code in Society Journals — Assessment FAQ"
 message: >-
   If you use this guide, please cite it using the metadata in this file. If you
   use the Dragon Kill Points approach to credit contributions, please also cite
   Martinig et al. (2026), listed under `references` below.
 type: software
 authors:
-  - given-names: Edward
-    name-particle: R.
+  - given-names: Edward R.
     family-names: Ivimey-Cook
     email: e.ivimeycook@gmail.com
+    affiliation: "University of East Anglia, UK"
     orcid: "https://orcid.org/0000-0003-4910-0443"
+  - given-names: Joel L.
+    family-names: Pick
+    affiliation: "University of Edinburgh, UK"
+    orcid: "https://orcid.org/0000-0002-6295-3742"
+  - given-names: Ben
+    family-names: Auxier
+    affiliation: "Wageningen University and Research, Netherlands"
+    orcid: "https://orcid.org/0000-0002-7743-0610"
+  - given-names: Kevin R.
+    family-names: Bairos-Novak
+    affiliation: "Australian Institute of Marine Science, Australia"
+    orcid: "https://orcid.org/0000-0002-0152-1452"
+  - given-names: Leyla
+    family-names: Cabugos
+    affiliation: "California Polytechnic State University, USA"
+  - given-names: Dena J.
+    family-names: Clink
+    affiliation: "Cornell University, USA"
+    orcid: "https://orcid.org/0000-0003-0363-5581"
+  - given-names: Sarah
+    family-names: Hasnain
+    affiliation: "Laboratoire d'Océanographie de Villefranche, Sorbonne University, France"
+  - given-names: Christian
+    family-names: John
+    affiliation: "University of California, USA"
+  - given-names: Kate L.
+    family-names: Laskowski
+    affiliation: "University of California Davis, USA"
+    orcid: "https://orcid.org/0000-0003-1523-9340"
+  - given-names: César
+    family-names: Marín
+    affiliation: "Universidad Santo Tomás, Chile"
+    orcid: "https://orcid.org/0000-0002-2529-8929"
+  - given-names: Shinichi
+    family-names: Nakagawa
+    affiliation: "University of Alberta, Canada"
+    orcid: "https://orcid.org/0000-0002-7765-5182"
+  - given-names: Julia
+    family-names: Sharapi
+    affiliation: "Stanford University, USA"
 repository-code: "https://github.com/EIvimeyCook/Data-Code_Society"
 url: "https://eivimeycook.github.io/Data-Code_Society/"
 abstract: >-
-  A question-by-question FAQ for the data and code assessment form used at the
-  SORTEE 2026 conference hackathon. Covers how to judge whether a paper's data
-  and code are archived, accessible, licensed and documented, and how
-  contributions are credited using Dragon Kill Points.
+  A question-by-question FAQ for the assessment form used at the SORTEE 2026
+  conference hackathon, led by the SORTEE Advocacy Committee, on data and code
+  availability and quality in journals published by ecology and evolution
+  societies. Covers how to judge whether a paper's data and code are archived,
+  accessible, licensed and documented, and how contributions are credited using
+  Dragon Kill Points.
 keywords:
   - open data
   - open code
@@ -26,6 +68,8 @@ keywords:
   - reproducibility
   - research transparency
   - hackathon
+  - scholarly publishing
+  - journal policy
   - SORTEE
 # Dual licensed: MIT for the site template and CSS; CC BY 4.0 for the guide
 # text. See LICENSE and LICENSE-data.md.
@@ -41,14 +85,11 @@ references:
       Dragon Kill Points: applying a transparent working template to relieve
       authorship stress
     authors:
-      - given-names: April
-        name-particle: R.
+      - given-names: April R.
         family-names: Martinig
-      - given-names: Spenser
-        name-particle: L. P.
+      - given-names: Spenser L. P.
         family-names: Burk
-      - given-names: Szymon
-        name-particle: M.
+      - given-names: Szymon M.
         family-names: Drobniak
       - given-names: Isabella
         family-names: Perry
