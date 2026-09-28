@@ -6,19 +6,13 @@
 
 ## Introduction
 
-<!--
-TODO (organisers): Extend the introduction. Still to add:
-- Which journals/societies are included and why
-- What the assessments will be used for (e.g. a paper / report)
-- Date, time and location/format at the SORTEE 2026 conference
-- Who to contact during the event (names, Slack/Discord channel)
-- How manuscripts are allocated to participants
-- Code of conduct link
--->
+This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require authors to share the data and code behind their papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
-This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require authors to share the data and code behind their papers, but how well that works in practice varies.
+Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 90 journals, with ideally around 15 papers assessed per journal. Every participant will have access to a **master sheet** (a Google Sheet) listing all the papers to be assessed.
 
-Working through a shared set of recently published papers, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases.
+The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions-dragon-kill-points)).
+
+If you have any problems, check this FAQ first, then message one of the organisers by email or on Slack.
 
 ---
 
@@ -26,6 +20,7 @@ Working through a shared set of recently published papers, participants record w
 
 - **Have the manuscript open** (PDF or journal web page) *and* keep a second tab free for the repository.
 - **Assess what is there, not what should be there.** You are recording what a reader can find and use today — don't try to fix, re-run, or contact authors about anything.
+- **Check links as a member of the public would.** Open them in a private/incognito window, off the university network or VPN, so institutional logins don't hide access problems.
 - **Don't download huge files.** If a dataset is very large, you can answer "downloadable?" based on whether the download link starts working; you don't need to wait for it to finish.
 - **When in doubt, pick the most defensible answer and explain it in the comments box** for that section (3.13, 5.12 or 6.1). Comments are extremely useful to us when we clean the data.
 - Questions marked **\*** are mandatory.
@@ -63,18 +58,19 @@ Note that **data and code are assessed separately**, even when they live in the 
 
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
-### 1.2 What is the ID of the manuscript? \*
-**What to do:** Enter the manuscript ID exactly as it appears in your allocation sheet.
+### 1.2 What is the ID of the manuscript \*
+**What to do:** Enter the manuscript ID exactly as it appears in the master sheet.
 
 **FAQ**
-- *Where do I find the ID?* In the allocation spreadsheet you were given. Please copy–paste rather than retype — typos here make it very hard to match records.
+- *Where do I find the ID?* In the master sheet, next to the paper. Please copy–paste rather than retype — typos here make it very hard to match records.
 
-### 1.3 DOI of the manuscript \*
+### 1.3 Doi of MS \*
 **What to do:** Enter the article DOI.
 
 **FAQ**
 - *What format?* Either `10.xxxx/xxxxx` or the full `https://doi.org/10.xxxx/xxxxx` is fine — please be consistent across your submissions.
 - *Where do I find it?* Usually on the first page of the PDF or at the top of the journal web page.
+- *The paper has no DOI.* Paste the article's URL instead and say so in 6.1.
 
 ### 1.4 Should there be data and/or code associated with the paper? \*
 **What to do:** Answer **Yes** if the paper analyses data (empirical work) or presents theory/simulations that rely on code. Answer **No** for reviews, opinion pieces, perspectives, editorials, etc.
@@ -83,6 +79,8 @@ Note that **data and code are assessed separately**, even when they live in the 
 - *It's a meta-analysis.* **Yes** — meta-analyses analyse extracted data.
 - *It's a purely mathematical/analytical theory paper with no simulations.* Usually **No**, unless the paper mentions code (e.g. numerical solutions). If it does, answer **Yes**.
 - *It's a review that includes a small quantitative analysis or a systematic literature search.* **Yes** — there is data behind it.
+- *It's a methods or software paper (e.g. introducing an R package or a new statistical method).* **Yes** — there is code behind it, and usually example data.
+- *A comment or reply that re-analyses the original paper's data.* **Yes.** A comment with no new analysis is **No**.
 - *I'm unsure.* Answer **Yes**; it's easier for us to remove a false positive than to recover a skipped assessment. Explain in 6.1.
 
 ➡️ **Yes** → Section 2. **No** → Section 6.
@@ -97,15 +95,19 @@ Note that **data and code are assessed separately**, even when they live in the 
 | Option | Choose when… |
 |---|---|
 | **Yes** | At least one link/accession works and leads to data, *or* the data are in the supplementary files. |
-| **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, a login wall, or a generic landing page with no way to find the dataset. |
+| **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, a login page where you can't see the dataset at all, or a generic landing page with no way to find the dataset. |
 | **No, sensitive data so not shared** | The authors explicitly state data are withheld for ethical, legal, or conservation reasons (e.g. endangered species locations, human participants). |
 | **No, no reference** | No mention of archived data, *or* only "available from the authors on (reasonable) request". |
 
 **FAQ**
 - *"Data available on request" — which option?* **No, no reference.** Data on request are not archived. Mention it in 6.1.
+- *The data are described as sensitive **and** available on request.* **No, sensitive data so not shared** when the authors give a reason (e.g. protected species, human participants); **No, no reference** when there is only "on request" with no reason.
+- *The link reaches the dataset's own page, but downloading needs a login or an access request.* **Yes** here — the reference works. Answer **No** at 3.8.
 - *The DOI works but resolves to a private/embargoed record.* **Yes** here — the reference works. You'll record the access problem at 3.8.
 - *Only some of the data are archived.* **Yes**, and explain what's missing in 3.13.
 - *A link works in some browsers but not others / only works on the university network.* Choose **No, link(s) that doesn't work** and describe what happened in 6.1.
+- *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive. Quote the statement in 6.1.
+- *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published paper.* If it still opens the dataset, **Yes**, and note in 3.13 that it is a reviewer link. If it no longer works, **No, link(s) that doesn't work**.
 - *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the paper cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
 
 ➡️ **Yes** → Section 3. **Any "No"** → Section 4.
@@ -121,7 +123,7 @@ Note that **data and code are assessed separately**, even when they live in the 
 - *Is a GitHub repo that is also archived on Zenodo "multiple repositories"?* **No** — that's one resource in two places. Treat the **Zenodo** version as the repository (it has the permanent ID).
 - *Raw sequence reads on NCBI plus processed data on Dryad?* **Yes.**
 
-### 3.2 If there are multiple repos, select one as the primary and justify
+### 3.2 If there are multiple repos, please select one as the primary and justify your selection below
 **What to do:** Only answer if 3.1 = Yes. Pick **one** repository to assess for the rest of the section, using this priority order:
 
 1. The repo where **data and code are stored together**.
@@ -153,6 +155,10 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 ### 3.6 If yes, what is the Permanent ID?
 **What to do:** Paste the DOI/accession, e.g. `10.5061/dryad.xxxxxxx`.
 
+**FAQ**
+- *There are many accession numbers (e.g. one per sequence).* Paste the project- or study-level accession if there is one (e.g. a BioProject `PRJNA…` number); otherwise paste the first and list the rest, or the range, in 3.13.
+- *The record has a version DOI and a "concept" DOI (all versions).* Either is fine; the one the paper cites is best.
+
 ### 3.7 Is there a license? \*
 **What to do:** Look for a LICENSE file, or a licence stated on the repository landing page.
 
@@ -169,6 +175,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 Answer **No** if the repo is **private**, **embargoed**, requires a **login or request** to access, or the files are **empty or corrupt**.
 
 **FAQ**
+- *You can see the dataset's page and file list, but downloading needs a free account (e.g. Movebank, some institutional repositories).* **No** — the data aren't openly downloadable. Name the repository and the access condition in 3.13.
 - *The download is enormous.* If the download starts, answer **Yes** — no need to finish it.
 - *Files are compressed (.zip, .tar.gz).* Download and unzip if reasonably sized so you can answer 3.9–3.12. If it's too large, answer based on the file listing and note this in 3.13.
 
@@ -196,6 +203,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 
 **FAQ**
 - *The landing page just repeats the paper's abstract.* **Yes** — that is project information. A title alone is **No**.
+- *The data are in the journal's supplementary material.* **Yes** only if the supplement itself describes the project (e.g. a README or a cover sheet). Being attached to the article doesn't count on its own.
 
 ### 3.11 Is each data file described? \*
 **What to do:** Answer **Yes** if *every* data file has a description (what it contains/what it's for), either in a README or in file-level metadata.
@@ -234,6 +242,9 @@ Anything unusual: partial archiving, ambiguous answers, which rule you applied, 
 - *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the MS. Say so in 5.12.
 - *The paper only cites the R packages used (e.g. "analyses used lme4").* That is **not** archived analysis code → **No, no reference**.
 - *The paper says "code on GitHub" with no link.* **No, no reference**, and comment in 6.1 if you found it by searching.
+- *The link goes to an author's GitHub profile or lab page, not a specific repository.* If you can identify the right repository without guessing (e.g. one repo named after the paper), **Yes**, and say so in 5.12. If not, **No, link(s) that doesn't work**, and explain in 6.1.
+- *The analysis was done entirely in point-and-click software (e.g. SPSS menus, Excel, JMP) so there is no code.* **No, no reference**, and say so in 6.1 so we can separate "no code exists" from "code not shared".
+- *The data were on Dryad and the code is listed under "Software" on the same Dryad page.* **Yes** — Dryad publishes software files on Zenodo. Follow that link and assess the Zenodo record in Section 5.
 
 ➡️ **Yes** → Section 5. **Any "No"** → Section 6.
 
@@ -246,6 +257,9 @@ Anything unusual: partial archiving, ambiguous answers, which rule you applied, 
 ### 5.1 What is the repository? \*
 See **3.3** (above). Answer for the **code**, even if it's the same repo as the data.
 
+**FAQ**
+- *Code uploaded alongside a Dryad dataset.* Select **Zenodo** — that is where Dryad actually publishes software files — and note the Dryad link in 5.12.
+
 ### 5.2 Paste URL of the repository \*
 Copy the landing-page URL from the browser address bar.
 
@@ -253,13 +267,26 @@ Copy the landing-page URL from the browser address bar.
 See **3.5** (above). A bare GitHub/GitLab repo is **No**; a Zenodo snapshot of it (with DOI) is **Yes**.
 
 **FAQ**
-- *The GitHub README has a Zenodo DOI badge.* If you are assessing the GitHub repo because that is what the paper links to, answer **Yes** only if the DOI actually resolves to an archived snapshot. Note the situation in 5.12.
+- *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 (as in 3.1) and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**. Either way, note it in 5.12.
 
 ### 5.4 If yes, what is the Permanent ID?
 Paste the DOI.
 
 ### 5.5 Is there a license? \*
-See **3.7** (above). On GitHub, look for a `LICENSE` file or the licence shown in the "About" sidebar. **A public GitHub repo without a licence is *not* open-licensed** — answer **No**.
+**What to do:** Look for a licence that covers the **code**: a `LICENSE` (or `LICENCE`, `COPYING`) file, the licence shown on the repository page, or a licence statement in the README or at the top of the scripts.
+
+**FAQ**
+- *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check the root folder for a `LICENSE` file and the bottom of the README.
+- *Which licences count?* Any stated licence counts as **Yes**. The common software licences are **MIT**, **Apache-2.0**, **GPL-2.0/GPL-3.0**, **BSD-2/3-Clause**, **LGPL** and **AGPL**. Code is sometimes released under **CC0** or **CC-BY** — CC-BY isn't designed for software, but it is still a licence, so **Yes**.
+- *Zenodo.* Every open Zenodo record shows a licence on its landing page (the default is CC-BY 4.0), so this is usually **Yes**. Record which licence in 5.12 if it isn't a software licence.
+- *Dryad.* Dryad's CC0 waiver applies to the **data** only. Code submitted through Dryad is published on Zenodo with its own licence (often MIT or GPL) — check the Zenodo record.
+- *One licence covers the whole repository (data and code).* **Yes** — answer the same way here as in 3.7.
+- *Different licences for data and code (e.g. CC-BY for data, MIT for code).* Answer 3.7 for the data licence and 5.5 for the code licence; both are **Yes**.
+- *The licence is only mentioned in the README, or only as a header in the scripts.* **Yes**, and note in 5.12 that there is no separate licence file.
+- *An R package `DESCRIPTION` file with a `License:` field.* **Yes.**
+- *A custom licence or "free for academic use only".* **Yes** (a licence exists), but note in 5.12 that it is non-standard or restrictive.
+- *A public GitHub repo with no licence anywhere.* **No.** Being public is not the same as being licensed: without a licence, copyright law means others can view the code but not legally reuse it.
+- *Code in the journal's supplementary material.* Same rule as for data in 3.7: **Yes** only if a licence is stated for the supplement.
 
 ### 5.6 Are code files archived and downloadable? \*
 Can you see code files and download them (or download the whole repo, e.g. GitHub's *Code → Download ZIP*)? Private, empty, or login-only → **No**.
@@ -288,7 +315,7 @@ See **3.10** (above).
 - *There's a single, well-commented script.* **Yes.**
 - *The README says "run the code" and nothing else.* **No.**
 
-### 5.10 Is there information on the version of the computing software used? \*
+### 5.10 Is there information on the version of the computing software used \*
 **What to do:** Is the version of the language/software stated (e.g. *R v4.3.3*, *Python 3.11*, *MATLAB R2023b*)?
 
 **FAQ**
@@ -322,8 +349,6 @@ Anything that doesn't fit elsewhere: data "on request", links that work in one b
 **How long should one assessment take?**
 We're thinking this should take a maximum(!) of 10 mins per paper.
 
-_To be confirmed._
-
 **Should I run the code or check the data reproduce the results?**
 No. This form assesses **availability and documentation**, not computational reproducibility.
 
@@ -331,17 +356,22 @@ No. This form assesses **availability and documentation**, not computational rep
 No. Record what you find.
 
 **I made a mistake in a submission. What do I do?**
-Contact the organisers either by email or during the 
+Contact the organisers by email, or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting.
 
-_To be confirmed._
+**I can't get access to the paper (paywall).**
+Try your institutional access or the journal's open-access version first. If you still can't read it, skip it and flag it in the master sheet so someone else can pick it up. Don't use unofficial copies.
 
-**Two answers both seem right.**
-Choose the more conservative answer and explain in the comments box.
+**I've been allocated a paper I authored, or one by a close collaborator.**
+Skip it and flag it in the master sheet so someone else can pick it up. Assessing your own work is a conflict of interest.
+
+**The PDF and the journal web page give different links.**
+Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
+
+**Will anyone else assess the same paper?**
+No — each paper is assessed once. Please work independently and use the comments boxes for anything uncertain, as your answers are the only record we'll have.
 
 **Where do I ask questions during the event?**
-The zoom chat or the dedicated slack channel. 
-
-_To be confirmed._
+The Zoom chat or the dedicated Slack channel.
 
 ---
 
@@ -361,7 +391,7 @@ For this hackathon we track **one contribution only: the number of papers you ex
 
 ### Contribution table
 
-| Name | Confirmed involvement | Papers extracted (count) | Authorship earned (≥ 30 papers) | Author order (\* = equal) |
+| Name | Confirmed involvement | Papers extracted (count) | Authorship earned (≥ 30 papers) | Author order (alphabetical) |
 |---|---|---|---|---|
 | Participant 1 | participating | | | |
 | Participant 2 | participating | | | |
