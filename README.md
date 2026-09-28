@@ -38,7 +38,8 @@ Read it at: <https://eivimeycook.github.io/Data-Code_Society/>
 | `FAQ.md` | The guide itself. Renders as the site's home page, and is also readable directly on GitHub |
 | `_config.yml` | GitHub Pages (Jekyll) settings |
 | `_layouts/default.html` | Page template: top bar, content area, footer |
-| `assets/css/sortee-faq.css` | Styling, loosely based on the SORTEE website (Roboto, SORTEE green) |
+| `assets/css/sortee-faq.css` | Styling, loosely based on the SORTEE website (Roboto, SORTEE green), with dark mode |
+| `assets/js/faq.js` | Optional enhancements: question cards, number badges, side contents, back-to-top. The page reads fine without it |
 
 The guide covers:
 
@@ -104,8 +105,9 @@ Edward R. Ivimey-Cook — e.ivimeycook@gmail.com
 
 ## Licence
 
-- **Code**, meaning `_config.yml`, `_layouts/default.html` and
-  `assets/css/sortee-faq.css`, under the [MIT License](LICENSE).
+- **Code**, meaning `_config.yml`, `_layouts/default.html`,
+  `assets/css/sortee-faq.css` and `assets/js/faq.js`, under the
+  [MIT License](LICENSE).
 - **Content**, meaning the guide text in `FAQ.md` and this README, under
   [CC BY 4.0](LICENSE-data.md).
 
@@ -115,5 +117,5 @@ copied from it; the name SORTEE belongs to the society.
 ## AI declaration
 
 Claude (Anthropic) was used to draft the FAQ from the assessment form, to
-summarise the Dragon Kill Points framework, and to write the page template and
-CSS. All content was subsequently checked by the author.
+summarise the Dragon Kill Points framework, and to write the page template,
+CSS and JavaScript. All content was subsequently checked by the author.
