@@ -1,0 +1,27 @@
+title: "SORTEE 2026 Hackathon — Assessment Form FAQ"
+description: "Question-by-question guide to the SORTEE 2026 data and code assessment form."
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "FAQ.md"
+    values:
+      permalink: "/"
+
+exclude:
+  - README.md
+  - LICENSE
+  - LICENSE-data.md
+  - CITATION.cff

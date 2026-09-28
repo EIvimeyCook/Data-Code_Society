@@ -1,0 +1,191 @@
+/* SORTEE-inspired styling for the hackathon FAQ.
+   Roboto + the society's sage green, greys and light panels,
+   loosely following sortee.org without copying it. */
+
+:root {
+  --green: #6aae7a;        /* accent (borders, bars, highlights) */
+  --green-dark: #3d7a4c;   /* links and text on white (passes WCAG AA) */
+  --green-tint: #eef6f0;   /* soft panels */
+  --ink: #3a3a3a;          /* body text */
+  --ink-soft: #666666;
+  --grey-line: #e3e3e3;
+  --grey-panel: #f7f7f7;
+  --topbar: #555555;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: #ffffff;
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- top bar & footer ---------- */
+.topbar {
+  background: var(--topbar);
+  color: #fff;
+  border-bottom: 4px solid var(--green);
+}
+.topbar .wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+.topbar .brand {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  font-size: 1.15rem;
+}
+.topbar .tag {
+  font-weight: 300;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  background: var(--grey-panel);
+  border-top: 1px solid var(--grey-line);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- headings ---------- */
+.content { padding-top: 32px; }
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  color: #333333;
+  line-height: 1.25;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  margin: 0 0 20px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 48px 0 18px;
+  padding-bottom: 8px;
+  position: relative;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--green);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 32px 0 10px;
+  padding-left: 12px;
+  border-left: 4px solid var(--green);
+}
+
+/* ---------- text elements ---------- */
+a { color: var(--green-dark); text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+
+strong { color: #2f2f2f; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--grey-line);
+  margin: 40px 0;
+}
+
+ul, ol { padding-left: 1.4em; }
+li { margin: 4px 0; }
+
+/* Quick-links box and other callouts */
+blockquote {
+  margin: 20px 0;
+  padding: 14px 18px;
+  background: var(--green-tint);
+  border-left: 4px solid var(--green);
+  border-radius: 0 4px 4px 0;
+  color: var(--ink);
+}
+blockquote p { margin: 0; }
+
+/* ---------- code ---------- */
+code {
+  font-family: "Roboto Mono", Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: var(--grey-panel);
+  border: 1px solid var(--grey-line);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+pre {
+  background: var(--grey-panel);
+  border: 1px solid var(--grey-line);
+  border-radius: 4px;
+  padding: 16px;
+  overflow-x: auto;
+  line-height: 1.35;
+}
+pre code {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+/* ---------- tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0 24px;
+  font-size: 0.93rem;
+  display: block;          /* allows horizontal scroll on phones */
+  overflow-x: auto;
+}
+thead th {
+  background: var(--green-dark);
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+}
+th, td {
+  padding: 9px 12px;
+  border: 1px solid var(--grey-line);
+  vertical-align: top;
+}
+tbody tr:nth-child(even) { background: var(--grey-panel); }
+
+/* ---------- small screens ---------- */
+@media (max-width: 600px) {
+  body { font-size: 15px; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; }
+  .topbar .wrap { flex-direction: column; gap: 2px; }
+}

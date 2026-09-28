@@ -1,0 +1,90 @@
+cff-version: 1.2.0
+title: "SORTEE 2026 Hackathon: Data & Code Assessment FAQ"
+message: >-
+  If you use this guide, please cite it using the metadata in this file. If you
+  use the Dragon Kill Points approach to credit contributions, please also cite
+  Martinig et al. (2026), listed under `references` below.
+type: software
+authors:
+  - given-names: Edward
+    name-particle: R.
+    family-names: Ivimey-Cook
+    email: e.ivimeycook@gmail.com
+    orcid: "https://orcid.org/0000-0003-4910-0443"
+repository-code: "https://github.com/EIvimeyCook/Data-Code_Society"
+url: "https://eivimeycook.github.io/Data-Code_Society/"
+abstract: >-
+  A question-by-question FAQ for the data and code assessment form used at the
+  SORTEE 2026 conference hackathon. Covers how to judge whether a paper's data
+  and code are archived, accessible, licensed and documented, and how
+  contributions are credited using Dragon Kill Points.
+keywords:
+  - open data
+  - open code
+  - data sharing
+  - code sharing
+  - reproducibility
+  - research transparency
+  - hackathon
+  - SORTEE
+# Dual licensed: MIT for the site template and CSS; CC BY 4.0 for the guide
+# text. See LICENSE and LICENSE-data.md.
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: "2026-09-28"
+version: "1.0.0"
+
+references:
+  - type: article
+    title: >-
+      Dragon Kill Points: applying a transparent working template to relieve
+      authorship stress
+    authors:
+      - given-names: April
+        name-particle: R.
+        family-names: Martinig
+      - given-names: Spenser
+        name-particle: L. P.
+        family-names: Burk
+      - given-names: Szymon
+        name-particle: M.
+        family-names: Drobniak
+      - given-names: Isabella
+        family-names: Perry
+      - given-names: Kyle
+        family-names: Morrison
+      - given-names: Megan
+        family-names: Petersohn
+      - given-names: Patrice
+        family-names: Pottier
+      - given-names: Shinichi
+        family-names: Nakagawa
+      - given-names: Pietro
+        family-names: Pollo
+      - given-names: Lorenzo
+        family-names: Ricolfi
+      - given-names: Coralie
+        family-names: Williams
+      - given-names: Ayumi
+        family-names: Mizuno
+      - given-names: Aimee
+        family-names: Chhen
+      - given-names: Jess
+        family-names: Tam
+      - given-names: Yefeng
+        family-names: Yang
+      - given-names: Julia
+        family-names: de Jong
+      - given-names: Alberto
+        family-names: Ceccacci
+      - given-names: Sandra
+        family-names: Cuadros
+      - given-names: Malgorzata
+        family-names: Lagisz
+    journal: "BMC Biology"
+    volume: 24
+    start: 48
+    year: 2026
+    doi: "10.1186/s12915-026-02521-x"
+    url: "https://doi.org/10.1186/s12915-026-02521-x"
