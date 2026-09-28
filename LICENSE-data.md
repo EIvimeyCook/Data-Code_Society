@@ -33,6 +33,9 @@ Scope and exceptions
   * The code in this repository (_config.yml, _layouts/, assets/) is licensed
     separately under the MIT License — see LICENSE.
 
+  * The SORTEE logo mark (assets/img/sortee-mark.png) belongs to SORTEE and
+    is not covered by this licence or the MIT License.
+
   * The Dragon Kill Points framework summarised in FAQ.md is the work of
     Martinig et al. (2026), BMC Biology 24: 48,
     https://doi.org/10.1186/s12915-026-02521-x, and is attributed there.

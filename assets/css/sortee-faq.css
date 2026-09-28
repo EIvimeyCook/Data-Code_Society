@@ -131,13 +131,14 @@ body {
 .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
 .hero-mark {
   position: absolute;
-  right: 4%;
-  bottom: -30px;
-  font-size: 220px;
-  line-height: 1;
-  opacity: .12;
-  filter: grayscale(1) brightness(3);
+  right: 5%;
+  top: 50%;
+  transform: translateY(-46%);
+  height: 92%;
+  width: auto;
+  opacity: .13;
   pointer-events: none;
+  user-select: none;
 }
 
 /* ================= page shell ================= */
@@ -427,7 +428,7 @@ td:first-child { font-weight: 500; }
   body { font-size: 15.5px; }
   .hero { padding: 0 16px 40px; }
   .hero-body { padding-top: 36px; }
-  .hero-mark { font-size: 140px; right: -10px; }
+  .hero-mark { height: 62%; right: -24px; top: 58%; opacity: .08; }
   .shell { padding: 0 16px; }
   .card { padding: 18px 16px; }
   h2 { font-size: 1.3rem; margin-top: 48px; }

@@ -39,6 +39,7 @@ Read it at: <https://eivimeycook.github.io/Data-Code_Society/>
 | `_config.yml` | GitHub Pages (Jekyll) settings |
 | `_layouts/default.html` | Page template: top bar, content area, footer |
 | `assets/css/sortee-faq.css` | Styling, loosely based on the SORTEE website (Roboto, SORTEE green), with dark mode |
+| `assets/img/sortee-mark.png` | The SORTEE logo mark, used as the header watermark |
 | `assets/js/faq.js` | Optional enhancements: question cards, number badges, side contents, back-to-top. The page reads fine without it |
 
 The guide covers:
@@ -111,8 +112,9 @@ Edward R. Ivimey-Cook — e.ivimeycook@gmail.com
 - **Content**, meaning the guide text in `FAQ.md` and this README, under
   [CC BY 4.0](LICENSE-data.md).
 
-The styling is inspired by the SORTEE website but is not affiliated with or
-copied from it; the name SORTEE belongs to the society.
+The SORTEE logo mark in `assets/img/` belongs to SORTEE and is not covered by
+either licence. The styling is inspired by the SORTEE website but not copied
+from it.
 
 ## AI declaration
 
