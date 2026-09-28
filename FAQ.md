@@ -56,10 +56,11 @@ Note that **data and code are assessed separately**, even when they live in the 
 ## Section 1 — Metadata
 
 ### 1.1 Name \*
-**What to do:** Enter your name (or confirm the automatically collected value).
+**What to do:** Enter your name.
 
 **FAQ**
-- *Why do you need my name?* So we can credit you (see [Contributions](#contributions-dragon-kill-points)) and check inter-rater agreement where manuscripts are double-assessed.
+- *Why do you need my name?* So we can credit you (see [Contributions](#contributions-dragon-kill-points)).
+
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
 ### 1.2 What is the ID of the manuscript? \*
@@ -80,7 +81,7 @@ Note that **data and code are assessed separately**, even when they live in the 
 
 **FAQ**
 - *It's a meta-analysis.* **Yes** — meta-analyses analyse extracted data.
-- *It's a purely mathematical/analytical theory paper with no simulations.* Usually **No**, unless the paper mentions code (e.g. Mathematica/Maple notebooks, numerical solutions). If it does, answer **Yes**.
+- *It's a purely mathematical/analytical theory paper with no simulations.* Usually **No**, unless the paper mentions code (e.g. numerical solutions). If it does, answer **Yes**.
 - *It's a review that includes a small quantitative analysis or a systematic literature search.* **Yes** — there is data behind it.
 - *I'm unsure.* Answer **Yes**; it's easier for us to remove a false positive than to recover a skipped assessment. Explain in 6.1.
 
@@ -147,7 +148,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 **FAQ**
 - *GitHub?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. (If the GitHub repo has been archived to Zenodo, you should be assessing the Zenodo record — see 3.1.)
 - *OSF project?* OSF projects can be registered or given a DOI. Answer **Yes** only if a DOI is shown on the project page.
-- *Supplementary material?* <!-- TODO (organisers): confirm convention --> Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
+- *Supplementary material?*  Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
 
 ### 3.6 If yes, what is the Permanent ID?
 **What to do:** Paste the DOI/accession, e.g. `10.5061/dryad.xxxxxxx`.
@@ -319,7 +320,7 @@ Anything that doesn't fit elsewhere: data "on request", links that work in one b
 ## General FAQ
 
 **How long should one assessment take?**
-<!-- TODO (organisers): add a target time -->
+We're thinking this should take a maximum(!) of 10 mins per paper.
 
 _To be confirmed._
 
@@ -330,15 +331,15 @@ No. This form assesses **availability and documentation**, not computational rep
 No. Record what you find.
 
 **I made a mistake in a submission. What do I do?**
-<!-- TODO (organisers): add correction procedure (e.g. edit-after-submit link, or resubmit and flag in 6.1) -->
+Contact the organisers either by email or during the 
 
 _To be confirmed._
 
 **Two answers both seem right.**
-Choose the more conservative answer (the one that credits less) and explain in the comments box.
+Choose the more conservative answer and explain in the comments box.
 
 **Where do I ask questions during the event?**
-<!-- TODO (organisers): add channel -->
+The zoom chat or the dedicated slack channel. 
 
 _To be confirmed._
 
@@ -356,9 +357,7 @@ We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026)
 
 For this hackathon we track **one contribution only: the number of papers you extract** (i.e. completed form submissions). Each completed form counts as one paper.
 
-**Authorship rule:** extract **30 papers** and you earn authorship on the resulting paper.
-
-<!-- TODO (organisers): state how author order is decided among those who reach 30 (e.g. by number of papers extracted, alphabetical, or equal contribution). -->
+**Authorship rule:** extract **30 papers** and you earn authorship on the resulting paper. Authorship will be alphabetical. 
 
 ### Contribution table
 
@@ -367,8 +366,6 @@ For this hackathon we track **one contribution only: the number of papers you ex
 | Participant 1 | participating | | | |
 | Participant 2 | participating | | | |
 | Participant 3 | not participating | NA | No | NA |
-
-> Pre-made DKP templates and a Shiny app for tracking contributions and generating author lists are available from the [Dragon Kill Points template repository](https://github.com/martinig/dragon-kill-points) and the [DKP Shiny app](https://github.com/szymekdr/dragonkillpoints_app).
 
 ### Reference
 
