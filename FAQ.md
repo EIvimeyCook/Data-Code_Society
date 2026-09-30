@@ -361,7 +361,7 @@ Skip it and flag it in the master sheet so someone else can pick it up. Assessin
 Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
 
 **Will anyone else assess the same paper?**
-No — each paper is assessed once. Please work independently and use the comments boxes for anything uncertain, as your answers are the only record we'll have.
+Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. 
 
 **Where do I ask questions during the event?**
 The Zoom chat or the dedicated Slack channel.
