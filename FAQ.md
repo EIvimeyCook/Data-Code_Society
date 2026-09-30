@@ -6,7 +6,7 @@
 
 ## Introduction
 
-This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require authors to share the data and code behind their papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
+This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
 Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 90 journals, with ideally around 15 papers assessed per journal. Every participant will have access to a **master sheet** (a Google Sheet) listing all the papers to be assessed.
 
@@ -18,10 +18,7 @@ If you have any problems, check this FAQ first, then message one of the organise
 
 ## Before you start
 
-- **Have the manuscript open** (PDF or journal web page) *and* keep a second tab free for the repository.
 - **Assess what is there, not what should be there.** You are recording what a reader can find and use today — don't try to fix, re-run, or contact authors about anything.
-- **Check links as a member of the public would.** Open them in a private/incognito window, off the university network or VPN, so institutional logins don't hide access problems.
-- **Don't download huge files.** If a dataset is very large, you can answer "downloadable?" based on whether the download link starts working; you don't need to wait for it to finish.
 - **When in doubt, pick the most defensible answer and explain it in the comments box** for that section (3.13, 5.12 or 6.1). Comments are extremely useful to us when we clean the data.
 - Questions marked **\*** are mandatory.
 
@@ -62,15 +59,15 @@ Note that **data and code are assessed separately**, even when they live in the 
 **What to do:** Enter the manuscript ID exactly as it appears in the master sheet.
 
 **FAQ**
-- *Where do I find the ID?* In the master sheet, next to the paper. Please copy–paste rather than retype — typos here make it very hard to match records.
+- *Where do I find the ID?* In the master sheet, next to the paper.
 
 ### 1.3 Doi of MS \*
 **What to do:** Enter the article DOI.
 
 **FAQ**
-- *What format?* Either `10.xxxx/xxxxx` or the full `https://doi.org/10.xxxx/xxxxx` is fine — please be consistent across your submissions.
+- *What format?* Either `10.xxxx/xxxxx` or the full `https://doi.org/10.xxxx/xxxxx` is fine.
 - *Where do I find it?* Usually on the first page of the PDF or at the top of the journal web page.
-- *The paper has no DOI.* Paste the article's URL instead and say so in 6.1.
+- *The paper has no DOI.* Paste the article's URL instead and mention this in 6.1.
 
 ### 1.4 Should there be data and/or code associated with the paper? \*
 **What to do:** Answer **Yes** if the paper analyses data (empirical work) or presents theory/simulations that rely on code. Answer **No** for reviews, opinion pieces, perspectives, editorials, etc.
@@ -81,7 +78,6 @@ Note that **data and code are assessed separately**, even when they live in the 
 - *It's a review that includes a small quantitative analysis or a systematic literature search.* **Yes** — there is data behind it.
 - *It's a methods or software paper (e.g. introducing an R package or a new statistical method).* **Yes** — there is code behind it, and usually example data.
 - *A comment or reply that re-analyses the original paper's data.* **Yes.** A comment with no new analysis is **No**.
-- *I'm unsure.* Answer **Yes**; it's easier for us to remove a false positive than to recover a skipped assessment. Explain in 6.1.
 
 ➡️ **Yes** → Section 2. **No** → Section 6.
 
@@ -94,7 +90,7 @@ Note that **data and code are assessed separately**, even when they live in the 
 
 | Option | Choose when… |
 |---|---|
-| **Yes** | At least one link/accession works and leads to data, *or* the data are in the supplementary files. |
+| **Yes** | The link/accession works and leads to data, *or* the data are in the supplementary files. |
 | **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, a login page where you can't see the dataset at all, or a generic landing page with no way to find the dataset. |
 | **No, sensitive data so not shared** | The authors explicitly state data are withheld for ethical, legal, or conservation reasons (e.g. endangered species locations, human participants). |
 | **No, no reference** | No mention of archived data, *or* only "available from the authors on (reasonable) request". |
@@ -105,7 +101,6 @@ Note that **data and code are assessed separately**, even when they live in the 
 - *The link reaches the dataset's own page, but downloading needs a login or an access request.* **Yes** here — the reference works. Answer **No** at 3.8.
 - *The DOI works but resolves to a private/embargoed record.* **Yes** here — the reference works. You'll record the access problem at 3.8.
 - *Only some of the data are archived.* **Yes**, and explain what's missing in 3.13.
-- *A link works in some browsers but not others / only works on the university network.* Choose **No, link(s) that doesn't work** and describe what happened in 6.1.
 - *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive. Quote the statement in 6.1.
 - *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published paper.* If it still opens the dataset, **Yes**, and note in 3.13 that it is a reviewer link. If it no longer works, **No, link(s) that doesn't work**.
 - *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the paper cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
@@ -157,7 +152,6 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 
 **FAQ**
 - *There are many accession numbers (e.g. one per sequence).* Paste the project- or study-level accession if there is one (e.g. a BioProject `PRJNA…` number); otherwise paste the first and list the rest, or the range, in 3.13.
-- *The record has a version DOI and a "concept" DOI (all versions).* Either is fine; the one the paper cites is best.
 
 ### 3.7 Is there a license? \*
 **What to do:** Look for a LICENSE file, or a licence stated on the repository landing page.
@@ -221,7 +215,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone. Note it in 3.13.
 
 ### 3.13 Comments about data
-Anything unusual: partial archiving, ambiguous answers, which rule you applied, access problems, etc.
+Anything you think it is important to note.
 
 ➡️ Continue to Section 4.
 
@@ -242,7 +236,7 @@ Anything unusual: partial archiving, ambiguous answers, which rule you applied, 
 - *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the MS. Say so in 5.12.
 - *The paper only cites the R packages used (e.g. "analyses used lme4").* That is **not** archived analysis code → **No, no reference**.
 - *The paper says "code on GitHub" with no link.* **No, no reference**, and comment in 6.1 if you found it by searching.
-- *The link goes to an author's GitHub profile or lab page, not a specific repository.* If you can identify the right repository without guessing (e.g. one repo named after the paper), **Yes**, and say so in 5.12. If not, **No, link(s) that doesn't work**, and explain in 6.1.
+- *The link goes to an author's GitHub profile or lab page, not a specific repository.* **No, link(s) that doesn't work**, and explain in 6.1.
 - *The analysis was done entirely in point-and-click software (e.g. SPSS menus, Excel, JMP) so there is no code.* **No, no reference**, and say so in 6.1 so we can separate "no code exists" from "code not shared".
 - *The data were on Dryad and the code is listed under "Software" on the same Dryad page.* **Yes** — Dryad publishes software files on Zenodo. Follow that link and assess the Zenodo record in Section 5.
 
@@ -276,7 +270,7 @@ Paste the DOI.
 **What to do:** Look for a licence that covers the **code**: a `LICENSE` (or `LICENCE`, `COPYING`) file, the licence shown on the repository page, or a licence statement in the README or at the top of the scripts.
 
 **FAQ**
-- *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check the root folder for a `LICENSE` file and the bottom of the README.
+- *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check for a `LICENSE` file and the bottom of the README.
 - *Which licences count?* Any stated licence counts as **Yes**. The common software licences are **MIT**, **Apache-2.0**, **GPL-2.0/GPL-3.0**, **BSD-2/3-Clause**, **LGPL** and **AGPL**. Code is sometimes released under **CC0** or **CC-BY** — CC-BY isn't designed for software, but it is still a licence, so **Yes**.
 - *Zenodo.* Every open Zenodo record shows a licence on its landing page (the default is CC-BY 4.0), so this is usually **Yes**. Record which licence in 5.12 if it isn't a software licence.
 - *Dryad.* Dryad's CC0 waiver applies to the **data** only. Code submitted through Dryad is published on Zenodo with its own licence (often MIT or GPL) — check the Zenodo record.
@@ -320,7 +314,6 @@ See **3.10** (above).
 
 **FAQ**
 - *Where should I look?* README, top of scripts, `sessionInfo()` output, `renv.lock`, `environment.yml`, a Dockerfile, or the repository page.
-- *Only stated in the paper's methods.* **No** — note it in 5.12.
 
 ### 5.11 Is there some information on version numbers of software packages? \*
 **What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)?
@@ -331,7 +324,7 @@ See **3.10** (above).
 - *Only some packages have versions.* **Yes** (the question asks for "some"), and note it in 5.12.
 
 ### 5.12 Comments about code
-Anything unusual: hard-coded file paths, missing scripts, code in a different repo from data, ambiguous answers.
+Anything you think it is important to note.
 
 ➡️ Continue to Section 6.
 
@@ -340,7 +333,7 @@ Anything unusual: hard-coded file paths, missing scripts, code in a different re
 ## Section 6 — Comments
 
 ### 6.1 General comments
-Anything that doesn't fit elsewhere: data "on request", links that work in one browser but not another, disagreements between the paper and the repository, time taken, or suggestions for improving the form.
+Anything that doesn't fit elsewhere e.g. total time taken. 
 
 ---
 
@@ -385,17 +378,27 @@ We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026)
 - **Autonomy** — contributors can query or change their position as the project progresses;
 - **Transparency** — the contribution record is shared with the whole team throughout.
 
-For this hackathon we track **one contribution only: the number of papers you extract** (i.e. completed form submissions). Each completed form counts as one paper.
+For this hackathon, points are awarded for three tasks:
 
-**Authorship rule:** extract **30 papers** and you earn authorship on the resulting paper. Authorship will be alphabetical. 
+| Task | Points | What counts |
+|---|---|---|
+| **Full extraction** | 2 | A paper assessed through the whole form, including at least one repository (Section 3 and/or Section 5). |
+| **Section 2 extraction** | 1 | A paper where the form ends early because no archived data or code was found (the "No" routes at 2.1 and 4.1), so no repository is assessed. |
+| **Journal policy** | 1 | Recording a society journal's data and code policy (the initial policy extraction for each journal). |
+
+Each paper counts once, and each journal policy counts once.
+
+**Authorship rule:** reach **30 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
 
 ### Contribution table
 
-| Name | Confirmed involvement | Papers extracted (count) | Authorship earned (≥ 30 papers) | Author order (alphabetical) |
-|---|---|---|---|---|
-| Participant 1 | participating | | | |
-| Participant 2 | participating | | | |
-| Participant 3 | not participating | NA | No | NA |
+| Name | Confirmed involvement | Full extractions (2 pts) | Section 2 extractions (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
+|---|---|---|---|---|---|---|---|
+| Participant 1 | participating | | | | | | |
+| Participant 2 | participating | | | | | | |
+| Participant 3 | not participating | NA | NA | NA | 0 | No | NA |
+
+Total points = (2 × full extractions) + section 2 extractions + journal policies.
 
 ### Reference
 
