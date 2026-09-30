@@ -40,7 +40,7 @@ The guide covers:
 | How the form flows | Which answers route to which sections |
 | Sections 1–6 | Help and FAQs for every form question |
 | General FAQ | Timing, corrections, where to ask for help |
-| Contributions | Dragon Kill Points: 30 papers extracted earns authorship |
+| Contributions | Dragon Kill Points: 30 points earns authorship |
 
 ## Organisers
 

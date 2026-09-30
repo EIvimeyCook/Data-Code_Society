@@ -52,7 +52,6 @@ Note that **data and code are assessed separately**, even when they live in the 
 
 **FAQ**
 - *Why do you need my name?* So we can credit you (see [Contributions](#contributions-dragon-kill-points)).
-
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
 ### 1.2 What is the ID of the manuscript \*
@@ -145,7 +144,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 **FAQ**
 - *GitHub?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. (If the GitHub repo has been archived to Zenodo, you should be assessing the Zenodo record — see 3.1.)
 - *OSF project?* OSF projects can be registered or given a DOI. Answer **Yes** only if a DOI is shown on the project page.
-- *Supplementary material?*  Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
+- *Supplementary material?* Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
 
 ### 3.6 If yes, what is the Permanent ID?
 **What to do:** Paste the DOI/accession, e.g. `10.5061/dryad.xxxxxxx`.
@@ -215,7 +214,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone. Note it in 3.13.
 
 ### 3.13 Comments about data
-Anything you think it is important to note.
+Anything you think is important to note.
 
 ➡️ Continue to Section 4.
 
@@ -314,6 +313,7 @@ See **3.10** (above).
 
 **FAQ**
 - *Where should I look?* README, top of scripts, `sessionInfo()` output, `renv.lock`, `environment.yml`, a Dockerfile, or the repository page.
+- *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. Note it in 5.12.
 
 ### 5.11 Is there some information on version numbers of software packages? \*
 **What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)?
@@ -324,7 +324,7 @@ See **3.10** (above).
 - *Only some packages have versions.* **Yes** (the question asks for "some"), and note it in 5.12.
 
 ### 5.12 Comments about code
-Anything you think it is important to note.
+Anything you think is important to note.
 
 ➡️ Continue to Section 6.
 
@@ -333,7 +333,7 @@ Anything you think it is important to note.
 ## Section 6 — Comments
 
 ### 6.1 General comments
-Anything that doesn't fit elsewhere e.g. total time taken. 
+Anything that doesn't fit elsewhere, e.g. total time taken (in minutes).
 
 ---
 
@@ -382,9 +382,9 @@ For this hackathon, points are awarded for three tasks:
 
 | Task | Points | What counts |
 |---|---|---|
-| **Full extraction** | 2 | A paper assessed through the whole form, including at least one repository (Section 3 and/or Section 5). |
-| **Section 2 extraction** | 1 | A paper where the form ends early because no archived data or code was found (the "No" routes at 2.1 and 4.1), so no repository is assessed. |
-| **Journal policy** | 1 | Recording a society journal's data and code policy (the initial policy extraction for each journal). |
+| **Full extraction** | 2 | A paper answered **Yes** at 1.4, so the form continues through Sections 2–6. |
+| **Section 1 extraction** | 1 | A paper answered **No** at 1.4 (e.g. a review or opinion piece), so the form goes straight from Section 1 to Section 6. |
+| **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 3 were later dropped, leaving the 90 in the sample. |
 
 Each paper counts once, and each journal policy counts once.
 
@@ -392,13 +392,13 @@ Each paper counts once, and each journal policy counts once.
 
 ### Contribution table
 
-| Name | Confirmed involvement | Full extractions (2 pts) | Section 2 extractions (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
+| Name | Confirmed involvement | Full extractions (2 pts) | Section 1 extractions (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
 |---|---|---|---|---|---|---|---|
 | Participant 1 | participating | | | | | | |
 | Participant 2 | participating | | | | | | |
 | Participant 3 | not participating | NA | NA | NA | 0 | No | NA |
 
-Total points = (2 × full extractions) + section 2 extractions + journal policies.
+Total points
 
 ### Reference
 
