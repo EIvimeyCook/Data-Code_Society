@@ -31,17 +31,6 @@ are credited, using **Dragon Kill Points** (Martinig et al. 2026).
 
 Read it at: <https://eivimeycook.github.io/Data-Code_Society/>
 
-## Contents
-
-| File | What it is |
-|---|---|
-| `FAQ.md` | The guide itself. Renders as the site's home page, and is also readable directly on GitHub |
-| `_config.yml` | GitHub Pages (Jekyll) settings |
-| `_layouts/default.html` | Page template: top bar, content area, footer |
-| `assets/css/sortee-faq.css` | Styling, loosely based on the SORTEE website (Roboto, SORTEE green), with dark mode |
-| `assets/img/sortee-mark.png` | The SORTEE logo mark, used as the header watermark |
-| `assets/js/faq.js` | Optional enhancements: question cards, number badges, side contents, back-to-top. The page reads fine without it |
-
 The guide covers:
 
 | Section | What it covers |
@@ -59,7 +48,7 @@ The hackathon is run by the **SORTEE Advocacy Committee**:
 
 | Name | Role | Affiliation |
 |---|---|---|
-| Ed Ivimey-Cook | Co-chair | University of East Anglia, UK |
+| Ed R. Ivimey-Cook | Co-chair | University of East Anglia, UK |
 | Joel Pick | Co-chair | University of Edinburgh, UK |
 | Ben Auxier | Member | Wageningen University and Research, Netherlands |
 | Kevin R. Bairos-Novak | Member | Australian Institute of Marine Science, Australia |
