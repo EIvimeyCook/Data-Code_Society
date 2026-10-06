@@ -193,13 +193,22 @@ Note that **data and code are assessed separately**, even when they live in the 
 Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; raw reads on NCBI."*
 
 ### 3.3 What is the repository? \*
-**What to do:** Select the repository you are assessing.
+**What to do:** Select the repository you are assessing. The options are in alphabetical order, with **Other** last:
 
-**FAQ**
-- *The DOI starts with `10.5061/dryad`* → Dryad. *`10.5281/zenodo`* → Zenodo. *`10.17605/OSF.IO` or osf.io* → OSF. *`10.6084/m9.figshare`* → Figshare.
-- *Data are in the journal's Supporting Information* → **Supplementary Material**.
-- *A university data store (e.g. "Edinburgh DataShare", "Pure")* → **Institutional repository**.
-- *Pangaea, Mendeley Data, Borealis, etc.* → **Other**, and name it in 3.13.
+| Option | How to recognise it |
+|---|---|
+| **DataVerse** | A Dataverse site, e.g. Harvard Dataverse (DOIs starting `10.7910/DVN`) or Borealis (Canada) |
+| **Dryad** | datadryad.org; DOI starts `10.5061/dryad` |
+| **Figshare** | figshare.com; DOI starts `10.6084/m9.figshare` |
+| **Genbank/NCBI etc** | Sequence or genomic accessions, e.g. GenBank, SRA, BioProject, ENA |
+| **GitHub/GitLab/Bitbucket** | github.com, gitlab.com or bitbucket.org. If it is archived on Zenodo, choose **Zenodo** instead (see 3.1) |
+| **Institutional repository** | A university or institute data store, e.g. Edinburgh DataShare, Pure |
+| **OSF** | osf.io; DOI starts `10.17605/OSF.IO` |
+| **Personal website** | Files on an author's or lab's own website, e.g. a download link on a personal or lab page, Google Sites, a university staff page |
+| **ScholarWorks** | A repository branded "ScholarWorks" (used by several universities) — choose this rather than Institutional repository |
+| **Supplementary Material** | The journal's Supporting Information files |
+| **Zenodo** | zenodo.org; DOI starts `10.5281/zenodo` |
+| **Other** | Anything else, e.g. Pangaea, Mendeley Data — name it in 3.13 |
 
 ### 3.4 Paste URL of the repository \*
 **What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the paper.
@@ -210,6 +219,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 **FAQ**
 - *GitHub?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. (If the GitHub repo has been archived to Zenodo, you should be assessing the Zenodo record — see 3.1.)
 - *OSF project?* OSF projects can be registered or given a DOI. Answer **Yes** only if a DOI is shown on the project page.
+- *Personal website?* **No.** A website URL is not a permanent identifier — pages can move or disappear when people change jobs.
 - *Supplementary material?* Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
 
 ### 3.6 If yes, what is the Permanent ID?
