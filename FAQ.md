@@ -48,9 +48,7 @@ For this hackathon, points are awarded based on how much is extracted per paper:
 | 1.4 is **Yes**, code repository only | 2 |
 | 1.4 is **Yes**, data **and** code repositories | 3 |
 
-If data and code are in the same repository, you still complete both Section 3 and Section 5, so that paper is worth 3 points.
-
-**Authorship rule:** reach **30 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
+**Authorship rule:** reach **60 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
 
 ### Contribution table
 
