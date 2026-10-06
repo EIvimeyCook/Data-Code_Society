@@ -6,13 +6,16 @@
 
 ## Introduction
 
-This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
+This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and sharing quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
-Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,444 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and 30 for nine larger journals. Each participant will be given their **own folder** containing the papers allocated to them, each with its manuscript ID.
+Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,444 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and 30 for nine journals with data editors. Each participant will be given their **own file** containing a list of papers allocated to them, each with its own manuscript ID.
 
 The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions)).
 
 If you have any problems, check this FAQ first, then message one of the organisers by email or on Slack.
+
+Ed Ivimey-Cook: e.ivimeycook@gmail.com
+Joel Pick: joel.l.pick@gmail.com
 
 ---
 
@@ -42,14 +45,14 @@ We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026)
 - **Autonomy** — contributors can query or change their position as the project progresses;
 - **Transparency** — the contribution record is shared with the whole team throughout.
 
-For this hackathon, points are awarded per paper, plus a point for each journal policy:
+For this hackathon, points are awarded based on how much is extracted per paper:
 
 | Task | Points | When |
 |---|---|---|
-| **Searching for data and code** | 1 | The paper is answered **Yes** at 1.4, so you search it for data and code links (2.1 and 4.1). |
-| **Data repository extraction** | +1 | 2.1 is **Yes**, so you also extract the data repository (Section 3). |
-| **Code repository extraction** | +1 | 4.1 is **Yes**, so you also extract the code repository (Section 5). |
-| **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 4 were later dropped, leaving the 89 in the sample. |
+| **Searching for data and code links** | 1 | If the paper is expected to have data and/or code. Q1.4  = **YES** and so you search it for data and code links (2.1 and 4.1). |
+| **Data repository extraction** | 1 | If there is archived data (2.1 is **Yes**), so you also extract information about the data repository (Section 3). |
+| **Code repository extraction** | 1 | If there is archived data (4.1 is **Yes**), so you also extract information about the code repository (Section 5). |
+| **Journal policy** | 1 | Extracting data on a society journal's data and code policy done by the Advocacy Committee before the hackathon. |
 
 **What a paper is worth**
 
@@ -59,11 +62,13 @@ For this hackathon, points are awarded per paper, plus a point for each journal 
 | 1.4 is **Yes**, but no working data or code reference | 1 |
 | 1.4 is **Yes**, data repository only | 2 |
 | 1.4 is **Yes**, code repository only | 2 |
-| 1.4 is **Yes**, data **and** code repositories (full extraction) | 3 |
+| 1.4 is **Yes**, data **and** code repositories | 3 |
 
 If data and code are in the same repository, you still complete both Section 3 and Section 5, so that paper is a full extraction worth 3 points.
 
 **Authorship threshold:** **60 DKP**, together with the other requirements above.
+
+**Authorship rule:** reach **60 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
 
 #### Contribution table
 
