@@ -1,6 +1,6 @@
 # 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
-> **Quick links:** [Introduction](#introduction) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments) · [General FAQ](#general-faq) · [Contributions (Dragon Kill Points)](#contributions-dragon-kill-points)
+> **Quick links:** [Introduction](#introduction) · [Contributions (Dragon Kill Points)](#contributions-dragon-kill-points) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments) · [General FAQ](#general-faq)
 
 ---
 
@@ -13,6 +13,44 @@ Working through a shared set of papers published between January and September 2
 The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions-dragon-kill-points)).
 
 If you have any problems, check this FAQ first, then message one of the organisers by email or on Slack.
+
+---
+
+## Contributions (Dragon Kill Points)
+
+We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026), a transparent, points-based system adapted from multiplayer gaming. It is built on five **GREAT** principles:
+
+- **Granularity** — record contributions at a detailed task level so nothing is under-counted;
+- **Responsibility** — authorship criteria are agreed at the outset;
+- **Equity** — the same rules apply to everyone, regardless of career stage;
+- **Autonomy** — contributors can query or change their position as the project progresses;
+- **Transparency** — the contribution record is shared with the whole team throughout.
+
+For this hackathon, points are awarded for three tasks:
+
+| Task | Points | What counts |
+|---|---|---|
+| **Full extraction** | 2 | A paper answered **Yes** at 1.4, so the form continues through Sections 2–6. |
+| **Section 1 extraction** | 1 | A paper answered **No** at 1.4 (e.g. a review or opinion piece), so the form goes straight from Section 1 to Section 6. |
+| **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 4 were later dropped, leaving the 89 in the sample. |
+
+Each paper counts once, and each journal policy counts once.
+
+**Authorship rule:** reach **30 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
+
+### Contribution table
+
+| Name | Confirmed involvement | Full extractions (2 pts) | Section 1 extractions (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
+|---|---|---|---|---|---|---|---|
+| Participant 1 | participating | | | | | | |
+| Participant 2 | participating | | | | | | |
+| Participant 3 | not participating | NA | NA | NA | 0 | No | NA |
+
+Total points
+
+### Reference
+
+Martinig, A. R., Burk, S. L. P., Drobniak, S. M., Perry, I., Morrison, K., Petersohn, M., Pottier, P., Nakagawa, S., Pollo, P., Ricolfi, L., Williams, C., Mizuno, A., Chhen, A., Tam, J., Yang, Y., de Jong, J., Ceccacci, A., Cuadros, S., & Lagisz, M. (2026). Dragon Kill Points: applying a transparent working template to relieve authorship stress. *BMC Biology*, 24, 48. https://doi.org/10.1186/s12915-026-02521-x
 
 ---
 
@@ -365,41 +403,3 @@ Potentially — There is a chance that your paper could be extracted by another 
 
 **Where do I ask questions during the event?**
 The Zoom chat or the dedicated Slack channel.
-
----
-
-## Contributions (Dragon Kill Points)
-
-We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026), a transparent, points-based system adapted from multiplayer gaming. It is built on five **GREAT** principles:
-
-- **Granularity** — record contributions at a detailed task level so nothing is under-counted;
-- **Responsibility** — authorship criteria are agreed at the outset;
-- **Equity** — the same rules apply to everyone, regardless of career stage;
-- **Autonomy** — contributors can query or change their position as the project progresses;
-- **Transparency** — the contribution record is shared with the whole team throughout.
-
-For this hackathon, points are awarded for three tasks:
-
-| Task | Points | What counts |
-|---|---|---|
-| **Full extraction** | 2 | A paper answered **Yes** at 1.4, so the form continues through Sections 2–6. |
-| **Section 1 extraction** | 1 | A paper answered **No** at 1.4 (e.g. a review or opinion piece), so the form goes straight from Section 1 to Section 6. |
-| **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 4 were later dropped, leaving the 89 in the sample. |
-
-Each paper counts once, and each journal policy counts once.
-
-**Authorship rule:** reach **30 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
-
-### Contribution table
-
-| Name | Confirmed involvement | Full extractions (2 pts) | Section 1 extractions (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
-|---|---|---|---|---|---|---|---|
-| Participant 1 | participating | | | | | | |
-| Participant 2 | participating | | | | | | |
-| Participant 3 | not participating | NA | NA | NA | 0 | No | NA |
-
-Total points
-
-### Reference
-
-Martinig, A. R., Burk, S. L. P., Drobniak, S. M., Perry, I., Morrison, K., Petersohn, M., Pottier, P., Nakagawa, S., Pollo, P., Ricolfi, L., Williams, C., Mizuno, A., Chhen, A., Tam, J., Yang, Y., de Jong, J., Ceccacci, A., Cuadros, S., & Lagisz, M. (2026). Dragon Kill Points: applying a transparent working template to relieve authorship stress. *BMC Biology*, 24, 48. https://doi.org/10.1186/s12915-026-02521-x
