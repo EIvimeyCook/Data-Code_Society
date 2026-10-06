@@ -113,20 +113,21 @@ Note that **data and code are assessed separately**, even when they live in the 
 
 ## Section 1 — Metadata
 
-### 1.1 Name \*
-**What to do:** Enter your name.
+### 1.1 What is your name? \*
+**What to do:** Enter your name. Please keep it the same for every extraction.
 
 **FAQ**
+- *Does the exact spelling matter?* Yes — use exactly the same name every time (e.g. always "Jo Smith", not sometimes "J. Smith"). Your points are counted by matching names.
 - *Why do you need my name?* So we can credit you (see [Contributions](#contributions-dragon-kill-points)).
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
-### 1.2 What is the ID of the manuscript \*
+### 1.2 What is the ID of the manuscript? \*
 **What to do:** Enter the manuscript ID exactly as it appears in your folder.
 
 **FAQ**
 - *Where do I find the ID?* In your folder, next to the paper.
 
-### 1.3 Doi of MS \*
+### 1.3 DOI of MS \*
 **What to do:** Enter the article DOI.
 
 **FAQ**
@@ -193,22 +194,22 @@ Note that **data and code are assessed separately**, even when they live in the 
 Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; raw reads on NCBI."*
 
 ### 3.3 What is the repository? \*
-**What to do:** Select the repository you are assessing. The options are in alphabetical order, with **Other** last:
+**What to do:** Select the repository you are assessing. The options are listed below in the same order as on the form:
 
 | Option | How to recognise it |
 |---|---|
 | **DataVerse** | A Dataverse site, e.g. Harvard Dataverse (DOIs starting `10.7910/DVN`) or Borealis (Canada) |
 | **Dryad** | datadryad.org; DOI starts `10.5061/dryad` |
 | **Figshare** | figshare.com; DOI starts `10.6084/m9.figshare` |
-| **Genbank/NCBI etc** | Sequence or genomic accessions, e.g. GenBank, SRA, BioProject, ENA |
-| **GitHub/GitLab/Bitbucket** | github.com, gitlab.com or bitbucket.org. If it is archived on Zenodo, choose **Zenodo** instead (see 3.1) |
+| **GitHub/GitLab/Bitbucket/Codeberg** | github.com, gitlab.com, bitbucket.org or codeberg.org. If it is archived on Zenodo, choose **Zenodo** instead (see 3.1) |
+| **GenBank/NCBI etc** | Sequence or genomic accessions, e.g. GenBank, SRA, BioProject, ENA |
 | **Institutional repository** | A university or institute data store, e.g. Edinburgh DataShare, Pure |
 | **OSF** | osf.io; DOI starts `10.17605/OSF.IO` |
-| **Personal website** | Files on an author's or lab's own website, e.g. a download link on a personal or lab page, Google Sites, a university staff page |
+| **Personal Website** | Files on an author's or lab's own website, e.g. a download link on a personal or lab page, Google Sites, a university staff page |
 | **ScholarWorks** | A repository branded "ScholarWorks" (used by several universities) — choose this rather than Institutional repository |
 | **Supplementary Material** | The journal's Supporting Information files |
 | **Zenodo** | zenodo.org; DOI starts `10.5281/zenodo` |
-| **Other** | Anything else, e.g. Pangaea, Mendeley Data — name it in 3.13 |
+| **Other** | Anything else, e.g. Pangaea, Mendeley Data — name it in the box |
 
 ### 3.4 Paste URL of the repository \*
 **What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the paper.
@@ -249,14 +250,15 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *Files are compressed (.zip, .tar.gz).* Download and unzip if reasonably sized so you can answer 3.9–3.12. If it's too large, answer based on the file listing and note this in 3.13.
 
 ### 3.9 What format are the data in? \*
-**What to do:** Tick **all** formats present, based on file extensions.
+**What to do:** Tick **all** formats present, based on the file suffixes. If unsure, use **Other** and separate multiple formats with `;`.
 
 | Option | Examples |
 |---|---|
 | Tabular data | `.csv`, `.tsv` |
-| Spreadsheet | `.xlsx`, `.xls`, `.ods` |
+| Interoperable spreadsheet | `.xlsx`, `.ods` |
+| Proprietary spreadsheet | `.xls` |
 | Text | `.txt` |
-| Statistical software file | `.rds`, `.RData`/`.rda`, `.sav`, `.dta`, `.mat` |
+| Statistical software file | `.sav`, `.dta`, `.rds`, `.Rdata`/`.rda` |
 | Image | `.png`, `.jpg`, `.tiff` |
 | Video | `.mp4`, `.mov`, `.avi` |
 | Document | `.doc`, `.docx`, `.pdf`, `.odt` |
@@ -267,7 +269,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *Data are only in a `.zip`.* Record the formats **inside** the archive where you can.
 - *Data tables are only in a PDF supplement.* Tick **Document**.
 
-### 3.10 Is there info on the project? \*
+### 3.10 Is there some info on the project? \*
 **What to do:** Answer **Yes** if the repository contains or displays project-level information — e.g. the associated article, authors/contact details, funders. This is usually in a **README** or the landing-page description.
 
 **FAQ**
@@ -282,11 +284,16 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *There's only one data file and the landing page describes it.* **Yes.**
 
 ### 3.12 Are the variables in the data files explicitly explained? \*
-**What to do:** Is there a **data dictionary** or equivalent that says what each column/variable means (ideally with units and codes for categories)?
+**What to do:** Is there a **data dictionary** or other information that explains what each variable (column) is **and its unit of measurement**?
+
+- **Yes** = all variables and units explained.
+- **No** = none, or not all, variables and units given.
 
 **FAQ**
 - *Column names are self-explanatory (e.g. `body_mass_g`).* That's good practice, but not an explanation — answer **No** unless explanations are given. Mention it in 3.13.
 - *Only some variables are explained.* **No**, and note it in 3.13.
+- *Every variable is described, but units are missing.* **No** — the form asks for units too. Note it in 3.13.
+- *A variable has no unit (e.g. an ID, a category, a count).* That's fine — it only needs explaining (for categories, what the codes mean). Units are needed for measured quantities.
 - *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone. Note it in 3.13.
 
 ### 3.13 Comments about data
@@ -326,16 +333,19 @@ Anything you think is important to note.
 ### 5.1 What is the repository? \*
 See **3.3** (above). Answer for the **code**, even if it's the same repo as the data.
 
+The code list is the same as in 3.3, plus **Software Heritage** (archive.softwareheritage.org), which archives source code from GitHub and other platforms.
+
 **FAQ**
 - *Code uploaded alongside a Dryad dataset.* Select **Zenodo** — that is where Dryad actually publishes software files — and note the Dryad link in 5.12.
 
-### 5.2 Paste URL of the repository \*
+### 5.2 Paste URL of the repository
 Copy the landing-page URL from the browser address bar.
 
 ### 5.3 Is there a Permanent ID? \*
 See **3.5** (above). A bare GitHub/GitLab repo is **No**; a Zenodo snapshot of it (with DOI) is **Yes**.
 
 **FAQ**
+- *Software Heritage.* **Yes** — its identifiers (SWHIDs, starting `swh:1:`) are permanent. Paste the SWHID at 5.4.
 - *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 (as in 3.1) and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**. Either way, note it in 5.12.
 
 ### 5.4 If yes, what is the Permanent ID?
@@ -384,20 +394,20 @@ See **3.10** (above).
 - *There's a single, well-commented script.* **Yes.**
 - *The README says "run the code" and nothing else.* **No.**
 
-### 5.10 Is there information on the version of the computing software used \*
+### 5.10 Is there information on the version of the computing software used? \*
 **What to do:** Is the version of the language/software stated (e.g. *R v4.3.3*, *Python 3.11*, *MATLAB R2023b*)?
 
 **FAQ**
 - *Where should I look?* README, top of scripts, `sessionInfo()` output, `renv.lock`, `environment.yml`, a Dockerfile, or the repository page.
 - *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. Note it in 5.12.
 
-### 5.11 Is there some information on version numbers of software packages? \*
+### 5.11 Is there at least some information on version numbers of software packages? \*
 **What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)?
 
 **FAQ**
 - *Which files count?* A README list, `sessionInfo()` output, `renv.lock`, `requirements.txt` (with versions), `environment.yml`, `DESCRIPTION`, or versions in script comments.
 - *`requirements.txt` lists packages without versions.* **No.**
-- *Only some packages have versions.* **Yes** (the question asks for "some"), and note it in 5.12.
+- *Only some packages have versions.* **Yes** (the question asks for "at least some"), and note it in 5.12.
 
 ### 5.12 Comments about code
 Anything you think is important to note.
