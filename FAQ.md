@@ -384,7 +384,7 @@ For this hackathon, points are awarded for three tasks:
 |---|---|---|
 | **Full extraction** | 2 | A paper answered **Yes** at 1.4, so the form continues through Sections 2–6. |
 | **Section 1 extraction** | 1 | A paper answered **No** at 1.4 (e.g. a review or opinion piece), so the form goes straight from Section 1 to Section 6. |
-| **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 3 were later dropped, leaving the 90 in the sample. |
+| **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 4 were later dropped, leaving the 89 in the sample. |
 
 Each paper counts once, and each journal policy counts once.
 
