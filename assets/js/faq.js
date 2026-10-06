@@ -92,7 +92,47 @@
       }
     }
 
-    // 7. Back-to-top button
+    // 7. Mermaid diagrams (```mermaid blocks): render with Mermaid from jsDelivr.
+    //    GitHub renders the same blocks natively, so FAQ.md stays readable there.
+    var blocks = [];
+    main.querySelectorAll("code.language-mermaid, pre.mermaid code, .language-mermaid code").forEach(function (code) {
+      var outer = code.closest(".language-mermaid") || code.closest("pre");
+      if (!outer || blocks.some(function (b) { return b.outer === outer; })) return;
+      blocks.push({ outer: outer, text: code.textContent });
+    });
+    if (blocks.length) {
+      blocks.forEach(function (b) {
+        var wrap = document.createElement("figure");
+        wrap.className = "flow";
+        var div = document.createElement("div");
+        div.className = "mermaid";
+        div.textContent = b.text;
+        wrap.appendChild(div);
+        b.outer.parentNode.replaceChild(wrap, b.outer);
+      });
+      var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      var s = document.createElement("script");
+      s.src = window.MERMAID_SRC || "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
+      s.onload = function () {
+        window.mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: "strict",
+          theme: "base",
+          flowchart: { curve: "basis", padding: 14, nodeSpacing: 40, rankSpacing: 46, htmlLabels: true },
+          themeVariables: {
+            fontFamily: '"Roboto", Helvetica, Arial, sans-serif',
+            fontSize: "15px",
+            lineColor: dark ? "#a7b1ac" : "#5d6561",
+            edgeLabelBackground: dark ? "#1a201d" : "#ffffff",
+            textColor: dark ? "#e4e9e6" : "#2f3432"
+          }
+        });
+        window.mermaid.run({ querySelector: ".flow .mermaid" });
+      };
+      document.head.appendChild(s);
+    }
+
+    // 8. Back-to-top button
     var top = document.querySelector(".to-top");
     if (top) {
       var onScroll = function () { top.classList.toggle("show", window.scrollY > 600); };

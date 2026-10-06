@@ -440,3 +440,24 @@ td:first-child { font-weight: 500; }
   html { scroll-behavior: auto; }
   .btn, .to-top { transition: none; }
 }
+
+/* ================= flow diagram (Mermaid) ================= */
+figure.flow {
+  margin: 20px 0 24px;
+  padding: 28px 20px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  text-align: center;
+}
+figure.flow .mermaid { visibility: hidden; min-height: 200px; }
+figure.flow .mermaid[data-processed="true"] { visibility: visible; min-height: 0; }
+figure.flow svg { max-width: 560px !important; width: 100%; height: auto; }
+figure.flow .edgeLabel,
+figure.flow .edgeLabel p,
+figure.flow .edgeLabel span { color: var(--ink) !important; font-weight: 700; font-size: 13px; }
+figure.flow .edgeLabel rect,
+figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surface) !important; }
+@media (max-width: 640px) { figure.flow { padding: 16px 8px; } }

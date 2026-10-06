@@ -64,19 +64,34 @@ Martinig, A. R., Burk, S. L. P., Drobniak, S. M., Perry, I., Morrison, K., Peter
 
 ## How the form flows
 
-```
-Section 1 (Metadata)
-   └─ 1.4 Should there be data and/or code?
-        ├─ No  ──────────────────────────────────────────► Section 6 (Comments) → End
-        └─ Yes ─► Section 2: Is there a data repository? (2.1)
-                    ├─ Yes ─► Section 3 (Data repository) ─┐
-                    └─ Any "No" option ────────────────────┤
-                                                           ▼
-                             Section 4: Is there a code repository? (4.1)
-                                ├─ Yes ─► Section 5 (Code repository) ─┐
-                                └─ Any "No" option ────────────────────┤
-                                                                       ▼
-                                                  Section 6 (Comments) → End
+```mermaid
+flowchart TD
+    S1["Section 1 · Metadata<br/>1.1 – 1.4"]
+    Q1{{"1.4 · Should there be<br/>data and/or code?"}}
+    Q2{{"Section 2 · 2.1<br/>Working reference to archived data?"}}
+    S3["Section 3 · Data repository<br/>3.1 – 3.13"]
+    Q4{{"Section 4 · 4.1<br/>Working reference to archived code?"}}
+    S5["Section 5 · Code repository<br/>5.1 – 5.12"]
+    S6["Section 6 · Comments<br/>6.1"]
+    END(["Submit"])
+
+    S1 --> Q1
+    Q1 -->|Yes| Q2
+    Q1 -->|No| S6
+    Q2 -->|Yes| S3
+    Q2 -->|Any No| Q4
+    S3 --> Q4
+    Q4 -->|Yes| S5
+    Q4 -->|Any No| S6
+    S5 --> S6
+    S6 --> END
+
+    classDef section fill:#eef6f0,stroke:#3d7a4c,stroke-width:1.5px,color:#1f2a24
+    classDef decision fill:#fdf6e7,stroke:#b7791f,stroke-width:1.5px,color:#1f2a24
+    classDef finish fill:#2f6b40,stroke:#2f6b40,color:#ffffff
+    class S1,S3,S5,S6 section
+    class Q1,Q2,Q4 decision
+    class END finish
 ```
 
 Note that **data and code are assessed separately**, even when they live in the same repository. If one Zenodo record contains both, you will visit it in Section 3 *and* again in Section 5 — that is intended.
