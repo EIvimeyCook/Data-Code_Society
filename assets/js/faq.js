@@ -98,7 +98,12 @@
     main.querySelectorAll("code.language-mermaid, pre.mermaid code, .language-mermaid code").forEach(function (code) {
       var outer = code.closest(".language-mermaid") || code.closest("pre");
       if (!outer || blocks.some(function (b) { return b.outer === outer; })) return;
-      blocks.push({ outer: outer, text: code.textContent });
+      // classDef colours are for GitHub's own view; on the site the CSS colours
+      // the nodes (so they follow light/dark), so drop the classDef lines here.
+      var text = code.textContent.split("\n").filter(function (line) {
+        return !/^\s*classDef\s/.test(line);
+      }).join("\n");
+      blocks.push({ outer: outer, text: text });
     });
     if (blocks.length) {
       blocks.forEach(function (b) {
@@ -110,7 +115,6 @@
         wrap.appendChild(div);
         b.outer.parentNode.replaceChild(wrap, b.outer);
       });
-      var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
       var s = document.createElement("script");
       s.src = window.MERMAID_SRC || "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
       s.onload = function () {
@@ -122,9 +126,9 @@
           themeVariables: {
             fontFamily: '"Roboto", Helvetica, Arial, sans-serif',
             fontSize: "15px",
-            lineColor: dark ? "#a7b1ac" : "#5d6561",
-            edgeLabelBackground: dark ? "#1a201d" : "#ffffff",
-            textColor: dark ? "#e4e9e6" : "#2f3432"
+            lineColor: "#5d6561",
+            edgeLabelBackground: "transparent",
+            textColor: "#2f3432"
           }
         });
         window.mermaid.run({ querySelector: ".flow .mermaid" });
@@ -132,7 +136,26 @@
       document.head.appendChild(s);
     }
 
-    // 8. Back-to-top button
+    // 8. Light/dark toggle: remembers the choice; otherwise follows the system
+    var toggle = document.querySelector(".theme-toggle");
+    if (toggle) {
+      var root = document.documentElement;
+      var isDark = function () {
+        var t = root.getAttribute("data-theme");
+        if (t) return t === "dark";
+        return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      };
+      var label = function () { toggle.setAttribute("aria-pressed", isDark() ? "true" : "false"); };
+      label();
+      toggle.addEventListener("click", function () {
+        var next = isDark() ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem("faq-theme", next); } catch (e) {}
+        label();
+      });
+    }
+
+    // 9. Back-to-top button
     var top = document.querySelector(".to-top");
     if (top) {
       var onScroll = function () { top.classList.toggle("show", window.scrollY > 600); };

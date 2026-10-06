@@ -64,6 +64,7 @@ Martinig, A. R., Burk, S. L. P., Drobniak, S. M., Perry, I., Morrison, K., Peter
 
 ## How the form flows
 
+<!-- {% raw %} -->
 ```mermaid
 flowchart TD
     S1["Section 1 · Metadata<br/>1.1 – 1.4"]
@@ -93,6 +94,7 @@ flowchart TD
     class Q1,Q2,Q4 decision
     class END finish
 ```
+<!-- {% endraw %} -->
 
 Note that **data and code are assessed separately**, even when they live in the same repository. If one Zenodo record contains both, you will visit it in Section 3 *and* again in Section 5 — that is intended.
 
