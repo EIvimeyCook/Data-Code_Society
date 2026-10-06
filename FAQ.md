@@ -26,27 +26,38 @@ We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026)
 - **Autonomy** — contributors can query or change their position as the project progresses;
 - **Transparency** — the contribution record is shared with the whole team throughout.
 
-For this hackathon, points are awarded for three tasks:
+For this hackathon, points are awarded per paper, plus a point for each journal policy:
 
-| Task | Points | What counts |
+| Task | Points | When |
 |---|---|---|
-| **Full extraction** | 2 | A paper answered **Yes** at 1.4, so the form continues through Sections 2–6. |
-| **Section 1 extraction** | 1 | A paper answered **No** at 1.4 (e.g. a review or opinion piece), so the form goes straight from Section 1 to Section 6. |
+| **Searching for data and code** | 1 | The paper is answered **Yes** at 1.4, so you search it for data and code links (2.1 and 4.1). |
+| **Data repository extraction** | +1 | 2.1 is **Yes**, so you also extract the data repository (Section 3). |
+| **Code repository extraction** | +1 | 4.1 is **Yes**, so you also extract the code repository (Section 5). |
 | **Journal policy** | 1 | A society journal's data and code policy, extracted by the Advocacy Committee before the hackathon (one point per journal). Policies were extracted for 93 journals; 4 were later dropped, leaving the 89 in the sample. |
 
-Each paper counts once, and each journal policy counts once.
+**What a paper is worth**
+
+| What you find | Points |
+|---|---|
+| 1.4 is **No** (e.g. a review or opinion piece) | 0 |
+| 1.4 is **Yes**, but no working data or code reference | 1 |
+| 1.4 is **Yes**, data repository only | 2 |
+| 1.4 is **Yes**, code repository only | 2 |
+| 1.4 is **Yes**, data **and** code repositories (full extraction) | 3 |
+
+If data and code are in the same repository, you still complete both Section 3 and Section 5, so that paper is a full extraction worth 3 points.
 
 **Authorship rule:** reach **30 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
 
 ### Contribution table
 
-| Name | Confirmed involvement | Full extractions (2 pts) | Section 1 extractions (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
-|---|---|---|---|---|---|---|---|
-| Participant 1 | participating | | | | | | |
-| Participant 2 | participating | | | | | | |
-| Participant 3 | not participating | NA | NA | NA | 0 | No | NA |
+| Name | Confirmed involvement | Papers searched (1 pt) | Data repositories (1 pt) | Code repositories (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
+|---|---|---|---|---|---|---|---|---|
+| Participant 1 | participating | | | | | | | |
+| Participant 2 | participating | | | | | | | |
+| Participant 3 | not participating | NA | NA | NA | NA | 0 | No | NA |
 
-Total points
+Total points = papers searched + data repositories + code repositories + journal policies.
 
 ### Reference
 
