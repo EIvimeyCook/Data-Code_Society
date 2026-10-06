@@ -54,10 +54,14 @@ the 89 society journals in the sample, and were compiled in October 2026.
 | `hackathon_papers.csv` | 1,444 papers | The papers to be assessed at the hackathon, a subset of `total_papers_oct.csv`. |
 | `2026_journals_oct.csv` | 89 journals | The number of papers each journal published per month, January to September 2026, with a total. |
 
+Each participant's folder of allocated papers is drawn from `hackathon_papers.csv`,
+and its `manuscript_id` is what participants enter at question 1.2 of the form.
+
 **Columns in `total_papers_oct.csv` and `hackathon_papers.csv`**
 
 | Column | Description |
 |---|---|
+| `manuscript_id` | `hackathon_papers.csv` only: a unique number for each paper (1–1,444), entered at question 1.2 of the form |
 | `title` | Article title |
 | `doi` | Article DOI, as a full `https://doi.org/` link |
 | `journal` | Journal name |

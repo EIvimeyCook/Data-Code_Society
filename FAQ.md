@@ -8,7 +8,7 @@
 
 This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
-Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 90 journals, with ideally around 15 papers assessed per journal. Every participant will have access to a **master sheet** (a Google Sheet) listing all the papers to be assessed.
+Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,444 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and 30 for nine larger journals. Each participant will be given their **own folder** containing the papers allocated to them, each with its manuscript ID.
 
 The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions-dragon-kill-points)).
 
@@ -55,10 +55,10 @@ Note that **data and code are assessed separately**, even when they live in the 
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
 ### 1.2 What is the ID of the manuscript \*
-**What to do:** Enter the manuscript ID exactly as it appears in the master sheet.
+**What to do:** Enter the manuscript ID exactly as it appears in your folder.
 
 **FAQ**
-- *Where do I find the ID?* In the master sheet, next to the paper.
+- *Where do I find the ID?* In your folder, next to the paper.
 
 ### 1.3 Doi of MS \*
 **What to do:** Enter the article DOI.
@@ -352,10 +352,10 @@ No. Record what you find.
 Contact the organisers by email, or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting.
 
 **I can't get access to the paper (paywall).**
-Try your institutional access or the journal's open-access version first. If you still can't read it, skip it and flag it in the master sheet so someone else can pick it up. Don't use unofficial copies.
+Try your institutional access or the journal's open-access version first. If you still can't read it, skip it and tell the organisers (with the manuscript ID) so it can be given to someone else. Don't use unofficial copies.
 
 **I've been allocated a paper I authored, or one by a close collaborator.**
-Skip it and flag it in the master sheet so someone else can pick it up. Assessing your own work is a conflict of interest.
+Skip it and tell the organisers (with the manuscript ID) so it can be given to someone else. Assessing your own work is a conflict of interest.
 
 **The PDF and the journal web page give different links.**
 Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
