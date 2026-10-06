@@ -368,7 +368,7 @@ Tick all that apply.
 | Text | `.txt` containing code |
 | Code / script | `.R`, `.py`, `.m`, `.sh`, `.jl`, `.stan`, `.Rmd`, `.qmd`, `.ipynb` |
 | Document | Code pasted into `.doc`, `.docx`, `.pdf` |
-| Other | Anything else — name it in 5.12 |
+| Other | Anything else — name it here |
 
 **FAQ**
 - *R Markdown, Quarto or Jupyter notebooks?* Tick **Code / script** — these are executable.
