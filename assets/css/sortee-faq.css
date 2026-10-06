@@ -491,7 +491,7 @@ td:first-child { font-weight: 500; }
 /* ================= flow diagram (Mermaid) ================= */
 figure.flow {
   margin: 20px 0 24px;
-  padding: 28px 20px;
+  padding: 18px 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -499,12 +499,12 @@ figure.flow {
   overflow-x: auto;
   text-align: center;
 }
-figure.flow .mermaid { visibility: hidden; min-height: 200px; }
+figure.flow .mermaid { visibility: hidden; min-height: 120px; }
 figure.flow .mermaid[data-processed="true"] { visibility: visible; min-height: 0; }
-figure.flow svg { max-width: 560px !important; width: 100%; height: auto; }
+figure.flow svg { max-width: 360px !important; width: 100%; height: auto; }
 figure.flow .edgeLabel,
 figure.flow .edgeLabel p,
-figure.flow .edgeLabel span { color: var(--ink) !important; font-weight: 700; font-size: 13px; }
+figure.flow .edgeLabel span { color: var(--ink) !important; font-weight: 700; font-size: 11px; }
 /* node colours follow the theme (overrides the classDef colours GitHub uses) */
 figure.flow .node.section rect,
 figure.flow .node.section polygon { fill: var(--flow-sec-fill) !important; stroke: var(--flow-sec-stroke) !important; }

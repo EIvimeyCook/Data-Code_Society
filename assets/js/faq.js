@@ -122,10 +122,10 @@
           startOnLoad: false,
           securityLevel: "strict",
           theme: "base",
-          flowchart: { curve: "basis", padding: 14, nodeSpacing: 40, rankSpacing: 46, htmlLabels: true },
+          flowchart: { curve: "basis", padding: 8, nodeSpacing: 22, rankSpacing: 26, htmlLabels: true },
           themeVariables: {
             fontFamily: '"Roboto", Helvetica, Arial, sans-serif',
-            fontSize: "15px",
+            fontSize: "12px",
             lineColor: "#5d6561",
             edgeLabelBackground: "transparent",
             textColor: "#2f3432"
