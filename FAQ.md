@@ -33,11 +33,11 @@ Co-authorship requires all the below contributions and responsibilities. To be a
 - Disclose personal information (e.g. name, affiliation, ORCID, email, languages, society memberships) and conflicts of interest needed prior to submission in a timely manner.
 - Agree to be personally accountable for your contribution as a co-author.
 
-**Note:** First and last authorship positions in the manuscript will be held by the project leads (EIC and JLP). Other authorship positions will be determined by the total amount and quality of contributions, as in the project records. For equal contributions, the order of mid-authorship will be alphabetical. All authors must read and approve the final manuscript draft before submission. The manuscript will contain a CRediT-like statement detailing the roles of individuals.
+**Note:** First and last authorship positions in the manuscript will be held by the project leads (EIC and JLP). Other authorship positions will be determined by the total amount and quality of contributions. The order of mid-authorship will be alphabetical. All authors must read and approve the final manuscript draft before submission. The manuscript will contain a CRediT-like statement detailing the roles of individuals. 
 
 ### Dragon Kill Points (DKP)
 
-We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026), a transparent, points-based system adapted from multiplayer gaming. It is built on five **GREAT** principles:
+We track contributions using **Dragon Kill Points (DKP)** [Martinig et al. 2026](https://doi.org/10.1186/s12915-026-02521-x), a transparent, points-based system adapted from multiplayer gaming. It is built on five **GREAT** principles:
 
 - **Granularity** — record contributions at a detailed task level so nothing is under-counted;
 - **Responsibility** — authorship criteria are agreed at the outset;
@@ -64,31 +64,13 @@ For this hackathon, points are awarded based on how much is extracted per paper:
 | 1.4 is **Yes**, code repository only | 2 |
 | 1.4 is **Yes**, data **and** code repositories | 3 |
 
-If data and code are in the same repository, you still complete both Section 3 and Section 5, so that paper is a full extraction worth 3 points.
-
-**Authorship threshold:** **60 DKP**, together with the other requirements above.
-
-**Authorship rule:** reach **60 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
-
-#### Contribution table
-
-| Name | Confirmed involvement | Papers searched (1 pt) | Data repositories (1 pt) | Code repositories (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 60 DKP) | Author order |
-|---|---|---|---|---|---|---|---|---|
-| Participant 1 | participating | | | | | | | |
-| Participant 2 | participating | | | | | | | |
-| Participant 3 | not participating | NA | NA | NA | NA | 0 | No | NA |
-
-Total points = papers searched + data repositories + code repositories + journal policies.
-
-#### Reference
-
-Martinig, A. R., Burk, S. L. P., Drobniak, S. M., Perry, I., Morrison, K., Petersohn, M., Pottier, P., Nakagawa, S., Pollo, P., Ricolfi, L., Williams, C., Mizuno, A., Chhen, A., Tam, J., Yang, Y., de Jong, J., Ceccacci, A., Cuadros, S., & Lagisz, M. (2026). Dragon Kill Points: applying a transparent working template to relieve authorship stress. *BMC Biology*, 24, 48. https://doi.org/10.1186/s12915-026-02521-x
+**Authorship threshold:** **60 DKP**, together with the other requirements above. Anyone who extracts but does not gain 60 DKP will be acknowledged.
 
 ---
 
 ## Before you start
 
-- **Assess what is there, not what should be there.** You are recording what a reader can find and use today — don't try to fix, re-run, or contact authors about anything.
+- **Assess what is there, not what should be there.** You are recording what a reader can find and use today — don't try to fix links or contact authors about anything.
 - **When in doubt, pick the most defensible answer and explain it in the comments box** for that section (3.13, 5.12 or 6.1). Comments are extremely useful to us when we clean the data.
 - Questions marked **\*** are mandatory.
 
@@ -143,10 +125,10 @@ Note that **data and code are assessed separately**, even when they live in the 
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
 ### 1.2 What is the ID of the manuscript? \*
-**What to do:** Enter the manuscript ID exactly as it appears in your folder.
+**What to do:** Enter the manuscript ID exactly as it appears in your file.
 
 **FAQ**
-- *Where do I find the ID?* In your folder, next to the paper.
+- *Where do I find the ID?* In your file, next to the paper title.
 
 ### 1.3 DOI of MS \*
 **What to do:** Enter the article DOI.
