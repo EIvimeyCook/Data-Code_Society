@@ -42,6 +42,45 @@ The guide covers:
 | General FAQ | Timing, corrections, where to ask for help |
 | Contributions | Dragon Kill Points: 30 points earns authorship |
 
+## Data files
+
+The `hackathon_papers/` folder holds the paper lists behind the hackathon. All
+three files cover papers published between 1 January and 30 September 2026 in
+the 89 society journals in the sample, and were compiled in October 2026.
+
+| File | Rows | What it contains |
+|---|---|---|
+| `total_papers_oct.csv` | 10,830 papers | Every paper published in the sample journals over that period: the sampling frame the hackathon papers were drawn from. |
+| `hackathon_papers.csv` | 1,444 papers | The papers to be assessed at the hackathon, a subset of `total_papers_oct.csv`. |
+| `2026_journals_oct.csv` | 89 journals | The number of papers each journal published per month, January to September 2026, with a total. |
+
+**Columns in `total_papers_oct.csv` and `hackathon_papers.csv`**
+
+| Column | Description |
+|---|---|
+| `title` | Article title |
+| `doi` | Article DOI, as a full `https://doi.org/` link |
+| `journal` | Journal name |
+| `publication_date` | Publication date (`YYYY-MM-DD`) |
+
+**Columns in `2026_journals_oct.csv`**
+
+| Column | Description |
+|---|---|
+| *(unnamed, first)* | Row number (1–89) |
+| `journal` | Journal name, matching the `journal` column in the other two files |
+| `Jan` – `Sep` | Number of papers the journal published in that month of 2026 |
+| `total` | Total papers January–September 2026 (the sum of the monthly columns) |
+| *(unnamed, last)* | Free-text notes; blank for most journals |
+
+**How the hackathon sample was drawn:** most journals contribute 15 papers.
+Where a journal published fewer than 15 papers in the period, all of its papers
+are included (7 journals, 7–14 papers each). Ecological Monographs contributes
+all 23 of its papers, and 9 journals contribute 30 papers each: Behavioral
+Ecology, Ecological Applications, Ecology, Ecology Letters, Ecosphere, Frontiers
+in Ecology and the Environment, Journal of Evolutionary Biology, Proceedings of
+the Royal Society B, and The American Naturalist.
+
 ## Organisers
 
 The hackathon is run by the **SORTEE Advocacy Committee**:
