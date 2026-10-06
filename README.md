@@ -36,7 +36,7 @@ The guide covers:
 | Section | What it covers |
 |---|---|
 | Introduction | What the hackathon is and how papers are allocated |
-| Contributions | Dragon Kill Points: 30 points earns authorship |
+| Contributions | Who can contribute, co-authorship requirements, and Dragon Kill Points (60 DKP for authorship) |
 | Before you start | Ground rules for assessing |
 | How the form flows | Which answers route to which sections |
 | Sections 1–6 | Help and FAQs for every form question |

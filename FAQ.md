@@ -1,6 +1,6 @@
 # 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
-> **Quick links:** [Introduction](#introduction) · [Contributions (Dragon Kill Points)](#contributions-dragon-kill-points) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments) · [General FAQ](#general-faq)
+> **Quick links:** [Introduction](#introduction) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments) · [General FAQ](#general-faq)
 
 ---
 
@@ -10,13 +10,29 @@ This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and co
 
 Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,444 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and 30 for nine larger journals. Each participant will be given their **own folder** containing the papers allocated to them, each with its manuscript ID.
 
-The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions-dragon-kill-points)).
+The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions)).
 
 If you have any problems, check this FAQ first, then message one of the organisers by email or on Slack.
 
 ---
 
-## Contributions (Dragon Kill Points)
+## Contributions
+
+We invite researchers at any career stage with a background in ecology and/or evolutionary biology to contribute to the project. All contributions will be acknowledged. Significant contributions (as outlined below), will warrant co-authorship. The final number of authors will depend on the individual contributions warranting authorship. The expected time you may spend on data extraction for this project is expected to be around ~5 hours in total, but will ultimately depend on the number of articles for data extraction, the final number of contributors, and the complexity of extractions. We also expect co-authors to contribute time to giving feedback on the final manuscript.
+
+We welcome and actively encourage the participation of researchers from historically underrepresented and marginalized groups, valuing their unique perspectives and experiences as essential contributions to this work.
+
+Co-authorship requires all the below contributions and responsibilities. To be a co-author, you will need to:
+
+- Fill in the Expression Of Interest (EOI) form at the start of the project.
+- Gain 60 DKP (outlined below; data extractions must be of good quality) from a subset of articles, as assigned. The DKP (per person) has been determined by the desired sample size and the estimated time to complete each task.
+- Read and approve of the final manuscript draft before submission in a timely manner (feedback is encouraged at every stage of the project).
+- Disclose personal information (e.g. name, affiliation, ORCID, email, languages, society memberships) and conflicts of interest needed prior to submission in a timely manner.
+- Agree to be personally accountable for your contribution as a co-author.
+
+**Note:** First and last authorship positions in the manuscript will be held by the project leads (EIC and JLP). Other authorship positions will be determined by the total amount and quality of contributions, as in the project records. For equal contributions, the order of mid-authorship will be alphabetical. All authors must read and approve the final manuscript draft before submission. The manuscript will contain a CRediT-like statement detailing the roles of individuals.
+
+### Dragon Kill Points (DKP)
 
 We track contributions using **Dragon Kill Points (DKP)** (Martinig et al. 2026), a transparent, points-based system adapted from multiplayer gaming. It is built on five **GREAT** principles:
 
@@ -47,11 +63,11 @@ For this hackathon, points are awarded per paper, plus a point for each journal 
 
 If data and code are in the same repository, you still complete both Section 3 and Section 5, so that paper is a full extraction worth 3 points.
 
-**Authorship rule:** reach **30 points** and you earn authorship on the resulting paper. Authorship will be alphabetical.
+**Authorship threshold:** **60 DKP**, together with the other requirements above.
 
-### Contribution table
+#### Contribution table
 
-| Name | Confirmed involvement | Papers searched (1 pt) | Data repositories (1 pt) | Code repositories (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 30 points) | Author order (alphabetical) |
+| Name | Confirmed involvement | Papers searched (1 pt) | Data repositories (1 pt) | Code repositories (1 pt) | Journal policies (1 pt) | Total points | Authorship earned (≥ 60 DKP) | Author order |
 |---|---|---|---|---|---|---|---|---|
 | Participant 1 | participating | | | | | | | |
 | Participant 2 | participating | | | | | | | |
@@ -59,7 +75,7 @@ If data and code are in the same repository, you still complete both Section 3 a
 
 Total points = papers searched + data repositories + code repositories + journal policies.
 
-### Reference
+#### Reference
 
 Martinig, A. R., Burk, S. L. P., Drobniak, S. M., Perry, I., Morrison, K., Petersohn, M., Pottier, P., Nakagawa, S., Pollo, P., Ricolfi, L., Williams, C., Mizuno, A., Chhen, A., Tam, J., Yang, Y., de Jong, J., Ceccacci, A., Cuadros, S., & Lagisz, M. (2026). Dragon Kill Points: applying a transparent working template to relieve authorship stress. *BMC Biology*, 24, 48. https://doi.org/10.1186/s12915-026-02521-x
 
@@ -118,7 +134,7 @@ Note that **data and code are assessed separately**, even when they live in the 
 
 **FAQ**
 - *Does the exact spelling matter?* Yes — use exactly the same name every time (e.g. always "Jo Smith", not sometimes "J. Smith"). Your points are counted by matching names.
-- *Why do you need my name?* So we can credit you (see [Contributions](#contributions-dragon-kill-points)).
+- *Why do you need my name?* So we can credit you (see [Contributions](#contributions)).
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
 ### 1.2 What is the ID of the manuscript? \*
