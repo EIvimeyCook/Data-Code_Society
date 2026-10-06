@@ -229,12 +229,12 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 - *There are many accession numbers (e.g. one per sequence).* Paste the project- or study-level accession if there is one (e.g. a BioProject `PRJNA…` number); otherwise paste the first and list the rest, or the range, in 3.13.
 
 ### 3.7 Is there a license? \*
-**What to do:** Look for a LICENSE file, or a licence stated on the repository landing page.
+**What to do:** Look for a licence file or a licence mentioned on the repository page. For reference, all Dryad projects have CC0 licences by default, but they may not be included in the files. Licence files typically include CC licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL.
 
 **FAQ**
 - *Dryad.* Dryad publishes all data under CC0, even if no licence file is included — answer **Yes**.
 - *Zenodo / Figshare / OSF.* The licence is usually shown on the landing page sidebar (e.g. "Creative Commons Attribution 4.0 International"). If one is shown → **Yes**.
-- *Common data licences:* CC0, CC-BY-4.0. *Common code licences:* MIT, Apache-2.0, GNU GPL. A code licence applied to a data repository still counts as **Yes**.
+- *A code licence (e.g. MIT, GPL) on a data repository.* Still counts as **Yes** — any stated licence does.
 - *"All rights reserved" / a copyright notice only.* **No** — this isn't an open licence. Note it in 3.13.
 - *Supplementary material.* Answer **Yes** only if a licence is stated for the supplement (sometimes the article's CC-BY licence explicitly covers supplementary files — if so, say so in 3.13).
 
@@ -342,7 +342,7 @@ See **3.5** (above). A bare GitHub/GitLab repo is **No**; a Zenodo snapshot of i
 Paste the DOI.
 
 ### 5.5 Is there a license? \*
-**What to do:** Look for a licence that covers the **code**: a `LICENSE` (or `LICENCE`, `COPYING`) file, the licence shown on the repository page, or a licence statement in the README or at the top of the scripts.
+**What to do:** Look for a licence file or a licence mentioned on the repository page. Licence files typically include CC licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL. For code, the file may also be called `LICENCE` or `COPYING`, and the licence may be stated in the README or at the top of the scripts.
 
 **FAQ**
 - *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check for a `LICENSE` file and the bottom of the README.
