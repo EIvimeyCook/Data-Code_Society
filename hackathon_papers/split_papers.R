@@ -6,10 +6,11 @@
 #load tidy
 library(tidyverse)
 
-# Full list of candidate papers
+# Full list of candidate papers; must contain a `journal` column whose values
+# match the names in `data_editor_journals` exactly (case and punctuation).
 pubs <- read_csv("papers/total_papers_oct.csv")
 
-# Fix the seed so the same papers are drawn every run.
+# Fix the random number generator so the same papers are drawn every run.
 set.seed(1)
 
 # Journals that employ a data editor; these are sampled more heavily.
@@ -32,5 +33,9 @@ sampled_papers <- bind_rows(
   pubs |> filter(!journal %in% data_editor_journals) |>
     slice_sample(n = 15, by = journal, replace = FALSE)
 ) %>%
-  # Save the combined sample. 
+  # Number papers within each journal in the order they were drawn:
+  # 1-30 for data-editor journals, 1-15 for the rest.
+  mutate(sample_no = row_number(), .by = journal) %>%
+  # Save the combined sample. The path is relative to the working directory,
+  # so this lands in the project root, not in papers/.
   write_csv("sampled_papers.csv")

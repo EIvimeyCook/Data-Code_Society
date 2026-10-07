@@ -261,6 +261,12 @@ source_lookup <- source_lookup %>%
 
 source_lookup
 
+pubs <- split(source_lookup$issn_l, ceiling(seq_along(source_lookup$issn_l) / 50)) |>
+  map_dfr(\(x) oa_fetch(entity = "sources", issn = x)) |>
+  select(any_of(c("display_name", "issn_l", "host_organization_name", "host_organization")))
+
+pubs %>% write_csv("publishers.csv")
+
 # ---------------------------------------------------------------------
 # Step 2: pull all 2026 journal-article works from those sources
 # ---------------------------------------------------------------------
@@ -272,7 +278,11 @@ get_2026_papers <- function(source_lookup, year = 2026) {
     primary_location.source.id = ids,
     publication_year = year,
     type = "article",
-    verbose = TRUE
+    authors_count = ">0", # drop items with no authors
+    primary_topic.id = "!null", # drop items OpenAlex couldn't assign a topic
+    verbose = TRUE,
+    indexed_in = "crossref",
+    to_publication_date = "2026-09-30"
   )
 
   if (is.null(works) || nrow(works) == 0) {
@@ -304,7 +314,9 @@ get_2026_papers <- function(source_lookup, year = 2026) {
 
 papers_2026 <- get_2026_papers(source_lookup)
 
-papers_2026 |> write.csv("papers/total_papers_oct.csv", row.names = F)
+papers_2026 |>
+  distinct(doi, .keep_all = TRUE) |>
+  write.csv("papers/total_papers_oct_rerun.csv", row.names = F)
 
 unique(papers_2026$journal)
 
@@ -324,4 +336,4 @@ paper_counts_wide <- papers_2026 %>%
     values_fill = 0
   )
 
-paper_counts_wide %>% write.csv("papers/2026_journals_oct.csv")
+paper_counts_wide %>% write.csv("papers/2026_journals_oct_rerun.csv")
