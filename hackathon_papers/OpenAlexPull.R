@@ -265,7 +265,7 @@ pubs <- split(source_lookup$issn_l, ceiling(seq_along(source_lookup$issn_l) / 50
   map_dfr(\(x) oa_fetch(entity = "sources", issn = x)) |>
   select(any_of(c("display_name", "issn_l", "host_organization_name", "host_organization")))
 
-pubs %>% write_csv("publishers.csv")
+pubs %>% write.csv("publishers.csv")
 
 # ---------------------------------------------------------------------
 # Step 2: pull all 2026 journal-article works from those sources

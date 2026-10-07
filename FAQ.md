@@ -1,6 +1,6 @@
 # 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
-> **Quick links:** [Introduction](#introduction) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments) · [General FAQ](#general-faq)
+> **Quick links:** [Introduction](#introduction) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
 
 ---
 
@@ -8,7 +8,7 @@
 
 This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and sharing quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
-Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,444 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and 30 for nine journals with data editors. Each participant will be given their **own file** containing a list of papers allocated to them, each with its own manuscript ID.
+Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a Google Form. This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,442 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and up to 30 for the ten journals with data editors. Each participant will be given their **own file** containing a list of papers allocated to them, each with its own manuscript ID.
 
 The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions)).
 
@@ -111,6 +111,43 @@ flowchart TD
 <!-- {% endraw %} -->
 
 Note that **data and code are assessed separately**, even when they live in the same repository. If one Zenodo record contains both, you will visit it in Section 3 *and* again in Section 5 — that is intended.
+
+---
+
+## General FAQ
+
+**How long should one assessment take?**
+We're thinking this should take a maximum(!) of 10 mins per paper.
+
+**Should I run the code or check the data reproduce the results?**
+No. This form assesses **availability and documentation**, not computational reproducibility.
+
+**Should I contact the authors if something is missing?**
+No. Record what you find.
+
+**I made a mistake in a submission. What do I do?**
+Contact the organisers by email, or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting.
+
+**I can't get access to the paper (paywall).**
+Try your institutional access or the journal's open-access version first. If you still can't read it, don't assess it: submit its manuscript ID through the Google Form we will provide (_link to follow_) so it can be given to someone else, and move on to your next paper. Don't use unofficial copies.
+
+**I've been allocated a paper I have a conflict of interest with.**
+You can't assess a paper if you:
+
+- are an **author** or **co-author** of it;
+- are a close collaborator of its authors; or
+- hold a **position at the journal** that published it (e.g. editor, associate editor, data editor, editorial board member).
+
+Don't assess it: submit its manuscript ID through the Google Form we will provide (_link to follow_) so it can be given to someone else, and move on to your next paper.
+
+**The PDF and the journal web page give different links.**
+Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
+
+**Will anyone else assess the same paper?**
+Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. 
+
+**Where do I ask questions during the event?**
+The Zoom chat or the dedicated Slack channel.
 
 ---
 
@@ -423,34 +460,3 @@ Anything you think is important to note.
 
 ### 6.1 General comments
 Anything that doesn't fit elsewhere, e.g. total time taken (in minutes).
-
----
-
-## General FAQ
-
-**How long should one assessment take?**
-We're thinking this should take a maximum(!) of 10 mins per paper.
-
-**Should I run the code or check the data reproduce the results?**
-No. This form assesses **availability and documentation**, not computational reproducibility.
-
-**Should I contact the authors if something is missing?**
-No. Record what you find.
-
-**I made a mistake in a submission. What do I do?**
-Contact the organisers by email, or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting.
-
-**I can't get access to the paper (paywall).**
-Try your institutional access or the journal's open-access version first. If you still can't read it, skip it and tell the organisers (with the manuscript ID) so it can be given to someone else. Don't use unofficial copies.
-
-**I've been allocated a paper I authored, or one by a close collaborator.**
-Skip it and tell the organisers (with the manuscript ID) so it can be given to someone else. Assessing your own work is a conflict of interest.
-
-**The PDF and the journal web page give different links.**
-Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
-
-**Will anyone else assess the same paper?**
-Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. 
-
-**Where do I ask questions during the event?**
-The Zoom chat or the dedicated Slack channel.
