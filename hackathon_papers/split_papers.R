@@ -39,4 +39,4 @@ sampled_papers <- bind_rows(
   # 1-30 for data-editor journals, 1-15 for the rest.
   mutate(sample_no = row_number(), .by = journal) %>%
   # Save the combined sample.
-  write_csv("papers/hackathon_papers.csv")
+  readr::write_excel_csv("papers/hackathon_papers.csv")

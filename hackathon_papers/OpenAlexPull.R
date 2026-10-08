@@ -244,8 +244,7 @@ resolve_journal_interactive <- function(journals, n_candidates = 5) {
   bind_rows(results)
 }
 
-# Review just a handful -- e.g. the ones you've already spotted as wrong
-# from the automatic pass -- and merge your picks back into source_lookup:
+# Review these as openalex picks the first one - they are the second optino for all.
 journals_to_review <- c(
   "Behavioral Ecology",
   "Coastal Management",
@@ -265,7 +264,8 @@ pubs <- split(source_lookup$issn_l, ceiling(seq_along(source_lookup$issn_l) / 50
   map_dfr(\(x) oa_fetch(entity = "sources", issn = x)) |>
   select(any_of(c("display_name", "issn_l", "host_organization_name", "host_organization")))
 
-pubs %>% write.csv("publishers.csv")
+pubs %>%
+  write.csv("publishers.csv", row.names = FALSE)
 
 # ---------------------------------------------------------------------
 # Step 2: pull all 2026 journal-article works from those sources
@@ -282,7 +282,8 @@ get_2026_papers <- function(source_lookup, year = 2026) {
     primary_topic.id = "!null", # drop items OpenAlex couldn't assign a topic
     verbose = TRUE,
     indexed_in = "crossref",
-    to_publication_date = "2026-09-30"
+    to_publication_date = "2026-09-30",
+    is_retracted = FALSE
   )
 
   if (is.null(works) || nrow(works) == 0) {
@@ -314,11 +315,42 @@ get_2026_papers <- function(source_lookup, year = 2026) {
 
 papers_2026 <- get_2026_papers(source_lookup)
 
-papers_2026 |>
-  distinct(doi, .keep_all = TRUE) |>
-  write.csv("papers/total_papers_oct_rerun.csv", row.names = F)
+# possible ones to remove due to replies/comments
+comment_pattern <- regex(paste(
+  # comments and replies
+  "(?<!with |and )\\bcomments? on\\b",
+  "\\bcommentary on\\b",
+  "\\b(a|technical) comment\\b",
+  "^comment\\b",
+  "[:.]\\s*(comment|reply)\\s*$",
+  "\\brepl(y|ies) to\\b",
+  "\\banswer to comments\\b",
+  "\\bresponse to comments\\b",
+  "\\brejoinder\\b",
+  "\\bmatters arising\\b",
+  "(^|[:.?—–]\\s*)(a )?response to\\b",
+  # introductions to special issues / sections
+  "(^|[:.—–-]\\s*)(an )?introduction to\\b",
+  # obituaries: "Name (1940–2026)" at the start of the title
+  "^[^:(]{3,30}\\((1[89]|20)\\d\\d\\s*[–-]\\s*20\\d\\d\\)\\s*(:|,|$)",
+  sep = "|"
+), ignore_case = TRUE)
 
-unique(papers_2026$journal)
+# give every paper a fixed row number
+papers_2026 <- papers_2026 |> mutate(row_id = row_number(), .before = 1)
+
+# write the flagged ones out to check
+papers_2026 |>
+  filter(str_detect(title, comment_pattern)) |>
+  write.csv("papers/possible_comments.csv", row.names = FALSE)
+
+# all are comments/repleis aside from the protest call
+
+papers_2026 |>
+  filter(!str_detect(title, comment_pattern) |
+    str_detect(title, "protest calls by Brazilian free-tailed bats")) |>
+  distinct(doi, .keep_all = TRUE) |>
+  readr::write_excel_csv("papers/total_papers_oct_rerun.csv")
 
 # ---------------------------------------------------------------------
 # Step 3: count papers by journal and month of publication (wide format
@@ -328,6 +360,9 @@ library(lubridate)
 library(tidyr)
 
 paper_counts_wide <- papers_2026 %>%
+  filter(!str_detect(title, comment_pattern) |
+    str_detect(title, "protest calls by Brazilian free-tailed bats")) |>
+  distinct(doi, .keep_all = TRUE) |>
   mutate(month = month(publication_date, label = TRUE, abbr = TRUE)) %>%
   count(journal, month, name = "n_papers") %>%
   pivot_wider(
@@ -336,4 +371,4 @@ paper_counts_wide <- papers_2026 %>%
     values_fill = 0
   )
 
-paper_counts_wide %>% write.csv("papers/2026_journals_oct_rerun.csv")
+paper_counts_wide %>% readr::write_excel_csv("papers/total_journals_oct_rerun.csv")
