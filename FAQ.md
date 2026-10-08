@@ -136,7 +136,7 @@ No. This form assesses **availability and documentation**, not computational rep
 No. Record what you find.
 
 **I made a mistake in a submission. What do I do?**
-Contact the organisers by email, or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting.
+Contact the organisers by email (Ed Ivimey-Cook: e.ivimeycook@gmail.com; Joel Pick: joel.l.pick@gmail.com), or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting. 
 
 **I can't get access to the paper (paywall).**
 Try your institutional access or the journal's open-access version first. If you still can't read it, don't assess it: submit its manuscript ID through the Google Form we will provide (_link to follow_) so it can be given to someone else, and move on to your next paper. Don't use unofficial copies.
@@ -145,7 +145,6 @@ Try your institutional access or the journal's open-access version first. If you
 You can't assess a paper if you:
 
 - are an **author** or **co-author** of it;
-- are a close collaborator of its authors; or
 - hold a **position at the journal** that published it (e.g. editor, associate editor, data editor, editorial board member).
 
 Don't assess it: submit its manuscript ID through the Google Form we will provide (_link to follow_) so it can be given to someone else, and move on to your next paper.
@@ -154,7 +153,7 @@ Don't assess it: submit its manuscript ID through the Google Form we will provid
 Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
 
 **Will anyone else assess the same paper?**
-Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. 
+Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. ~25% of papers will be extracted by two people.
 
 **Where do I ask questions during the event?**
 The Zoom chat or the dedicated Slack channel.
@@ -202,13 +201,13 @@ The Zoom chat or the dedicated Slack channel.
 ## Section 2 — Is there a Data repository?
 
 ### 2.1 Is there a working reference to archived data in the MS? \*
-**What to do:** Search the manuscript for "data" and read the **Data Availability / Open Research statement**, the **Methods**, and the **Supplementary Material** list. Try every link given.
+**What to do:** Search the manuscript using the browser search function for "data" and read the **Data Availability / Open Research statement**, the **Methods**, or the **Supplementary Material** list. Try every link given.
 
 | Option | Choose when… |
 |---|---|
 | **Yes** | The link/accession works and leads to data, *or* the data are in the supplementary files. |
-| **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, a login page where you can't see the dataset at all, or a generic landing page with no way to find the dataset. |
-| **No, sensitive data so not shared** | The authors explicitly state data are withheld for ethical, legal, or conservation reasons (e.g. endangered species locations, human participants). |
+| **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, or a generic landing page with no way to find the dataset. |
+| **No, sensitive data so not shared** | The authors explicitly state data are withheld for ethical, legal, or conservation reasons (e.g. endangered species locations or human participants). |
 | **No, no reference** | No mention of archived data, *or* only "available from the authors on (reasonable) request". |
 
 **FAQ**
@@ -295,7 +294,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 Answer **No** if the repo is **private**, **embargoed**, requires a **login or request** to access, or the files are **empty or corrupt**.
 
 **FAQ**
-- *You can see the dataset's page and file list, but downloading needs a free account (e.g. Movebank, some institutional repositories).* **No** — the data aren't openly downloadable. Name the repository and the access condition in 3.13.
+- *You can see the dataset's page and file list, but downloading needs a free account (e.g. Movebank, some institutional repositories).* **Yes** — the data aren't openly downloadable. Name the repository and the access condition in 3.13.
 - *The download is enormous.* If the download starts, answer **Yes** — no need to finish it.
 - *Files are compressed (.zip, .tar.gz).* Download and unzip if reasonably sized so you can answer 3.9–3.12. If it's too large, answer based on the file listing and note this in 3.13.
 
