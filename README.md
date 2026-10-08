@@ -46,35 +46,35 @@ The guide covers:
 ## Data files
 
 The `hackathon_papers/` folder holds the paper lists behind the hackathon and
-the R code that produced them. The paper lists cover journal articles published
-between 1 January and 30 September 2026 in the 89 society journals in the
-sample, pulled from [OpenAlex](https://openalex.org) in October 2026.
+the R code that produced them. The paper lists cover research articles
+published between 1 January and 30 September 2026 in the 89 society journals in
+the sample, pulled from [OpenAlex](https://openalex.org) in October 2026.
 
 | File | Rows | What it contains |
 |---|---|---|
-| `total_papers_oct_rerun.csv` | 10,798 papers | Every article published in the sample journals over that period: the sampling frame the hackathon papers were drawn from. |
-| `hackathon_papers.csv` | 1,442 papers | The papers to be assessed at the hackathon, a random subset of `total_papers_oct_rerun.csv`. Each participant's file of allocated papers is drawn from this. |
-| `2026_journals_oct_rerun.csv` | 89 journals | The number of articles each journal published per month, January to September 2026, with a total. |
+| `total_papers_oct_rerun.csv` | 10,721 papers | Every research article published in the sample journals over that period, after removing comments and replies: the sampling frame the hackathon papers were drawn from. |
+| `possible_comments.csv` | 76 papers | Items whose titles look like comments, replies, introductions or obituaries. All but one were removed from the sampling frame (see below). |
+| `hackathon_papers.csv` | 1,439 papers | The papers to be assessed at the hackathon, a random subset of `total_papers_oct_rerun.csv`. Each participant's file of allocated papers is drawn from this. |
+| `total_journals_oct_rerun.csv` | 89 journals | The number of articles each journal published per month, January to September 2026, with a total (matches `total_papers_oct_rerun.csv`). |
 | `publishers.csv` | 89 journals | Each journal's publisher, as recorded in OpenAlex. |
-| `OpenAlexPull.R` | — | R script that pulls the articles from OpenAlex and writes the three files above it. |
+| `OpenAlexPull.R` | — | R script that pulls the articles from OpenAlex and writes the files above. |
 | `split_papers.R` | — | R script that draws the hackathon sample from the full list. |
 
-**Columns in `total_papers_oct_rerun.csv` and `hackathon_papers.csv`**
+**Columns in `total_papers_oct_rerun.csv`, `possible_comments.csv` and `hackathon_papers.csv`**
 
 | Column | Description |
 |---|---|
+| `row_id` | A unique ID for each paper, assigned before comments were removed, so the numbers in `total_papers_oct_rerun.csv` have gaps. It stays the same in every file, so papers can be matched across them. |
 | `title` | Article title |
 | `doi` | Article DOI, as a full `https://doi.org/` link |
 | `journal` | Journal name, as in OpenAlex |
 | `publication_date` | Publication date (`YYYY-MM-DD`) |
 | `sample_no` | `hackathon_papers.csv` only: the order in which the paper was drawn **within its journal** (1–15, or 1–30 for data-editor journals). Not unique across journals. |
-| `manuscript_id` | `hackathon_papers.csv` only: a unique number for each paper (1–1,442), entered at question 1.2 of the form. Added after sampling, so it is not produced by `split_papers.R`. |
 
-**Columns in `2026_journals_oct_rerun.csv`**
+**Columns in `total_journals_oct_rerun.csv`**
 
 | Column | Description |
 |---|---|
-| *(unnamed, first)* | Row number (1–89) |
 | `journal` | Journal name, matching the `journal` column in the other files |
 | `Jan` – `Sep` | Number of articles the journal published in that month of 2026 |
 | `total` | Total articles January–September 2026 (the sum of the monthly columns) |
@@ -93,13 +93,19 @@ sample, pulled from [OpenAlex](https://openalex.org) in October 2026.
 free OpenAlex API key. It:
 
 1. matches each journal title to an OpenAlex source, automatically and then by
-   hand for five journals whose automatic match was wrong, and saves each
+   hand for five journals where OpenAlex's first match was wrong, and saves each
    journal's publisher to `publishers.csv`;
 2. downloads every work from those journals with `type = "article"`, published
-   in 2026 up to 30 September, indexed in Crossref, with at least one author
-   and an assigned topic (filters intended to exclude editorials and other front matter);
-3. removes duplicate DOIs and saves the result as `total_papers_oct_rerun.csv`;
-4. counts articles per journal per month and saves `2026_journals_oct_rerun.csv`.
+   in 2026 up to 30 September, indexed in Crossref, not retracted, with at least
+   one author and an assigned topic (filters intended to exclude editorials and
+   other front matter);
+3. gives every paper a `row_id`, then flags titles that look like comments,
+   replies, responses, introductions to special issues or obituaries, and saves
+   them to `possible_comments.csv`. These were checked by hand: all are removed
+   except one research article caught by the pattern ("Response to individual
+   variation in protest calls by Brazilian free-tailed bats");
+4. removes duplicate DOIs and saves the result as `total_papers_oct_rerun.csv`;
+5. counts articles per journal per month and saves `total_journals_oct_rerun.csv`.
 
 The script queries 90 journals; Primate Conservation published nothing in the
 period, which leaves 89.
@@ -111,10 +117,10 @@ sample, made reproducible with `set.seed(1)`:
   American Naturalist, Behavioral Ecology, Ecological Applications, Ecological
   Monographs, Ecology, Ecology Letters, Ecosphere, Frontiers in Ecology and the
   Environment, Journal of Evolutionary Biology, and Proceedings of the Royal
-  Society B. Ecological Monographs published only 24 articles, so all 24 are
-  included.
+  Society B. Ecological Monographs published only 22 research articles, so all
+  22 are included.
 - **All other journals** contribute up to 15 papers each. Seven published fewer
-  than 15, so all of their papers are included (7–14 each).
+  than 15, so all of their papers are included (6–14 each).
 
 ## Organisers
 
