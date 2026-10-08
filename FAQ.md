@@ -61,18 +61,22 @@ For this hackathon, points are awarded based on how much is extracted per paper:
 |---|---|---|
 | **Searching for data and code links** | 1 | If the paper is expected to have data and/or code. Q1.4  = **YES** and so you search it for data and code links (2.1 and 4.1). |
 | **Data repository extraction** | 1 | If there is archived data (2.1 is **Yes**), so you also extract information about the data repository (Section 3). |
-| **Code repository extraction** | 1 | If there is archived data (4.1 is **Yes**), so you also extract information about the code repository (Section 5). |
+| **Code repository extraction** | 1 | If there is archived code (4.1 is **Yes**), so you also extract information about the code repository (Section 5). |
 | **Journal policy** | 1 | Extracting data on a society journal's data and code policy done by the Advocacy Committee before the hackathon. |
+| **Trial extraction** | | Taking part in the trial extraction used to test the form. |
+| **Protocol feedback** | | Giving feedback on the extraction protocol. |
+
+Each DKP is roughly **5 minutes** of work, so a full extraction (3 DKP) takes about **15 minutes**.
 
 **What a paper is worth**
 
-| What you find | Points |
-|---|---|
-| 1.4 is **No** (e.g. a review or opinion piece) | 0 |
-| 1.4 is **Yes**, but no working data or code reference | 1 |
-| 1.4 is **Yes**, data repository only | 2 |
-| 1.4 is **Yes**, code repository only | 2 |
-| 1.4 is **Yes**, data **and** code repositories | 3 |
+| What you find | Points | Approx. time |
+|---|---|---|
+| 1.4 is **No** (e.g. a review or opinion piece) | 0 | — |
+| 1.4 is **Yes**, but no working data or code reference | 1 | 5 min |
+| 1.4 is **Yes**, data repository only | 2 | 10 min |
+| 1.4 is **Yes**, code repository only | 2 | 10 min |
+| 1.4 is **Yes**, data **and** code repositories (full extraction) | 3 | 15 min |
 
 **Authorship threshold:** **60 DKP**, together with the other requirements above. Anyone who extracts but does not gain 60 DKP will be acknowledged.
 
@@ -127,7 +131,7 @@ Note that **data and code are assessed separately**, even when they live in the 
 ## General FAQ
 
 **How long should one assessment take?**
-We're thinking this should take a maximum(!) of 10 mins per paper.
+About 5 minutes per DKP, so up to about 15 minutes for a full extraction (data and code). See [Dragon Kill Points](#dragon-kill-points-dkp).
 
 **Should I run the code or check the data reproduce the results?**
 No. This form assesses **availability and documentation**, not computational reproducibility.
