@@ -36,6 +36,7 @@ The guide covers:
 | Section | What it covers |
 |---|---|
 | Introduction | What the hackathon is and how papers are allocated |
+| Timeline | Start (13 October 2026, 09:00 UTC) and close of data extraction (1 December 2026) |
 | Contributions | Who can contribute, co-authorship requirements, and Dragon Kill Points (60 DKP for authorship) |
 | Before you start | Ground rules for assessing |
 | How the form flows | Which answers route to which sections |

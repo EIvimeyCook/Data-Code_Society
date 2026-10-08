@@ -550,3 +550,44 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   :root:not([data-theme="light"]) .theme-toggle .i-moon { display: none; }
 }
 @media (max-width: 640px) { .theme-toggle .t-label { display: none; } }
+
+/* ================= timeline ================= */
+#timeline + ol {
+  list-style: none;
+  counter-reset: none;
+  margin: 8px 0 8px;
+  padding: 0 0 0 30px;
+  position: relative;
+}
+#timeline + ol::before {               /* the vertical line */
+  content: "";
+  position: absolute;
+  left: 9px; top: 10px; bottom: 10px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--green), var(--green-line));
+  border-radius: 2px;
+}
+#timeline + ol > li {
+  position: relative;
+  margin: 0 0 14px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  color: var(--ink-soft);
+  font-size: .95rem;
+}
+#timeline + ol > li:last-child { margin-bottom: 0; }
+#timeline + ol > li strong { color: var(--ink); font-size: 1.02rem; }
+#timeline + ol > li::before {          /* the dot */
+  content: "";
+  position: absolute;
+  left: -27px; top: 18px;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 3px solid var(--green);
+}
+#timeline + ol > li:first-child::before,
+#timeline + ol > li:last-child::before { background: var(--green); }

@@ -1,6 +1,6 @@
 # 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
-> **Quick links:** [Introduction](#introduction) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
+> **Quick links:** [Introduction](#introduction) · [Timeline](#timeline) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
 
 ---
 
@@ -14,8 +14,18 @@ The aim is to write a manuscript on the state of data and code archiving in soci
 
 If you have any problems, check this FAQ first, then message one of the organisers by email or on Slack.
 
-Ed Ivimey-Cook: e.ivimeycook@gmail.com
-Joel Pick: joel.l.pick@gmail.com
+- Ed Ivimey-Cook: e.ivimeycook@gmail.com
+- Joel Pick: joel.l.pick@gmail.com
+
+---
+
+## Timeline
+
+1. **Tuesday 13 October 2026, 09:00 UTC — Hackathon starts**
+2. **13 October – 1 December 2026 — Data extraction**<br>
+   Seven weeks to work through the papers in your file, at your own pace.
+3. **Tuesday 1 December 2026 — Data extraction closes**<br>
+   All forms must be submitted by this date.
 
 ---
 
