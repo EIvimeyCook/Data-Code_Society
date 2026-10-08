@@ -21,9 +21,9 @@ If you have any problems, check this FAQ first, then message one of the organise
 
 ## Timeline
 
-1. **Tuesday 13 October 2026, 09:00 UTC — Hackathon starts**
+1. **Tuesday 13 October 2026, 09:00–10:25 UTC — Hackathon**
 2. **13 October – 1 December 2026 — Data extraction**<br>
-   Seven weeks to work through the papers in your file, at your own pace.
+   Seven weeks to finish your extraction.
 3. **Tuesday 1 December 2026 — Data extraction closes**<br>
    All forms must be submitted by this date.
 

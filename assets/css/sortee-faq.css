@@ -559,6 +559,7 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   padding: 0 0 0 30px;
   position: relative;
 }
+
 #timeline + ol::before {               /* the vertical line */
   content: "";
   position: absolute;
@@ -591,3 +592,42 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
 }
 #timeline + ol > li:first-child::before,
 #timeline + ol > li:last-child::before { background: var(--green); }
+
+/* "today" marker that moves along the timeline (positioned by faq.js) */
+#timeline + ol { overflow: visible; }
+.tl-now {
+  position: absolute;
+  left: -2px;
+  transform: translate(-100%, -50%);
+  display: flex;
+  align-items: center;
+  gap: 0;
+  pointer-events: none;
+  transition: top .4s ease;
+  z-index: 2;
+}
+.tl-now-label {
+  white-space: nowrap;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--on-accent);
+  background: var(--amber);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+.tl-now-arrow {
+  width: 0; height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 9px solid var(--amber);
+}
+#timeline + ol > li.current { border-color: var(--amber); box-shadow: 0 0 0 3px var(--amber-tint), var(--shadow); }
+#timeline + ol > li.current::before { border-color: var(--amber); background: var(--amber); }
+/* make room on the left for the marker */
+#timeline + ol { margin-left: 118px; margin-top: 34px; }
+@media (max-width: 640px) {
+  #timeline + ol { margin-left: 92px; }
+  .tl-now-label { font-size: .62rem; padding: 2px 6px; }
+}

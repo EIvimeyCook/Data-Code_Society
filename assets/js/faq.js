@@ -155,7 +155,51 @@
       });
     }
 
-    // 9. Back-to-top button
+    // 9. "Today" marker on the timeline. Edit these dates if the schedule changes.
+    var TIMELINE = {
+      start: Date.UTC(2026, 9, 13, 9, 0),      // 13 Oct 2026, 09:00 UTC (months are 0-based)
+      hackEnd: Date.UTC(2026, 9, 13, 10, 25),  // 13 Oct 2026, 10:25 UTC
+      close: Date.UTC(2026, 11, 2, 0, 0)       // end of 1 Dec 2026 (00:00 UTC on 2 Dec)
+    };
+    var tl = document.querySelector("#timeline + ol");
+    if (tl && tl.children.length >= 3) {
+      var items = tl.children;
+      var marker = document.createElement("div");
+      marker.className = "tl-now";
+      marker.setAttribute("aria-hidden", "true");
+      marker.innerHTML = '<span class="tl-now-label"></span><span class="tl-now-arrow"></span>';
+      tl.appendChild(marker);
+      var label = marker.querySelector(".tl-now-label");
+      var DAY = 86400000;
+
+      var place = function () {
+        var now = Date.now();
+        var dotY = function (li) { return li.offsetTop + 25; };   // centre of each item's dot
+        var y, text, current = -1;
+        if (now < TIMELINE.start) {
+          var ms = TIMELINE.start - now, d = Math.ceil(ms / DAY);
+          y = dotY(items[0]) - 30;
+          text = ms < DAY ? "Starts in " + Math.ceil(ms / 3600000) + "h" : d + " days to go";
+        } else if (now < TIMELINE.hackEnd) {
+          y = dotY(items[0]); text = "Happening now"; current = 0;
+        } else if (now < TIMELINE.close) {
+          var f = (now - TIMELINE.hackEnd) / (TIMELINE.close - TIMELINE.hackEnd);
+          y = dotY(items[0]) + f * (dotY(items[2]) - dotY(items[0]));
+          var left = Math.ceil((TIMELINE.close - now) / DAY);
+          text = left + (left === 1 ? " day left" : " days left"); current = 1;
+        } else {
+          y = dotY(items[2]); text = "Closed"; current = 2;
+        }
+        marker.style.top = Math.max(-6, y) + "px";
+        label.textContent = text;
+        for (var i = 0; i < items.length; i++) items[i].classList.toggle("current", i === current);
+      };
+      place();
+      window.addEventListener("resize", place);
+      setInterval(place, 60000);
+    }
+
+    // 10. Back-to-top button
     var top = document.querySelector(".to-top");
     if (top) {
       var onScroll = function () { top.classList.toggle("show", window.scrollY > 600); };
