@@ -59,9 +59,18 @@
     });
 
     // 5. Tables: rounded scroll wrapper
-    main.querySelectorAll("table").forEach(function (t) {
+    var heads = Array.prototype.slice.call(main.querySelectorAll("h2, h3"));
+    main.querySelectorAll("thead th").forEach(function (th) { th.setAttribute("scope", "col"); });
+    main.querySelectorAll("table").forEach(function (t, i) {
+      var before = heads.filter(function (h) {
+        return h.compareDocumentPosition(t) & Node.DOCUMENT_POSITION_FOLLOWING;
+      }).pop();
       var wrap = document.createElement("div");
       wrap.className = "table-wrap";
+      // focusable + labelled so keyboard users can scroll wide tables on phones
+      wrap.tabIndex = 0;
+      wrap.setAttribute("role", "region");
+      wrap.setAttribute("aria-label", "Table " + (i + 1) + (before ? ": " + before.textContent.replace(/\s+/g, " ").trim() : ""));
       t.parentNode.insertBefore(wrap, t);
       wrap.appendChild(t);
     });
@@ -96,7 +105,8 @@
     //    GitHub renders the same blocks natively, so FAQ.md stays readable there.
     var blocks = [];
     main.querySelectorAll("code.language-mermaid, pre.mermaid code, .language-mermaid code").forEach(function (code) {
-      var outer = code.closest(".language-mermaid") || code.closest("pre");
+      // replace the whole block: Rouge wraps it in div.language-mermaid, other renderers in <pre>
+      var outer = code.closest("div.language-mermaid") || code.closest("pre");
       if (!outer || blocks.some(function (b) { return b.outer === outer; })) return;
       // classDef colours are for GitHub's own view; on the site the CSS colours
       // the nodes (so they follow light/dark), so drop the classDef lines here.
@@ -168,7 +178,8 @@
       marker.className = "tl-now";
       marker.setAttribute("aria-hidden", "true");
       marker.innerHTML = '<span class="tl-now-label"></span><span class="tl-now-arrow"></span>';
-      tl.appendChild(marker);
+      // placed after the list, not inside it (only <li> may go in an <ol>, and it keeps :last-child working)
+      tl.parentNode.insertBefore(marker, tl.nextSibling);
       var nowLabel = marker.querySelector(".tl-now-label");
       var DAY = 86400000;
 
@@ -190,7 +201,8 @@
         } else {
           y = dotY(items[2]); text = "Closed"; current = 2;
         }
-        marker.style.top = Math.max(-6, y) + "px";
+        marker.style.top = (tl.offsetTop + Math.max(-6, y)) + "px";
+        marker.style.left = (tl.offsetLeft - 2) + "px";
         nowLabel.textContent = text;
         for (var i = 0; i < items.length; i++) items[i].classList.toggle("current", i === current);
       };

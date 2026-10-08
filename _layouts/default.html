@@ -20,8 +20,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/sortee-faq.css' | relative_url }}">
-  <script src="{{ '/assets/js/faq.js' | relative_url }}" defer></script>
+  {%- comment -%} ?v= changes on every build, so browsers never pair a new page with an old cached stylesheet {%- endcomment -%}
+  {%- assign v = site.time | date: '%s' %}
+  <link rel="stylesheet" href="{{ '/assets/css/sortee-faq.css' | relative_url }}?v={{ v }}">
+  <script src="{{ '/assets/js/faq.js' | relative_url }}?v={{ v }}" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -29,8 +31,11 @@
   <header class="hero">
     <nav class="topbar" aria-label="SORTEE">
       <a href="https://sortee.org" class="brand">
-        <span class="brand-short">SORTEE</span>
-        <span class="brand-full">Society for Open, Reliable, and Transparent Ecology and Evolutionary biology</span>
+        <img class="brand-mark" src="{{ '/assets/img/sortee-mark.png' | relative_url }}" alt="" width="40" height="43">
+        <span class="brand-text">
+          <span class="brand-short">SORTEE</span>
+          <span class="brand-full">Society for Open, Reliable, and Transparent Ecology and Evolutionary biology</span>
+        </span>
       </a>
       <a href="https://sortee.org/people/#advocacy-committee" class="topbar-tag">Advocacy Committee</a>
       <button type="button" class="theme-toggle" aria-label="Switch between light and dark mode">
@@ -52,9 +57,9 @@
   </header>
 
   <div class="shell">
-    <aside class="toc" aria-label="On this page">
-      <p class="toc-title">On this page</p>
-      <nav id="toc"></nav>
+    <aside class="toc" aria-labelledby="toc-title">
+      <p class="toc-title" id="toc-title">On this page</p>
+      <nav id="toc" aria-labelledby="toc-title"></nav>
     </aside>
 
     <main id="main" class="content">
@@ -69,8 +74,7 @@
       <a href="https://sortee.org">sortee.org</a>
       <a href="https://github.com/EIvimeyCook/Data-Code_Society">Source on GitHub</a>
     </div>
+    <a class="to-top" href="#main" aria-label="Back to top">↑</a>
   </footer>
-
-  <a class="to-top" href="#main" aria-label="Back to top">↑</a>
 </body>
 </html>
