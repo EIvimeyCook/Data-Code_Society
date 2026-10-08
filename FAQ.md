@@ -22,7 +22,7 @@ If you have any problems, check this FAQ first, then message one of the organise
 > - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every paper you assess
 > - ✋ [Expression of Interest form](https://forms.gle/bA7D9yDXMz18Viom8): fill this in before you start
 > - ⚠️ [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for papers you can't access or have a conflict of interest with
-> - 📋 [List of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing) (view only)
+> - 📋 [List of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing)
 
 ---
 
