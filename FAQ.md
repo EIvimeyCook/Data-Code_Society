@@ -1,6 +1,6 @@
 # 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
-> **Quick links:** [Introduction](#introduction) · [Timeline](#timeline) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
+> **Quick links:** [Introduction](#introduction) · [Timeline](#timeline) · [Code of conduct](#code-of-conduct) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
 
 ---
 
@@ -29,6 +29,17 @@ If you have any problems, check this FAQ first, then message one of the organise
 
 ---
 
+## Code of conduct
+
+This hackathon follows the [SORTEE Code of Conduct](https://sortee.org/codeofconduct). In short:
+
+- **Be respectful and inclusive.** Everyone is welcome, whatever their career stage, background or experience. Harassment of any kind is not tolerated, in the Zoom session, on Slack or anywhere else connected with the project.
+- **Critique the archive, not the authors.** We are assessing how data and code are shared, not judging the researchers. Keep comments factual and don't name or shame authors in public.
+- **Work honestly and independently.** Record what you actually find, and don't discuss your answers with other extractors, as some papers are assessed twice.
+- **Raise concerns early.** Contact Ed or Joel, any member of the SORTEE Advocacy Committee, any SORTEE board member, or use SORTEE's anonymous reporting form (linked from the Code of Conduct page).
+
+---
+
 ## Contributions
 
 We invite researchers at any career stage with a background in ecology and/or evolutionary biology to contribute to the project. All contributions will be acknowledged. Significant contributions (as outlined below), will warrant co-authorship. The final number of authors will depend on the individual contributions warranting authorship. The expected time you may spend on data extraction for this project is expected to be around ~5 hours in total, but will ultimately depend on the number of articles for data extraction, the final number of contributors, and the complexity of extractions. We also expect co-authors to contribute time to giving feedback on the final manuscript.
@@ -37,11 +48,11 @@ We welcome and actively encourage the participation of researchers from historic
 
 Co-authorship requires all the below contributions and responsibilities. To be a co-author, you will need to:
 
-- Fill in the Expression Of Interest (EOI) form at the start of the project.
-- Gain 60 DKP (outlined below; data extractions must be of good quality) from a subset of articles, as assigned. The DKP (per person) has been determined by the desired sample size and the estimated time to complete each task.
-- Read and approve of the final manuscript draft before submission in a timely manner (feedback is encouraged at every stage of the project).
-- Disclose personal information (e.g. name, affiliation, ORCID, email, languages, society memberships) and conflicts of interest needed prior to submission in a timely manner.
-- Agree to be personally accountable for your contribution as a co-author.
+1. Fill in the Expression Of Interest (EOI) form at the start of the project.
+2. Gain 60 DKP (outlined below; data extractions must be of good quality) from a subset of articles, as assigned. The DKP (per person) has been determined by the desired sample size and the estimated time to complete each task.
+3. Read and approve of the final manuscript draft before submission in a timely manner (feedback is encouraged at every stage of the project).
+4. Disclose personal information (e.g. name, affiliation, ORCID, email, languages, society memberships) and conflicts of interest needed prior to submission in a timely manner.
+5. Agree to be personally accountable for your contribution as a co-author.
 
 **Note:** First and last authorship positions in the manuscript will be held by the project leads (EIC and JLP). Other authorship positions will be determined by the total amount and quality of contributions. The order of mid-authorship will be alphabetical. All authors must read and approve the final manuscript draft before submission. The manuscript will contain a CRediT-like statement detailing the roles of individuals. 
 
