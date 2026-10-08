@@ -1,5 +1,7 @@
 title: "SORTEE 2026 Hackathon — Data & Code in Society Journals"
 description: "Question-by-question guide to the SORTEE 2026 hackathon form on data and code availability in ecology and evolution society journals."
+url: "https://eivimeycook.github.io"
+baseurl: "/Data-Code_Society"
 
 markdown: kramdown
 kramdown:
@@ -25,3 +27,4 @@ exclude:
   - LICENSE
   - LICENSE-data.md
   - CITATION.cff
+  - Data-Code_Society.Rproj

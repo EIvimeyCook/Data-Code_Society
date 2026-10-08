@@ -11,6 +11,7 @@
   --green-line: #cfe5d5;
   --amber: #b7791f;
   --amber-tint: #fdf6e7;
+  --amber-ink: #8a5a12;      /* amber text and pills (AA on white and tint) */
 
   --ink: #2f3432;
   --ink-soft: #5d6561;
@@ -45,6 +46,7 @@
     --green-line: #2d4535;
     --amber: #e6b25a;
     --amber-tint: #2b2518;
+    --amber-ink: #e6b25a;
     --ink: #e4e9e6;
     --ink-soft: #a7b1ac;
     --bg: #121614;
@@ -70,6 +72,7 @@
   --green-line: #2d4535;
   --amber: #e6b25a;
   --amber-tint: #2b2518;
+  --amber-ink: #e6b25a;
   --ink: #e4e9e6;
   --ink-soft: #a7b1ac;
   --bg: #121614;
@@ -129,12 +132,22 @@ body {
   border-bottom: 1px solid rgba(255,255,255,.18);
 }
 .brand {
-  color: #fff; font-weight: 900; letter-spacing: .16em; text-decoration: none; font-size: 1.05rem;
+  display: flex; flex-direction: column; gap: 2px;
+  min-width: 0;
+  color: #fff; text-decoration: none;
 }
+.brand:hover { text-decoration: none; }
+.brand-short { font-weight: 900; letter-spacing: .16em; font-size: 1.05rem; line-height: 1.2; }
+.brand-full { font-size: .78rem; font-weight: 300; line-height: 1.3; color: #e6f4ea; }
+.brand:hover .brand-full { text-decoration: underline; text-underline-offset: 3px; }
 .topbar-tag {
+  flex: none;
   font-size: .8rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase;
   padding: 3px 10px; border: 1px solid rgba(255,255,255,.35); border-radius: 999px;
+  color: #fff; text-decoration: none;
+  transition: background .15s ease, border-color .15s ease;
 }
+.topbar-tag:hover { background: rgba(255,255,255,.14); border-color: rgba(255,255,255,.6); text-decoration: none; }
 .hero-body {
   position: relative;
   z-index: 1;
@@ -254,10 +267,10 @@ h2::before {
   border-radius: 4px;
   background: linear-gradient(180deg, var(--green), var(--green-deep));
 }
-.content > h1:first-child + blockquote + hr + h2,
 .content > h2:first-of-type { margin-top: 12px; }
 
 h3 { font-size: 1.1rem; font-weight: 700; margin: 28px 0 10px; }
+h2[id], h3[id] { scroll-margin-top: 24px; }
 
 /* question headings, badges added by faq.js */
 h3.q { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 12px; }
@@ -282,7 +295,7 @@ h3.q { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 12px; }
   padding: 1px 8px;
   border-radius: 999px;
   background: var(--amber-tint);
-  color: var(--amber);
+  color: var(--amber-ink);
   font-size: .68rem;
   font-weight: 700;
   letter-spacing: .06em;
@@ -335,6 +348,8 @@ p.route::before {
 /* ================= text ================= */
 a { color: var(--green-dark); text-decoration: none; }
 a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+a:focus-visible, .btn:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 4px; }
+.hero a:focus-visible { outline-color: #fff; }
 strong { font-weight: 700; }
 
 hr { border: 0; height: 1px; background: var(--line); margin: 48px 0; }
@@ -383,7 +398,7 @@ em.pending {
   padding: 3px 10px;
   border-radius: 999px;
   background: var(--amber-tint);
-  color: var(--amber);
+  color: var(--amber-ink);
   border: 1px dashed var(--amber);
 }
 
@@ -474,6 +489,9 @@ td:first-child { font-weight: 500; }
 @media (max-width: 640px) {
   body { font-size: 15.5px; }
   .hero { padding: 0 16px 40px; }
+  .topbar { flex-wrap: wrap; row-gap: 10px; }
+  .brand { flex: 1 0 100%; }
+  .brand-full { font-size: .72rem; }
   .hero-body { padding-top: 36px; }
   .hero-mark { height: 62%; right: -24px; top: 58%; opacity: .08; }
   .shell { padding: 0 16px; }
@@ -554,8 +572,7 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
 /* ================= timeline ================= */
 #timeline + ol {
   list-style: none;
-  counter-reset: none;
-  margin: 8px 0 8px;
+  margin: 34px 0 8px 118px;   /* left room for the "today" marker */
   padding: 0 0 0 30px;
   position: relative;
 }
@@ -594,7 +611,6 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
 #timeline + ol > li:last-child::before { background: var(--green); }
 
 /* "today" marker that moves along the timeline (positioned by faq.js) */
-#timeline + ol { overflow: visible; }
 .tl-now {
   position: absolute;
   left: -2px;
@@ -613,7 +629,7 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   letter-spacing: .04em;
   text-transform: uppercase;
   color: var(--on-accent);
-  background: var(--amber);
+  background: var(--amber-ink);
   padding: 3px 8px;
   border-radius: 999px;
 }
@@ -621,13 +637,26 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   width: 0; height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 9px solid var(--amber);
+  border-left: 9px solid var(--amber-ink);
 }
 #timeline + ol > li.current { border-color: var(--amber); box-shadow: 0 0 0 3px var(--amber-tint), var(--shadow); }
 #timeline + ol > li.current::before { border-color: var(--amber); background: var(--amber); }
-/* make room on the left for the marker */
-#timeline + ol { margin-left: 118px; margin-top: 34px; }
 @media (max-width: 640px) {
   #timeline + ol { margin-left: 92px; }
   .tl-now-label { font-size: .62rem; padding: 2px 6px; }
+}
+
+/* ================= print ================= */
+@media print {
+  :root { --bg: #fff !important; --surface: #fff !important; --ink: #000 !important; --ink-soft: #333 !important;
+          --line: #ccc !important; --code-bg: #f4f4f4 !important; --green-dark: #2f6b40 !important; }
+  .hero, .toc, .to-top, .skip, .theme-toggle { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .shell { display: block; padding: 0; }
+  .content { max-width: none; padding: 0; }
+  .card, figure.flow, pre, .table-wrap, blockquote { box-shadow: none; break-inside: avoid; }
+  .content > h1:first-child { display: block; }
+  a { color: inherit; }
+  .footer { background: none; color: #000; margin-top: 24px; }
+  .footer a, .footer-brand { color: #000; }
 }

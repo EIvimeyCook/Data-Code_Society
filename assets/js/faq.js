@@ -116,7 +116,7 @@
         b.outer.parentNode.replaceChild(wrap, b.outer);
       });
       var s = document.createElement("script");
-      s.src = window.MERMAID_SRC || "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
+      s.src = window.MERMAID_SRC || "https://cdn.jsdelivr.net/npm/mermaid@11.17.2/dist/mermaid.min.js";  // pinned so a new release can't change the diagram
       s.onload = function () {
         window.mermaid.initialize({
           startOnLoad: false,
@@ -145,13 +145,13 @@
         if (t) return t === "dark";
         return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
       };
-      var label = function () { toggle.setAttribute("aria-pressed", isDark() ? "true" : "false"); };
-      label();
+      var syncPressed = function () { toggle.setAttribute("aria-pressed", isDark() ? "true" : "false"); };
+      syncPressed();
       toggle.addEventListener("click", function () {
         var next = isDark() ? "light" : "dark";
         root.setAttribute("data-theme", next);
         try { localStorage.setItem("faq-theme", next); } catch (e) {}
-        label();
+        syncPressed();
       });
     }
 
@@ -163,13 +163,13 @@
     };
     var tl = document.querySelector("#timeline + ol");
     if (tl && tl.children.length >= 3) {
-      var items = tl.children;
+      var items = Array.prototype.slice.call(tl.children);   // the three <li>s, taken before the marker is added
       var marker = document.createElement("div");
       marker.className = "tl-now";
       marker.setAttribute("aria-hidden", "true");
       marker.innerHTML = '<span class="tl-now-label"></span><span class="tl-now-arrow"></span>';
       tl.appendChild(marker);
-      var label = marker.querySelector(".tl-now-label");
+      var nowLabel = marker.querySelector(".tl-now-label");
       var DAY = 86400000;
 
       var place = function () {
@@ -191,7 +191,7 @@
           y = dotY(items[2]); text = "Closed"; current = 2;
         }
         marker.style.top = Math.max(-6, y) + "px";
-        label.textContent = text;
+        nowLabel.textContent = text;
         for (var i = 0; i < items.length; i++) items[i].classList.toggle("current", i === current);
       };
       place();
