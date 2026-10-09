@@ -342,7 +342,7 @@ papers_2026 <- papers_2026 |> mutate(row_id = row_number(), .before = 1)
 # write the flagged ones out to check
 papers_2026 |>
   filter(str_detect(title, comment_pattern)) |>
-  write.csv("papers/possible_comments.csv", row.names = FALSE)
+  write.csv("Data/Raw/possible_comments.csv", row.names = FALSE)
 
 # all are comments/repleis aside from the protest call
 
@@ -350,7 +350,7 @@ papers_2026 |>
   filter(!str_detect(title, comment_pattern) |
     str_detect(title, "protest calls by Brazilian free-tailed bats")) |>
   distinct(doi, .keep_all = TRUE) |>
-  readr::write_excel_csv("papers/total_papers_oct_rerun.csv")
+  readr::write_excel_csv("Data/Raw/total_papers_oct_rerun.csv")
 
 # ---------------------------------------------------------------------
 # Step 3: count papers by journal and month of publication (wide format
@@ -371,4 +371,4 @@ paper_counts_wide <- papers_2026 %>%
     values_fill = 0
   )
 
-paper_counts_wide %>% readr::write_excel_csv("papers/total_journals_oct_rerun.csv")
+paper_counts_wide %>% readr::write_excel_csv("Data/Raw/total_journals_oct_rerun.csv")
