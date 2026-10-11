@@ -1,10 +1,11 @@
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Copyright (c) 2026 Edward R. Ivimey-Cook
+Copyright (c) 2026 Edward R. Ivimey-Cook and Joel L. Pick
 
 The prose content of this repository — FAQ.md, README.md and the rendered
-site — is licensed under the Creative Commons Attribution 4.0 International
-License.
+site — and the data files in Data/ are licensed under the Creative Commons
+Attribution 4.0 International License. The paper metadata in Data/ comes
+from OpenAlex (https://openalex.org), which releases its data under CC0.
 
 You are free to:
 
@@ -30,8 +31,8 @@ Human-readable summary: https://creativecommons.org/licenses/by/4.0/
 
 Scope and exceptions
 
-  * The code in this repository (_config.yml, _layouts/, assets/) is licensed
-    separately under the MIT License — see LICENSE.
+  * The code in this repository (_config.yml, _layouts/, assets/, R/) is
+    licensed separately under the MIT License — see LICENSE.
 
   * The SORTEE logo mark (assets/img/sortee-mark.png) belongs to SORTEE and
     is not covered by this licence or the MIT License.
