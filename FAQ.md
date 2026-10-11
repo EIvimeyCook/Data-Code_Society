@@ -236,18 +236,18 @@ The Zoom chat or the dedicated Slack channel.
 | **No, it is a simulation article or coding package** | The article doesn't use any empirical data, e.g. a simulation or modelling study, or an article describing a software package. |
 
 **FAQ**
-- *"Data available on request" — which option?* **No, no reference.** Data on request are not archived. Mention it in 6.1.
+- *"Data available on request" — which option?* **No, no reference.** Data on request are not archived. 
 - *The data are described as sensitive **and** available on request.* **No, sensitive data so not shared** when the authors give a reason (e.g. protected species, human participants); **No, no reference** when there is only "on request" with no reason.
 - *The link reaches the dataset's own page, but downloading needs a login or an access request.* **Yes** here — the reference works. Answer **No** at 3.8.
 - *The DOI works but resolves to a private/embargoed record.* **Yes** here — the reference works. You'll record the access problem at 3.8.
-- *Only some of the data are archived.* **Yes**, and explain what's missing in 3.13.
-- *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive. Quote the statement in 6.1.
-- *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**, and note in 3.13 that it is a reviewer link. If it no longer works, **No, link(s) that doesn't work**.
+- *Only some of the data are archived.* **Yes**.
+- *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive.
+- *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**. If it no longer works, **No, link(s) that doesn't work**.
 - *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
 - *What counts as "No, it is a simulation article or coding package"?* The article doesn't collect, compile or analyse any empirical (real-world) data. Typical examples are simulation or modelling studies and articles that describe a software package or coding tool. Their code is still assessed in Section 4.
 - *A simulation or model that is fitted to, or parameterised with, empirical data (e.g. field measurements or a published dataset).* The article contains data. Assess that data as normal: **Yes** or one of the other **No** options.
 - *A software or package article with a worked example on real data.* The article contains data. Assess the example data as normal. Small example or test datasets that come bundled inside the package don't count, so if those are all there is, choose **No, it is a simulation article or coding package**.
-- *The simulation outputs (e.g. model runs) are archived.* Simulated outputs aren't empirical data, so choose **No, it is a simulation article or coding package**, and say in 6.1 where the outputs are archived.
+- *The simulation outputs (e.g. model runs) are archived.* Simulated outputs aren't empirical data, so choose **No, it is a simulation article or coding package**.
 - *A purely mathematical or analytical theory article with no data and no code.* That should have been **No** at 1.4, so you shouldn't reach this question. If you have, go back and change 1.4.
 
 ➡️ **Yes** → Section 3. **Any "No"** → Section 4.
@@ -408,7 +408,7 @@ Anything you think is important to note.
 - *The link goes to an author's GitHub profile or lab page, not a specific repository.* **No, link(s) that doesn't work**.
 - *The analysis was done entirely in point-and-click software with no explanation of use archived (e.g. a list of SPSS menus clicked).* **No, no reference**.
 - *The data were on Dryad and the code is listed under "Software" on the same Dryad page.* **Yes** — Dryad publishes software files on Zenodo. Follow that link and assess the Zenodo record in Section 5.
-- *A simulation or package article with no archived code.* Answer as normal (**No, no reference** or **No, link(s) that doesn't work**), and note in 6.1 that the code was the article's only output.
+- *A simulation or package article with no archived code.* Answer as normal (**No, no reference** or **No, link(s) that doesn't work**).
 
 ➡️ **Yes** → Section 5. **Any "No"** → Section 6.
 
