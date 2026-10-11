@@ -209,13 +209,15 @@ The Zoom chat or the dedicated Slack channel.
 - *The article has no DOI.* Paste the article's URL instead and mention this in 6.1.
 
 ### 1.4 Should there be data and/or code associated with the article? \*
-**What to do:** Answer **Yes** if the article analyses data (empirical work) or presents theory/simulations that rely on code. Answer **No** for reviews, opinion pieces, perspectives, editorials, etc.
+**What to do:** Answer **Yes** if the article analyses data (empirical work) or presents theory/simulations that rely on code. Answer **No** for reviews, opinion pieces, perspectives, editorials, data papers, and software articles with no new analysis.
 
 **FAQ**
 - *It's a meta-analysis.* **Yes** — meta-analyses analyse extracted data.
-- *It's a purely mathematical/analytical theory article with no simulations.* Usually **No**, unless the article mentions code (e.g. numerical solutions). If it does, answer **Yes**, then choose **No, it is a simulation article or coding package** at 2.1.
+- *It's a purely mathematical/analytical theory article with no simulations.* Usually **No**, unless the article mentions code (e.g. numerical solutions). If it does, answer **Yes**, then choose **No, no data directly associated with the article (e.g. a simulation article or software package)** at 2.1.
 - *It's a review that includes a small quantitative analysis or a systematic literature search.* **Yes** — there is data behind it.
-- *It's a methods or software article (e.g. introducing an R package or a new statistical method).* **Yes** — there is code behind it. At 2.1, choose **No, it is a simulation article or coding package** unless it also analyses real data.
+- *It's a software article that introduces a package or tool (e.g. an R package) with no new analysis.* **No**.
+- *It's a methods or software article that also includes a new analysis (e.g. a new statistical method demonstrated on data or on simulations).* **Yes**. At 2.1, assess any real data as normal; if the analysis uses only simulated data, choose **No, no data directly associated with the article (e.g. a simulation article or software package)**.
+- *It's a data paper (an article whose purpose is to describe a dataset).* **No**.
 - *A comment or reply that re-analyses the original article's data.* **Yes.** A comment with no new analysis is **No**.
 
 ➡️ **Yes** → Section 2. **No** → Section 6.
@@ -233,7 +235,7 @@ The Zoom chat or the dedicated Slack channel.
 | **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, or a generic landing page with no way to find the dataset. |
 | **No, sensitive data so not shared** | The authors explicitly state data are withheld for ethical, legal, or conservation reasons (e.g. endangered species locations or human participants). |
 | **No, no reference** | No mention of archived data, *or* only "available from the authors on (reasonable) request". |
-| **No, it is a simulation article or coding package** | The article doesn't use any empirical data, e.g. a simulation or modelling study, or an article describing a software package. |
+| **No, no data directly associated with the article (e.g. a simulation article or software package)** | The article doesn't use any empirical data, e.g. a simulation or modelling study, or an article describing a software package. |
 
 **FAQ**
 - *"Data available on request" — which option?* **No, no reference.** Data on request are not archived. 
@@ -244,10 +246,10 @@ The Zoom chat or the dedicated Slack channel.
 - *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive.
 - *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**. If it no longer works, **No, link(s) that doesn't work**.
 - *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
-- *What counts as "No, it is a simulation article or coding package"?* The article doesn't collect, compile or analyse any empirical (real-world) data. Typical examples are simulation or modelling studies and articles that describe a software package or coding tool. Their code is still assessed in Section 4.
+- *What counts as "No, no data directly associated with the article (e.g. a simulation article or software package)"?* The article doesn't collect, compile or analyse any empirical (real-world) data. Typical examples are simulation or modelling studies, and software articles whose new analysis uses only simulated data. Their code is still assessed in Section 4.
 - *A simulation or model that is fitted to, or parameterised with, empirical data (e.g. field measurements or a published dataset).* The article contains data. Assess that data as normal: **Yes** or one of the other **No** options.
-- *A software or package article with a worked example on real data.* The article contains data. Assess the example data as normal. Small example or test datasets that come bundled inside the package don't count, so if those are all there is, choose **No, it is a simulation article or coding package**.
-- *The simulation outputs (e.g. model runs) are archived.* Simulated outputs aren't empirical data, so choose **No, it is a simulation article or coding package**.
+- *A software or package article with a new analysis on real data.* The article contains data. Assess that data as normal. Small example or test datasets that come bundled inside the package don't count, so if those are all there is, choose **No, no data directly associated with the article (e.g. a simulation article or software package)**.
+- *The simulation outputs (e.g. model runs) are archived.* Simulated outputs aren't empirical data, so choose **No, no data directly associated with the article (e.g. a simulation article or software package)**.
 - *A purely mathematical or analytical theory article with no data and no code.* That should have been **No** at 1.4, so you shouldn't reach this question. If you have, go back and change 1.4.
 
 ➡️ **Yes** → Section 3. **Any "No"** → Section 4.
