@@ -6,9 +6,9 @@
 
 ## Introduction
 
-This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and sharing quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
+This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and sharing quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published articles, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
-Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a [Google Form](https://forms.gle/PnGqVbRk6bJ8Er1B8). This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,439 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and up to 30 for the ten journals with data editors. The papers are split into **40 numbered article sets** of 45 papers each (the last set has 35). Your set number is next to your name in the [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing), and the papers in each set are listed in the [`Data/article_sets`](https://github.com/EIvimeyCook/Data-Code_Society/tree/main/Data/article_sets) folder of this project's GitHub repository. Each paper has its own **paper ID** (e.g. `12_7`).
+Working through a shared set of articles published between January and September 2026, participants record whether each article's data and code are **archived, accessible, licensed and documented**, using a [Google Form](https://forms.gle/PnGqVbRk6bJ8Er1B8). This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,439 articles: 15 per journal for most journals, all articles for journals that published fewer than that, and up to 30 for the ten journals with data editors. The articles are split into **40 numbered article sets** of 45 articles each (the last set has 35). Your set number is next to your name in the [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing), and the articles in each set are listed in the [`Data/article_sets`](https://github.com/EIvimeyCook/Data-Code_Society/tree/main/Data/article_sets) folder of this project's GitHub repository. Each article has its own **article ID** (e.g. `12_7`).
 
 The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions)).
 
@@ -21,9 +21,9 @@ If you have any problems, check this FAQ first, then message one of the organise
 > 
 > - ✋ [Expression of Interest form](https://forms.gle/bA7D9yDXMz18Viom8): fill this in before you start
 > - 📊 [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing) (view only): find your article set and your DKP
-> - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every paper you assess
-> - ⚠️ [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for papers you can't access or have a conflict of interest with
-> - 📋 [List of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing) (view only)
+> - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every article you assess
+> - ⚠️ [Article issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for articles you can't access or have a conflict of interest with
+> - 📋 [List of articles with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing) (view only)
 
 ---
 
@@ -43,7 +43,7 @@ This hackathon follows the [SORTEE Code of Conduct](https://sortee.org/codeofcon
 
 - **Be respectful and inclusive.** Everyone is welcome, whatever their career stage, background or experience. Harassment of any kind is not tolerated, in the Zoom session, on Slack or anywhere else connected with the project.
 - **Critique the archive, not the authors.** We are assessing how data and code are shared, not judging the researchers. Keep comments factual and don't name or shame authors in public.
-- **Work honestly and independently.** Record what you actually find, and don't discuss your answers with other extractors, as some papers are assessed twice.
+- **Work honestly and independently.** Record what you actually find, and don't discuss your answers with other extractors, as some articles are assessed twice.
 - **Raise concerns early.** Contact Ed or Joel, any member of the SORTEE Advocacy Committee, any SORTEE board member, or use SORTEE's anonymous reporting form (linked from the Code of Conduct page).
 
 ---
@@ -74,20 +74,20 @@ We track contributions using **Dragon Kill Points (DKP)** [Martinig et al. 2026]
 - **Autonomy** — contributors can query or change their position as the project progresses;
 - **Transparency** — the contribution record is shared with the whole team throughout.
 
-For this hackathon, points are awarded based on how much is extracted per paper:
+For this hackathon, points are awarded based on how much is extracted per article:
 
 | Task | Points | When |
 |---|---|---|
-| **Searching for data and code links** | 1 | If the paper is expected to have data and/or code. Q1.4  = **YES** and so you search it for data and code links (2.1 and 4.1). |
+| **Searching for data and code links** | 1 | If the article is expected to have data and/or code. Q1.4  = **YES** and so you search it for data and code links (2.1 and 4.1). |
 | **Data repository extraction** | 1 | If there is archived data (2.1 is **Yes**), so you also extract information about the data repository (Section 3). |
 | **Code repository extraction** | 1 | If there is archived code (4.1 is **Yes**), so you also extract information about the code repository (Section 5). |
 | **Journal policy** | 1 | Extracting data on a society journal's data and code policy done by the Advocacy Committee before the hackathon. |
-| **Trial extraction** | Same as a normal extraction (1–3 per paper) | Taking part in the trial extraction used to test the form. |
+| **Trial extraction** | Same as a normal extraction (1–3 per article) | Taking part in the trial extraction used to test the form. |
 | **Protocol feedback** | 6 | Giving feedback on the extraction protocol. |
 
 Each DKP is roughly **5 minutes** of work, so a full extraction (3 DKP) takes about **15 minutes**.
 
-**What a paper is worth**
+**What an article is worth**
 
 | What you find | Points | Approx. time |
 |---|---|---|
@@ -159,24 +159,24 @@ No. This form assesses **availability and documentation**, not computational rep
 No. Record what you find.
 
 **I made a mistake in a submission. What do I do?**
-Contact the organisers by email (Ed Ivimey-Cook: e.ivimeycook@gmail.com; Joel Pick: joel.l.pick@gmail.com), or during the event via the Zoom chat or the Slack channel, with the paper ID and what needs correcting. 
+Contact the organisers by email (Ed Ivimey-Cook: e.ivimeycook@gmail.com; Joel Pick: joel.l.pick@gmail.com), or during the event via the Zoom chat or the Slack channel, with the article ID and what needs correcting. 
 
-**I can't get access to the paper (paywall).**
-Try your institutional access or the journal's open-access version first. If you still can't read it, don't assess it: report it through the [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9) (reason, paper ID, title and DOI) so it can be given to someone else, and move on to your next paper. You can see reported papers, and who they've been passed to, in the [list of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing). Don't use unofficial copies.
+**I can't get access to the article (paywall).**
+Try your institutional access or the journal's open-access version first. If you still can't read it, don't assess it: report it through the [Article issue form](https://forms.gle/LnqXYE43wCtrMsGL9) (reason, article ID, title and DOI) so it can be given to someone else, and move on to your next article. You can see reported articles, and who they've been passed to, in the [list of articles with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing). Don't use unofficial copies.
 
-**I've been allocated a paper I have a conflict of interest with.**
-You can't assess a paper if you:
+**I've been allocated an article I have a conflict of interest with.**
+You can't assess an article if you:
 
 - are an **author** or **co-author** of it;
 - hold a **position at the journal** that published it (e.g. editor, associate editor, data editor, editorial board member).
 
-Don't assess it: report it through the [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9), choosing "CoI" as the reason, so it can be given to someone else, and move on to your next paper.
+Don't assess it: report it through the [Article issue form](https://forms.gle/LnqXYE43wCtrMsGL9), choosing "CoI" as the reason, so it can be given to someone else, and move on to your next article.
 
 **The PDF and the journal web page give different links.**
 Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
 
-**Will anyone else assess the same paper?**
-Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. 351 of the 1,439 papers (about 25%) appear in two article sets, so they will be extracted by two people.
+**Will anyone else assess the same article?**
+Potentially — There is a chance that your article could be extracted by another extractor in order to assess repeatability. 351 of the 1,439 articles (about 25%) appear in two article sets, so they will be extracted by two people.
 
 **Where do I ask questions during the event?**
 The Zoom chat or the dedicated Slack channel.
@@ -191,32 +191,32 @@ The Zoom chat or the dedicated Slack channel.
 **FAQ**
 - *Does the exact spelling matter?* Yes — use exactly the same name every time (e.g. always "Jo Smith", not sometimes "J. Smith"). Your points are counted by matching names.
 - *Why do you need my name?* So we can credit you (see [Contributions](#contributions)).
-- *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per paper.
+- *I'm assessing multiple articles — do I enter it every time?* Yes, one form submission per article.
 
-### 1.2 What is the ID of the paper? \*
-**What to do:** Enter the paper ID exactly as it appears in your article set file (the `paper_id` column, e.g. `12_7`).
+### 1.2 What is the ID of the article? \*
+**What to do:** Enter the article ID exactly as it appears in your article set file (the `article_id` column, e.g. `12_7`).
 
 **FAQ**
-- *Where do I find the ID?* In the `paper_id` column of your article set file, on the same row as the paper's DOI and title.
-- *What does the ID mean?* The first number is the journal and the second is the paper's place in that journal's random order, so `12_7` is the seventh paper drawn from journal 12.
+- *Where do I find the ID?* In the `article_id` column of your article set file, on the same row as the article's DOI and title.
+- *What does the ID mean?* The first number is the journal and the second is the article's place in that journal's random order, so `12_7` is the seventh article drawn from journal 12.
 
-### 1.3 DOI of paper \*
+### 1.3 DOI of article \*
 **What to do:** Enter the article DOI.
 
 **FAQ**
 - *What format?* Either `10.xxxx/xxxxx` or the full `https://doi.org/10.xxxx/xxxxx` is fine.
 - *Where do I find it?* Usually on the first page of the PDF or at the top of the journal web page.
-- *The paper has no DOI.* Paste the article's URL instead and mention this in 6.1.
+- *The article has no DOI.* Paste the article's URL instead and mention this in 6.1.
 
-### 1.4 Should there be data and/or code associated with the paper? \*
-**What to do:** Answer **Yes** if the paper analyses data (empirical work) or presents theory/simulations that rely on code. Answer **No** for reviews, opinion pieces, perspectives, editorials, etc.
+### 1.4 Should there be data and/or code associated with the article? \*
+**What to do:** Answer **Yes** if the article analyses data (empirical work) or presents theory/simulations that rely on code. Answer **No** for reviews, opinion pieces, perspectives, editorials, etc.
 
 **FAQ**
 - *It's a meta-analysis.* **Yes** — meta-analyses analyse extracted data.
-- *It's a purely mathematical/analytical theory paper with no simulations.* Usually **No**, unless the paper mentions code (e.g. numerical solutions). If it does, answer **Yes**.
+- *It's a purely mathematical/analytical theory article with no simulations.* Usually **No**, unless the article mentions code (e.g. numerical solutions). If it does, answer **Yes**.
 - *It's a review that includes a small quantitative analysis or a systematic literature search.* **Yes** — there is data behind it.
-- *It's a methods or software paper (e.g. introducing an R package or a new statistical method).* **Yes** — there is code behind it, and usually example data.
-- *A comment or reply that re-analyses the original paper's data.* **Yes.** A comment with no new analysis is **No**.
+- *It's a methods or software article (e.g. introducing an R package or a new statistical method).* **Yes** — there is code behind it, and usually example data.
+- *A comment or reply that re-analyses the original article's data.* **Yes.** A comment with no new analysis is **No**.
 
 ➡️ **Yes** → Section 2. **No** → Section 6.
 
@@ -224,8 +224,8 @@ The Zoom chat or the dedicated Slack channel.
 
 ## Section 2 — Is there a Data repository?
 
-### 2.1 Is there a working reference to archived data in the paper? \*
-**What to do:** Search the paper using the browser search function for "data" and read the **Data Availability / Open Research statement**, the **Methods**, or the **Supplementary Material** list. Try every link given.
+### 2.1 Is there a working reference to archived data in the article? \*
+**What to do:** Search the article using the browser search function for "data" and read the **Data Availability / Open Research statement**, the **Methods**, or the **Supplementary Material** list. Try every link given.
 
 | Option | Choose when… |
 |---|---|
@@ -241,8 +241,8 @@ The Zoom chat or the dedicated Slack channel.
 - *The DOI works but resolves to a private/embargoed record.* **Yes** here — the reference works. You'll record the access problem at 3.8.
 - *Only some of the data are archived.* **Yes**, and explain what's missing in 3.13.
 - *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive. Quote the statement in 6.1.
-- *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published paper.* If it still opens the dataset, **Yes**, and note in 3.13 that it is a reviewer link. If it no longer works, **No, link(s) that doesn't work**.
-- *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the paper cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
+- *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**, and note in 3.13 that it is a reviewer link. If it no longer works, **No, link(s) that doesn't work**.
+- *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
 
 ➡️ **Yes** → Section 3. **Any "No"** → Section 4.
 
@@ -286,7 +286,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 | **Other** | Anything else, e.g. Pangaea, Mendeley Data — name it in the box |
 
 ### 3.4 Paste URL of the repository \*
-**What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the paper.
+**What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the article.
 
 ### 3.5 Is there a Permanent ID? \*
 **What to do:** Answer **Yes** if the dataset has a persistent identifier such as a **DOI**, an **accession number** (e.g. GenBank, SRA), or a **Handle**.
@@ -354,7 +354,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 **What to do:** Answer **Yes** if the repository contains or displays project-level information — e.g. the associated article, authors/contact details, funders. This is usually in a **README** or the landing-page description.
 
 **FAQ**
-- *The landing page just repeats the paper's abstract.* **Yes** — that is project information. A title alone is **No**.
+- *The landing page just repeats the article's abstract.* **Yes** — that is project information. A title alone is **No**.
 - *The data are in the journal's supplementary material.* **Yes** only if the supplement itself describes the project (e.g. a README or a cover sheet). Being attached to the article doesn't count on its own.
 
 ### 3.11 Is each data file described? \*
@@ -375,7 +375,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *Only some variables are explained.* **No**.
 - *Every variable is described, but units are missing.* **No** — the form asks for units too.
 - *A variable has no unit (e.g. an ID, a category, a count).* That's fine — it only needs explaining (for categories, what the codes mean). Units are needed for measured quantities.
-- *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone.
+- *Variables are described in the article's methods, not the repo.* **No** — we're assessing whether the archive stands alone.
 
 ### 3.13 Comments about data
 Anything you think is important to note.
@@ -386,8 +386,8 @@ Anything you think is important to note.
 
 ## Section 4 — Is there a Code repository?
 
-### 4.1 Is there a working reference to archived code in the paper? \*
-**What to do:** Search the paper for "code", "script", "software", and read the Data/Code Availability or Open Research statement and the Supplementary list.
+### 4.1 Is there a working reference to archived code in the article? \*
+**What to do:** Search the article for "code", "script", "software", and read the Data/Code Availability or Open Research statement and the Supplementary list.
 
 | Option | Choose when… |
 |---|---|
@@ -396,9 +396,9 @@ Anything you think is important to note.
 | **No, no reference** | No mention of archived code, or "available on request". |
 
 **FAQ**
-- *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the paper.
-- *The paper only cites the R packages used (e.g. "analyses used lme4").* That is **not** archived analysis code → **No, no reference**.
-- *The paper says "code on GitHub" with no link.* **No, no reference**.
+- *The data repository from Section 3 also contains code, but the article never mentions code.* **Yes** — code is archived and reachable from a working reference in the article.
+- *The article only cites the R packages used (e.g. "analyses used lme4").* That is **not** archived analysis code → **No, no reference**.
+- *The article says "code on GitHub" with no link.* **No, no reference**.
 - *The link goes to an author's GitHub profile or lab page, not a specific repository.* **No, link(s) that doesn't work**.
 - *The analysis was done entirely in point-and-click software with no explanation of use archived (e.g. a list of SPSS menus clicked).* **No, no reference**.
 - *The data were on Dryad and the code is listed under "Software" on the same Dryad page.* **Yes** — Dryad publishes software files on Zenodo. Follow that link and assess the Zenodo record in Section 5.
@@ -439,7 +439,7 @@ Anything you think is important to note.
 - *Code uploaded alongside a Dryad dataset.* Select **Zenodo** — that is where Dryad actually publishes software files.
 
 ### 5.2 Paste URL of the repository
-**What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the paper.
+**What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the article.
 
 ### 5.3 Is there a Permanent ID? \*
 **What to do:** Answer **Yes** if the code has a persistent identifier such as a **DOI**, a **SWHID** (Software Heritage) or a **Handle**.
@@ -447,7 +447,7 @@ Anything you think is important to note.
 **FAQ**
 - *GitHub/GitLab?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. A Zenodo snapshot of the repo (with a DOI) is **Yes**.
 - *Software Heritage.* **Yes** — its identifiers (SWHIDs, starting `swh:1:`) are permanent. Paste the SWHID at 5.4.
-- *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**.
+- *The article links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**.
 - *OSF project?* OSF projects can be registered or given a DOI. Answer **Yes** only if a DOI is shown on the project page.
 - *Personal website?* **No.** A website URL is not a permanent identifier — pages can move or disappear when people change jobs.
 - *Supplementary material?* Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
@@ -498,11 +498,11 @@ Tick all that apply.
 **What to do:** Answer **Yes** if the repository contains or displays project-level information — e.g. the associated article, authors/contact details, funders. This is usually in a **README** or the landing-page description.
 
 **FAQ**
-- *The landing page just repeats the paper's abstract.* **Yes** — that is project information. A title alone is **No**.
+- *The landing page just repeats the article's abstract.* **Yes** — that is project information. A title alone is **No**.
 - *The code is in the journal's supplementary material.* **Yes** only if the supplement itself describes the project (e.g. a README or a cover sheet). Being attached to the article doesn't count on its own.
 
 ### 5.9 Are the code files well described? \*
-**What to do:** Could you work out **what each script does** and **in what order to run them** *without* reading the paper?
+**What to do:** Could you work out **what each script does** and **in what order to run them** *without* reading the article?
 
 **FAQ**
 - *Scripts are numbered (`01_clean.R`, `02_models.R`) but there's no README.* A judgement call — if the order and purpose are genuinely obvious, **Yes**; otherwise **No**.
@@ -514,10 +514,10 @@ Tick all that apply.
 
 **FAQ**
 - *Where should I look?* README, top of scripts, `sessionInfo()` output, `renv.lock`, `environment.yml`, a Dockerfile, or the repository page.
-- *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. 
+- *Only stated in the article's methods.* **No** — we're assessing whether the archive stands alone. 
 
 ### 5.11 Is there at least some information on version numbers of software packages? \*
-**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? We're not expecting you to work out every package that has been used in the paper.
+**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? We're not expecting you to work out every package that has been used in the article.
 
 **FAQ**
 - *Which files count?* A README list, `sessionInfo()` output, `renv.lock`, `requirements.txt` (with versions), `environment.yml`, `DESCRIPTION`, or versions in script comments.
