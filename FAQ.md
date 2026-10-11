@@ -8,7 +8,7 @@
 
 This hackathon, led by the **SORTEE Advocacy Committee**, looks at **data and code availability and sharing quality in journals published by ecology and evolution societies**. Many of these journals now require or encourage authors to share the data and code behind their published papers, but how well that works in practice varies. Some of these journals also have Data Editors who check the data and code during the publication process.
 
-Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a [Google Form](https://forms.gle/PnGqVbRk6bJ8Er1B8). This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,439 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and up to 30 for the ten journals with data editors. Each participant will be given their **own file** containing a list of papers allocated to them, each with its own manuscript ID.
+Working through a shared set of papers published between January and September 2026, participants record whether each paper's data and code are **archived, accessible, licensed and documented**, using a [Google Form](https://forms.gle/PnGqVbRk6bJ8Er1B8). This guide explains every question on that form and how to handle the edge cases. The method follows our pre-registration: _Link to follow._ The sample covers 89 journals and 1,439 papers: 15 per journal for most journals, all papers for journals that published fewer than that, and up to 30 for the ten journals with data editors. The papers are split into **40 numbered article sets** of 45 papers each (the last set has 35). Your set number is next to your name in the [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing), and the papers in each set are listed in the [`Data/article_sets`](https://github.com/EIvimeyCook/Data-Code_Society/tree/main/Data/article_sets) folder of this project's GitHub repository. Each paper has its own **paper ID** (e.g. `12_7`).
 
 The aim is to write a manuscript on the state of data and code archiving in society journals. Contributions, and authorship, are tracked using Dragon Kill Points (see [Contributions](#contributions)).
 
@@ -20,9 +20,10 @@ If you have any problems, check this FAQ first, then message one of the organise
 > **Key links**
 > 
 > - ✋ [Expression of Interest form](https://forms.gle/bA7D9yDXMz18Viom8): fill this in before you start
+> - 📊 [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing) (view only): find your article set and your DKP
 > - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every paper you assess
 > - ⚠️ [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for papers you can't access or have a conflict of interest with
-> - 📋 [List of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing)
+> - 📋 [List of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing) (view only)
 
 ---
 
@@ -81,8 +82,8 @@ For this hackathon, points are awarded based on how much is extracted per paper:
 | **Data repository extraction** | 1 | If there is archived data (2.1 is **Yes**), so you also extract information about the data repository (Section 3). |
 | **Code repository extraction** | 1 | If there is archived code (4.1 is **Yes**), so you also extract information about the code repository (Section 5). |
 | **Journal policy** | 1 | Extracting data on a society journal's data and code policy done by the Advocacy Committee before the hackathon. |
-| **Trial extraction** | | Taking part in the trial extraction used to test the form. |
-| **Protocol feedback** | | Giving feedback on the extraction protocol. |
+| **Trial extraction** | Same as a normal extraction (1–3 per paper) | Taking part in the trial extraction used to test the form. |
+| **Protocol feedback** | 6 | Giving feedback on the extraction protocol. |
 
 Each DKP is roughly **5 minutes** of work, so a full extraction (3 DKP) takes about **15 minutes**.
 
@@ -158,10 +159,10 @@ No. This form assesses **availability and documentation**, not computational rep
 No. Record what you find.
 
 **I made a mistake in a submission. What do I do?**
-Contact the organisers by email (Ed Ivimey-Cook: e.ivimeycook@gmail.com; Joel Pick: joel.l.pick@gmail.com), or during the event via the Zoom chat or the Slack channel, with the manuscript ID and what needs correcting. 
+Contact the organisers by email (Ed Ivimey-Cook: e.ivimeycook@gmail.com; Joel Pick: joel.l.pick@gmail.com), or during the event via the Zoom chat or the Slack channel, with the paper ID and what needs correcting. 
 
 **I can't get access to the paper (paywall).**
-Try your institutional access or the journal's open-access version first. If you still can't read it, don't assess it: report it through the [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9) (reason, manuscript ID, title and DOI) so it can be given to someone else, and move on to your next paper. You can see reported papers, and who they've been passed to, in the [list of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing). Don't use unofficial copies.
+Try your institutional access or the journal's open-access version first. If you still can't read it, don't assess it: report it through the [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9) (reason, paper ID, title and DOI) so it can be given to someone else, and move on to your next paper. You can see reported papers, and who they've been passed to, in the [list of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing). Don't use unofficial copies.
 
 **I've been allocated a paper I have a conflict of interest with.**
 You can't assess a paper if you:
@@ -175,7 +176,7 @@ Don't assess it: report it through the [Paper issue form](https://forms.gle/LnqX
 Use the journal web page (the version of record online), which is usually more up to date, and note the difference in 6.1.
 
 **Will anyone else assess the same paper?**
-Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. ~25% of papers will be extracted by two people.
+Potentially — There is a chance that your paper could be extracted by another extractor in order to assess repeatability. 351 of the 1,439 papers (about 25%) appear in two article sets, so they will be extracted by two people.
 
 **Where do I ask questions during the event?**
 The Zoom chat or the dedicated Slack channel.
@@ -193,10 +194,11 @@ The Zoom chat or the dedicated Slack channel.
 - *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
 
 ### 1.2 What is the ID of the manuscript? \*
-**What to do:** Enter the manuscript ID exactly as it appears in your file.
+**What to do:** Enter the paper ID exactly as it appears in your article set file (the `paper_id` column, e.g. `12_7`).
 
 **FAQ**
-- *Where do I find the ID?* In your file, next to the paper title.
+- *Where do I find the ID?* In the `paper_id` column of your article set file, on the same row as the paper's DOI and title.
+- *What does the ID mean?* The first number is the journal and the second is the paper's place in that journal's random order, so `12_7` is the seventh paper drawn from journal 12.
 
 ### 1.3 DOI of MS \*
 **What to do:** Enter the article DOI.
@@ -272,12 +274,13 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 | **DataVerse** | A Dataverse site, e.g. Harvard Dataverse (DOIs starting `10.7910/DVN`) or Borealis (Canada) |
 | **Dryad** | datadryad.org; DOI starts `10.5061/dryad` |
 | **Figshare** | figshare.com; DOI starts `10.6084/m9.figshare` |
-| **GitHub/GitLab/Bitbucket/Codeberg** | github.com, gitlab.com, bitbucket.org or codeberg.org. If it is archived on Zenodo, choose **Zenodo** instead (see 3.1) |
+| **GitHub/GitLab/Bitbucket/Codeberg** | github.com, gitlab.com, bitbucket.org or codeberg.org. If the repo has also been archived on Zenodo, choose **Zenodo** instead, because the Zenodo record has the permanent ID |
 | **GenBank/NCBI etc** | Sequence or genomic accessions, e.g. GenBank, SRA, BioProject, ENA |
 | **Institutional repository** | A university or institute data store, e.g. Edinburgh DataShare, Pure |
 | **OSF** | osf.io; DOI starts `10.17605/OSF.IO` |
 | **Personal Website** | Files on an author's or lab's own website, e.g. a download link on a personal or lab page, Google Sites, a university staff page |
 | **ScholarWorks** | A repository branded "ScholarWorks" (used by several universities) — choose this rather than Institutional repository |
+| **Software Heritage** | archive.softwareheritage.org, which archives copies of GitHub, GitLab and other repositories; identifiers start `swh:1:` |
 | **Supplementary Material** | The journal's Supporting Information files |
 | **Zenodo** | zenodo.org; DOI starts `10.5281/zenodo` |
 | **Other** | Anything else, e.g. Pangaea, Mendeley Data — name it in the box |
@@ -289,25 +292,33 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 **What to do:** Answer **Yes** if the dataset has a persistent identifier such as a **DOI**, an **accession number** (e.g. GenBank, SRA), or a **Handle**.
 
 **FAQ**
-- *GitHub?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. (If the GitHub repo has been archived to Zenodo, you should be assessing the Zenodo record — see 3.1.)
+- *GitHub?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. (If the GitHub repo has been archived to Zenodo, you should be assessing the Zenodo record instead, as it has the permanent ID.)
+- *Software Heritage.* **Yes** — its identifiers (SWHIDs, starting `swh:1:`) are permanent.
 - *OSF project?* OSF projects can be registered or given a DOI. Answer **Yes** only if a DOI is shown on the project page.
 - *Personal website?* **No.** A website URL is not a permanent identifier — pages can move or disappear when people change jobs.
 - *Supplementary material?* Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
 
 ### 3.6 If yes, what is the Permanent ID?
-**What to do:** Paste the DOI/accession, e.g. `10.5061/dryad.xxxxxxx`.
+**What to do:** Paste the DOI, accession or SWHID, e.g. `10.5061/dryad.xxxxxxx`.
 
 **FAQ**
 - *There are many accession numbers (e.g. one per sequence).* Paste the project- or study-level accession if there is one (e.g. a BioProject `PRJNA…` number); otherwise paste the first and list the rest, or the range.
 
 ### 3.7 Is there a license? \*
-**What to do:** Look for a licence file or a licence mentioned on the repository page. For reference, all Dryad projects have CC0 licences by default, but they may not be included in the files. Licence files typically include CC licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL.
+**What to do:** Look for a licence file or a licence mentioned on the repository page. Licence files are usually called `LICENSE`, `LICENCE` or `COPYING`, and the licence may also be stated on the landing page, in the README or at the top of the scripts. Licences typically include Creative Commons licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL. For reference, all Dryad datasets have a CC0 licence by default, but it may not be included in the files.
 
 **FAQ**
-- *Dryad.* Dryad publishes all data under CC0, even if no licence file is included — answer **Yes**.
-- *Zenodo / Figshare / OSF.* The licence is usually shown on the landing page sidebar (e.g. "Creative Commons Attribution 4.0 International"). If one is shown → **Yes**.
-- *A code licence (e.g. MIT, GPL) on a data repository.* Still counts as **Yes** — any stated licence does.
+- *Which licences count?* Any stated licence counts as **Yes**. The common data licences are **CC0** and **CC-BY** (and other Creative Commons licences, e.g. CC-BY-SA or CC-BY-NC). The common software licences are **MIT**, **Apache-2.0**, **GPL-2.0/GPL-3.0**, **BSD-2/3-Clause**, **LGPL** and **AGPL**. A software licence on data, or a Creative Commons licence on code, still counts as **Yes**.
 - *"All rights reserved" / a copyright notice only.* **No** — this isn't an open licence.
+- *A public repository with no licence anywhere.* **No.** Being public is not the same as being licensed: without a licence, copyright law means others can view the files but not legally reuse them.
+- *Dryad.* Dryad publishes all data under CC0, even if no licence file is included, so answer **Yes** for data. Code submitted through Dryad is published on Zenodo with its own licence (often MIT or GPL), so check the Zenodo record for the code.
+- *Zenodo / Figshare / OSF.* The licence is usually shown in the landing page sidebar (e.g. "Creative Commons Attribution 4.0 International"). Every open Zenodo record shows a licence (the default is CC-BY 4.0), so this is usually **Yes**.
+- *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check for a `LICENSE` file and the bottom of the README.
+- *Software Heritage.* Software Heritage keeps an exact copy of the original repository and doesn't add a licence of its own. Answer **Yes** only if the archived files include a licence.
+- *The licence is only mentioned in the README, or only as a header in the scripts.* **Yes**.
+- *An R package `DESCRIPTION` file with a `License:` field.* **Yes.**
+- *One licence covers the whole repository (data and code).* **Yes** for both data (3.7) and code (5.5).
+- *Different licences for data and code (e.g. CC-BY for data, MIT for code).* Answer 3.7 for the data licence and 5.5 for the code licence; both are **Yes**.
 - *Supplementary material.* Answer **Yes** only if a licence is stated for the supplement (sometimes the article's CC-BY licence explicitly covers supplementary files).
 
 ### 3.8 Are data archived and downloadable? \*
@@ -362,7 +373,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 **FAQ**
 - *Column names are self-explanatory (e.g. `body_mass_g`).* That's good practice, but not an explanation — answer **No** unless explanations are given.
 - *Only some variables are explained.* **No**.
-- *Every variable is described, but units are missing.* **No** — the form asks for units too..
+- *Every variable is described, but units are missing.* **No** — the form asks for units too.
 - *A variable has no unit (e.g. an ID, a category, a count).* That's fine — it only needs explaining (for categories, what the codes mean). Units are needed for measured quantities.
 - *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone.
 
@@ -398,46 +409,77 @@ Anything you think is important to note.
 
 ## Section 5 — Code Repository
 
-> If code is spread across multiple repositories, assess the one prioritised under the rules in **3.2** (above).
+> If code is spread across multiple repositories, assess **one**, chosen in this priority order:
+>
+> 1. The repo where **data and code are stored together**.
+> 2. The repo that holds the code the **analysis directly uses**.
+> 3. The repo holding **most** of the code.
+>
 
 ### 5.1 What is the repository? \*
-See **3.3** (above). Answer for the **code**, even if it's the same repo as the data.
+**What to do:** Select the repository holding the **code**, even if it's the same repo as the data. The options are listed below in the same order as on the form:
 
-The code list is the same as in 3.3, plus **Software Heritage** (archive.softwareheritage.org), which archives source code from GitHub and other platforms.
+| Option | How to recognise it |
+|---|---|
+| **DataVerse** | A Dataverse site, e.g. Harvard Dataverse (DOIs starting `10.7910/DVN`) or Borealis (Canada) |
+| **Dryad** | datadryad.org; DOI starts `10.5061/dryad` |
+| **Figshare** | figshare.com; DOI starts `10.6084/m9.figshare` |
+| **GitHub/GitLab/Bitbucket/Codeberg** | github.com, gitlab.com, bitbucket.org or codeberg.org. If the repo has also been archived on Zenodo, choose **Zenodo** instead, because the Zenodo record has the permanent ID |
+| **GenBank/NCBI etc** | Sequence or genomic accessions, e.g. GenBank, SRA, BioProject, ENA |
+| **Institutional repository** | A university or institute data store, e.g. Edinburgh DataShare, Pure |
+| **OSF** | osf.io; DOI starts `10.17605/OSF.IO` |
+| **Personal Website** | Files on an author's or lab's own website, e.g. a download link on a personal or lab page, Google Sites, a university staff page |
+| **ScholarWorks** | A repository branded "ScholarWorks" (used by several universities) — choose this rather than Institutional repository |
+| **Software Heritage** | archive.softwareheritage.org, which archives copies of GitHub, GitLab and other repositories; identifiers start `swh:1:` |
+| **Supplementary Material** | The journal's Supporting Information files |
+| **Zenodo** | zenodo.org; DOI starts `10.5281/zenodo` |
+| **Other** | Anything else, e.g. Pangaea, Mendeley Data — name it in the box |
 
 **FAQ**
 - *Code uploaded alongside a Dryad dataset.* Select **Zenodo** — that is where Dryad actually publishes software files.
 
 ### 5.2 Paste URL of the repository
-Copy the landing-page URL from the browser address bar.
+**What to do:** Copy the URL from your browser's address bar **after** following the link — i.e. the actual landing page, not the DOI string from the paper.
 
 ### 5.3 Is there a Permanent ID? \*
-See **3.5** (above). A bare GitHub/GitLab repo is **No**; a Zenodo snapshot of it (with DOI) is **Yes**.
+**What to do:** Answer **Yes** if the code has a persistent identifier such as a **DOI**, a **SWHID** (Software Heritage) or a **Handle**.
 
 **FAQ**
+- *GitHub/GitLab?* **No.** A GitHub URL is not a permanent identifier — repos can be renamed, edited or deleted. A Zenodo snapshot of the repo (with a DOI) is **Yes**.
 - *Software Heritage.* **Yes** — its identifiers (SWHIDs, starting `swh:1:`) are permanent. Paste the SWHID at 5.4.
-- *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 (as in 3.1) and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**.
+- *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**.
+- *OSF project?* OSF projects can be registered or given a DOI. Answer **Yes** only if a DOI is shown on the project page.
+- *Personal website?* **No.** A website URL is not a permanent identifier — pages can move or disappear when people change jobs.
+- *Supplementary material?* Answer **No** unless the supplementary file has its own DOI (some publishers, e.g. those using Figshare-hosted supplements, assign one). The article's DOI does not count.
 
 ### 5.4 If yes, what is the Permanent ID?
-Paste the DOI.
+**What to do:** Paste the DOI or SWHID, e.g. `10.5281/zenodo.xxxxxxx` or `swh:1:dir:…`.
 
 ### 5.5 Is there a license? \*
-**What to do:** Look for a licence file or a licence mentioned on the repository page. Licence files typically include CC licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL. For code, the file may also be called `LICENCE` or `COPYING`, and the licence may be stated in the README or at the top of the scripts.
+**What to do:** Look for a licence file or a licence mentioned on the repository page. Licence files are usually called `LICENSE`, `LICENCE` or `COPYING`, and the licence may also be stated on the landing page, in the README or at the top of the scripts. Licences typically include Creative Commons licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL. For reference, all Dryad datasets have a CC0 licence by default, but it may not be included in the files.
 
 **FAQ**
+- *Which licences count?* Any stated licence counts as **Yes**. The common data licences are **CC0** and **CC-BY** (and other Creative Commons licences, e.g. CC-BY-SA or CC-BY-NC). The common software licences are **MIT**, **Apache-2.0**, **GPL-2.0/GPL-3.0**, **BSD-2/3-Clause**, **LGPL** and **AGPL**. A software licence on data, or a Creative Commons licence on code, still counts as **Yes**.
+- *"All rights reserved" / a copyright notice only.* **No** — this isn't an open licence.
+- *A public repository with no licence anywhere.* **No.** Being public is not the same as being licensed: without a licence, copyright law means others can view the files but not legally reuse them.
+- *Dryad.* Dryad publishes all data under CC0, even if no licence file is included, so answer **Yes** for data. Code submitted through Dryad is published on Zenodo with its own licence (often MIT or GPL), so check the Zenodo record for the code.
+- *Zenodo / Figshare / OSF.* The licence is usually shown in the landing page sidebar (e.g. "Creative Commons Attribution 4.0 International"). Every open Zenodo record shows a licence (the default is CC-BY 4.0), so this is usually **Yes**.
 - *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check for a `LICENSE` file and the bottom of the README.
-- *Which licences count?* Any stated licence counts as **Yes**. The common software licences are **MIT**, **Apache-2.0**, **GPL-2.0/GPL-3.0**, **BSD-2/3-Clause**, **LGPL** and **AGPL**. Code is sometimes released under **CC0** or **CC-BY** — CC-BY isn't designed for software, but it is still a licence, so **Yes**.
-- *Zenodo.* Every open Zenodo record shows a licence on its landing page (the default is CC-BY 4.0), so this is usually **Yes**.
-- *Dryad.* Dryad's CC0 waiver applies to the **data** only. Code submitted through Dryad is published on Zenodo with its own licence (often MIT or GPL) — check the Zenodo record.
-- *One licence covers the whole repository (data and code).* **Yes** — answer the same way here as in 3.7.
-- *Different licences for data and code (e.g. CC-BY for data, MIT for code).* Answer 3.7 for the data licence and 5.5 for the code licence; both are **Yes**.
+- *Software Heritage.* Software Heritage keeps an exact copy of the original repository and doesn't add a licence of its own. Answer **Yes** only if the archived files include a licence.
 - *The licence is only mentioned in the README, or only as a header in the scripts.* **Yes**.
 - *An R package `DESCRIPTION` file with a `License:` field.* **Yes.**
-- *A public GitHub repo with no licence anywhere.* **No.** Being public is not the same as being licensed: without a licence, copyright law means others can view the code but not legally reuse it.
-- *Code in the journal's supplementary material.* Same rule as for data in 3.7: **Yes** only if a licence is stated for the supplement.
+- *One licence covers the whole repository (data and code).* **Yes** for both data (3.7) and code (5.5).
+- *Different licences for data and code (e.g. CC-BY for data, MIT for code).* Answer 3.7 for the data licence and 5.5 for the code licence; both are **Yes**.
+- *Supplementary material.* Answer **Yes** only if a licence is stated for the supplement (sometimes the article's CC-BY licence explicitly covers supplementary files).
 
 ### 5.6 Are code files archived and downloadable? \*
-Can you see code files and download them (or download the whole repo, e.g. GitHub's *Code → Download ZIP*)? Private, empty, or login-only → **No**.
+**What to do:** Can you see code files **and** start downloading them (one by one, or the whole repo, e.g. GitHub's *Code → Download ZIP*)?
+
+Answer **No** if the repo is **private**, **embargoed**, requires a **login or request** to access, or the files are **empty or corrupt**.
+
+**FAQ**
+- *The download is enormous.* If the download starts, answer **Yes** — no need to finish it.
+- *Files are compressed (.zip, .tar.gz).* Download and unzip if reasonably sized so you can answer 5.7–5.11. If it's too large, answer based on the file listing.
 
 ### 5.7 What format is the code in? \*
 Tick all that apply.
@@ -453,7 +495,11 @@ Tick all that apply.
 - *R Markdown, Quarto or Jupyter notebooks?* Tick **Code / script** — these are executable.
 
 ### 5.8 Is there info on the project? \*
-See **3.10** (above).
+**What to do:** Answer **Yes** if the repository contains or displays project-level information — e.g. the associated article, authors/contact details, funders. This is usually in a **README** or the landing-page description.
+
+**FAQ**
+- *The landing page just repeats the paper's abstract.* **Yes** — that is project information. A title alone is **No**.
+- *The code is in the journal's supplementary material.* **Yes** only if the supplement itself describes the project (e.g. a README or a cover sheet). Being attached to the article doesn't count on its own.
 
 ### 5.9 Are the code files well described? \*
 **What to do:** Could you work out **what each script does** and **in what order to run them** *without* reading the paper?
@@ -471,7 +517,7 @@ See **3.10** (above).
 - *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. 
 
 ### 5.11 Is there at least some information on version numbers of software packages? \*
-**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? Ee're not expecting you to work out every package that has been used in the MS.
+**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? We're not expecting you to work out every package that has been used in the MS.
 
 **FAQ**
 - *Which files count?* A README list, `sessionInfo()` output, `renv.lock`, `requirements.txt` (with versions), `environment.yml`, `DESCRIPTION`, or versions in script comments.

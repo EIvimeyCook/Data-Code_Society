@@ -44,52 +44,70 @@ The guide covers:
 | General FAQ | Timing, corrections, access problems, conflicts of interest, where to ask for help |
 | Sections 1–6 | Help and FAQs for every form question |
 
-## Data files
+## Data and code
 
-The `hackathon_papers/` folder holds the paper lists behind the hackathon and
-the R code that produced them. The paper lists cover research articles
-published between 1 January and 30 September 2026 in the 89 society journals in
-the sample, pulled from [OpenAlex](https://openalex.org) in October 2026.
+The paper lists behind the hackathon, and the R code that produced them, are in
+`Data/` and `R/`. The paper lists cover research articles published between
+1 January and 30 September 2026 in the 89 society journals in the sample, pulled
+from [OpenAlex](https://openalex.org) in October 2026.
+
+```
+Data/
+├── Raw/                  journal policies, the OpenAlex pull and the randomised paper list
+└── article_sets/         the 40 article sets handed out to participants
+R/
+├── 01_journal_policy.R   summarises the journals' data and code policies
+├── 02_open_alex_pull.R   pulls the papers from OpenAlex
+├── 03_randomise_papers.R shuffles the papers within each journal and gives them IDs
+└── 04_paper_assignment.R draws the sample and splits it into article sets
+```
+
+**`Data/Raw/`**
 
 | File | Rows | What it contains |
 |---|---|---|
-| `total_papers_oct_rerun.csv` | 10,721 papers | Every research article published in the sample journals over that period, after removing comments and replies: the sampling frame the hackathon papers were drawn from. |
-| `possible_comments.csv` | 76 papers | Items whose titles look like comments, replies, introductions or obituaries. All but one were removed from the sampling frame (see below). |
-| `hackathon_papers.csv` | 1,439 papers | The papers to be assessed at the hackathon, a random subset of `total_papers_oct_rerun.csv`. Each participant's file of allocated papers is drawn from this. |
-| `total_journals_oct_rerun.csv` | 89 journals | The number of articles each journal published per month, January to September 2026, with a total (matches `total_papers_oct_rerun.csv`). |
+| `Concensus_policy.csv` | 89 journals | Each journal's data and code policy and whether it has a data editor, as agreed by the Advocacy Committee before the hackathon. |
 | `publishers.csv` | 89 journals | Each journal's publisher, as recorded in OpenAlex. |
-| `OpenAlexPull.R` | — | R script that pulls the articles from OpenAlex and writes the files above. |
-| `split_papers.R` | — | R script that draws the hackathon sample from the full list. |
+| `total_papers_oct.csv` | 10,830 papers | The first October pull from OpenAlex, kept for reference. Superseded by `total_papers_oct_rerun.csv`. |
+| `possible_comments.csv` | 76 papers | Items whose titles look like comments, replies, introductions or obituaries. All but one were removed from the sampling frame. |
+| `total_papers_oct_rerun.csv` | 10,721 papers | Every research article published in the sample journals over the period, after removing comments, replies and duplicate DOIs: the sampling frame. |
+| `total_journals_oct_rerun.csv` | 89 journals | The number of articles each journal published per month, January to September 2026, with a total (matches `total_papers_oct_rerun.csv`). |
+| `randomised_papers.csv` | 10,721 papers | `total_papers_oct_rerun.csv` with the papers shuffled into a random order within each journal, and given journal and paper IDs. |
 
-**Columns in `total_papers_oct_rerun.csv`, `possible_comments.csv` and `hackathon_papers.csv`**
+**`Data/article_sets/`**
 
-| Column | Description |
-|---|---|
-| `row_id` | A unique ID for each paper, assigned before comments were removed, so the numbers in `total_papers_oct_rerun.csv` have gaps. It stays the same in every file, so papers can be matched across them. |
-| `title` | Article title |
-| `doi` | Article DOI, as a full `https://doi.org/` link |
-| `journal` | Journal name, as in OpenAlex |
-| `publication_date` | Publication date (`YYYY-MM-DD`) |
-| `sample_no` | `hackathon_papers.csv` only: the order in which the paper was drawn **within its journal** (1–15, or 1–30 for data-editor journals). Not unique across journals. |
+Forty files, numbered 1 to 40, one per article set. Each participant is given a
+set number, shown next to their name in the Expression of Interest sheet.
 
-**Columns in `total_journals_oct_rerun.csv`**
+- **1,439 papers** from all 89 journals are assessed. Sets 1–39 hold 45 papers
+  each and set 40 holds 35, so 1,790 papers are handed out in total.
+- **351 papers (about 25%) appear in two sets**, so they are assessed twice to
+  measure repeatability. No paper appears in more than two sets.
+- Within each set, the papers are in random order, and each set covers 44 or 45
+  different journals (set 40: 35).
 
-| Column | Description |
-|---|---|
-| `journal` | Journal name, matching the `journal` column in the other files |
-| `Jan` – `Sep` | Number of articles the journal published in that month of 2026 |
-| `total` | Total articles January–September 2026 (the sum of the monthly columns) |
+**Columns**
 
-**Columns in `publishers.csv`**
+| Column | File(s) | Description |
+|---|---|---|
+| `row_id` | `possible_comments.csv`, `total_papers_oct_rerun.csv`, `randomised_papers.csv` | A unique ID for each paper, assigned before comments were removed, so the numbers have gaps. It stays the same in every file, so papers can be matched across them. |
+| `title` | all paper lists | Article title |
+| `doi` | all paper lists | Article DOI, as a full `https://doi.org/` link |
+| `journal` | all paper lists | Journal name, as in OpenAlex |
+| `publication_date` | all except the article sets | Publication date (`YYYY-MM-DD`) |
+| `journal_id` | `randomised_papers.csv` | Journal number, 1–89. The ten journals with a data editor are 1–10. |
+| `paper_in_journal` | `randomised_papers.csv` | The paper's position in its journal's random order |
+| `paper_id` | `randomised_papers.csv`, article sets | `journal_id` and `paper_in_journal` joined by `_` (e.g. `12_7`). Unique. This is the ID participants enter in question 1.2 of the form. |
 
-| Column | Description |
-|---|---|
-| `display_name` | Journal name in OpenAlex |
-| `issn_l` | Linking ISSN |
-| `host_organization_name` | Publisher (e.g. Wiley, Springer Science+Business Media, Oxford University Press) |
-| `host_organization` | Publisher's OpenAlex ID |
+`Concensus_policy.csv` has one row per journal: `Journal`; `Data` and `Code`,
+the journal's data and code policy (`Mandated`, `Encouraged`, `Neutral` or
+`No Policy`), each with a `_Reason` column for notes; and `Data_editor`
+(`Yes`/`No`), with notes in `DE_Reason`. `total_journals_oct_rerun.csv` has
+`journal`, a column per month (`Jan`–`Sep`) and `total`. `publishers.csv` has
+`display_name`, `issn_l`, `host_organization_name` (the publisher) and
+`host_organization` (its OpenAlex ID).
 
-**How the papers were pulled (`OpenAlexPull.R`).** The script uses the
+**How the papers were pulled (`02_open_alex_pull.R`).** The script uses the
 [openalexR](https://cran.r-project.org/package=openalexR) package and needs a
 free OpenAlex API key. It:
 
@@ -111,17 +129,27 @@ free OpenAlex API key. It:
 The script queries 90 journals; Primate Conservation published nothing in the
 period, which leaves 89.
 
-**How the hackathon sample was drawn (`split_papers.R`).** A stratified random
-sample, made reproducible with `set.seed(1)`:
+**How the papers were randomised (`03_randomise_papers.R`).** With
+`set.seed(20261009)`, the papers in each journal are shuffled into a random
+order and numbered. Journals are numbered so that the ten with a data editor
+come first (1–10), and each paper gets a `paper_id` from its journal number and
+its place in the order. The output is `randomised_papers.csv`.
 
-- **Ten journals with a data editor** contribute up to 30 papers each: The
-  American Naturalist, Behavioral Ecology, Ecological Applications, Ecological
-  Monographs, Ecology, Ecology Letters, Ecosphere, Frontiers in Ecology and the
-  Environment, Journal of Evolutionary Biology, and Proceedings of the Royal
-  Society B. Ecological Monographs published only 22 research articles, so all
-  22 are included.
-- **All other journals** contribute up to 15 papers each. Seven published fewer
-  than 15, so all of their papers are included (6–14 each).
+**How the sample was drawn and split (`04_paper_assignment.R`).** With
+`set.seed(20261010)`, the script takes the first 15 papers in each journal's
+random order, and the first 30 for the ten journals with a data editor: The
+American Naturalist, Behavioral Ecology, Ecological Applications, Ecological
+Monographs, Ecology, Ecology Letters, Ecosphere, Frontiers in Ecology and the
+Environment, Journal of Evolutionary Biology, and Proceedings of the Royal
+Society B. Journals with fewer papers contribute all they have: Ecological
+Monographs 22, and seven other journals 6–14 each. Cycling through the journals
+in turn, the papers are cut into 40 overlapping blocks of 45, each overlapping
+the next by 9, then shuffled within each set and written to
+`Data/article_sets/`.
+
+**Journal policies (`01_journal_policy.R`).** Tabulates the data and code
+policies in `Concensus_policy.csv`, by policy type and by whether the journal
+has a data editor.
 
 ## Organisers
 
@@ -177,10 +205,11 @@ Edward R. Ivimey-Cook — e.ivimeycook@gmail.com
 ## Licence
 
 - **Code**, meaning `_config.yml`, `_layouts/default.html`,
-  `assets/css/sortee-faq.css`, `assets/js/faq.js` and the R scripts in
-  `hackathon_papers/`, under the [MIT License](LICENSE).
-- **Content**, meaning the guide text in `FAQ.md` and this README, under
-  [CC BY 4.0](LICENSE-data.md).
+  `assets/css/sortee-faq.css`, `assets/js/faq.js` and the R scripts in `R/`,
+  under the [MIT License](LICENSE).
+- **Content**, meaning the guide text in `FAQ.md`, this README and the files in
+  `Data/`, under [CC BY 4.0](LICENSE-data.md). The paper metadata comes from
+  OpenAlex, which releases its data under CC0.
 
 The SORTEE logo mark in `assets/img/` belongs to SORTEE and is not covered by
 either licence. The styling is inspired by the SORTEE website but not copied
