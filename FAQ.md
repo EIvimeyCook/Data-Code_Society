@@ -18,9 +18,9 @@ If you have any problems, check this FAQ first, then message one of the organise
 - Joel Pick: joel.l.pick@gmail.com
 
 > **Key links**
->
-> - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every paper you assess
+> 
 > - ✋ [Expression of Interest form](https://forms.gle/bA7D9yDXMz18Viom8): fill this in before you start
+> - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every paper you assess
 > - ⚠️ [Paper issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for papers you can't access or have a conflict of interest with
 > - 📋 [List of papers with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing)
 
@@ -298,7 +298,7 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 **What to do:** Paste the DOI/accession, e.g. `10.5061/dryad.xxxxxxx`.
 
 **FAQ**
-- *There are many accession numbers (e.g. one per sequence).* Paste the project- or study-level accession if there is one (e.g. a BioProject `PRJNA…` number); otherwise paste the first and list the rest, or the range, in 3.13.
+- *There are many accession numbers (e.g. one per sequence).* Paste the project- or study-level accession if there is one (e.g. a BioProject `PRJNA…` number); otherwise paste the first and list the rest, or the range.
 
 ### 3.7 Is there a license? \*
 **What to do:** Look for a licence file or a licence mentioned on the repository page. For reference, all Dryad projects have CC0 licences by default, but they may not be included in the files. Licence files typically include CC licences (e.g. CC-BY-4.0 or CC0), MIT, Apache or GNU GPL.
@@ -307,8 +307,8 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 - *Dryad.* Dryad publishes all data under CC0, even if no licence file is included — answer **Yes**.
 - *Zenodo / Figshare / OSF.* The licence is usually shown on the landing page sidebar (e.g. "Creative Commons Attribution 4.0 International"). If one is shown → **Yes**.
 - *A code licence (e.g. MIT, GPL) on a data repository.* Still counts as **Yes** — any stated licence does.
-- *"All rights reserved" / a copyright notice only.* **No** — this isn't an open licence. Note it in 3.13.
-- *Supplementary material.* Answer **Yes** only if a licence is stated for the supplement (sometimes the article's CC-BY licence explicitly covers supplementary files — if so, say so in 3.13).
+- *"All rights reserved" / a copyright notice only.* **No** — this isn't an open licence.
+- *Supplementary material.* Answer **Yes** only if a licence is stated for the supplement (sometimes the article's CC-BY licence explicitly covers supplementary files).
 
 ### 3.8 Are data archived and downloadable? \*
 **What to do:** Can you see data files **and** start downloading them?
@@ -316,9 +316,8 @@ Briefly say which rule you used, e.g. *"Zenodo chosen: data and code together; r
 Answer **No** if the repo is **private**, **embargoed**, requires a **login or request** to access, or the files are **empty or corrupt**.
 
 **FAQ**
-- *You can see the dataset's page and file list, but downloading needs a free account (e.g. Movebank, some institutional repositories).* **Yes** — the data aren't openly downloadable. Name the repository and the access condition in 3.13.
 - *The download is enormous.* If the download starts, answer **Yes** — no need to finish it.
-- *Files are compressed (.zip, .tar.gz).* Download and unzip if reasonably sized so you can answer 3.9–3.12. If it's too large, answer based on the file listing and note this in 3.13.
+- *Files are compressed (.zip, .tar.gz).* Download and unzip if reasonably sized so you can answer 3.9–3.12. If it's too large, answer based on the file listing.
 
 ### 3.9 What format are the data in? \*
 **What to do:** Tick **all** formats present, based on the file suffixes. If unsure, use **Other** and separate multiple formats with `;`.
@@ -329,7 +328,7 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 | Interoperable spreadsheet | `.xlsx`, `.ods` |
 | Proprietary spreadsheet | `.xls` |
 | Text | `.txt` |
-| Statistical software file | `.sav`, `.dta`, `.rds`, `.Rdata`/`.rda` |
+| Statistical software file | `.sav`, `.dta`, `.rds`, `.Rdata`, `.rda` |
 | Image | `.png`, `.jpg`, `.tiff` |
 | Video | `.mp4`, `.mov`, `.avi` |
 | Document | `.doc`, `.docx`, `.pdf`, `.odt` |
@@ -348,24 +347,24 @@ Answer **No** if the repo is **private**, **embargoed**, requires a **login or r
 - *The data are in the journal's supplementary material.* **Yes** only if the supplement itself describes the project (e.g. a README or a cover sheet). Being attached to the article doesn't count on its own.
 
 ### 3.11 Is each data file described? \*
-**What to do:** Answer **Yes** if *every* data file has a description (what it contains/what it's for), either in a README or in file-level metadata.
+**What to do:** Answer **Yes** if *every* data file has a description (what it contains as an overview/what it's for) e.g. in a README.
 
 **FAQ**
-- *Most files described, one or two aren't.* **No** — the question asks about *each* file. Explain in 3.13.
+- *Most files described, one or two aren't.* **No** — the question asks about *each* file.
 - *There's only one data file and the landing page describes it.* **Yes.**
 
 ### 3.12 Are the variables in the data files explicitly explained? \*
-**What to do:** Is there a **data dictionary** or other information that explains what each variable (column) is **and its unit of measurement**?
+**What to do:** For tabular, spreadsheet, or text data (e.g., .csv, .xlxs, .txt), is there a **data dictionary** or other information that explains what each variable (column) is **and its unit of measurement**?
 
 - **Yes** = all variables and units explained.
 - **No** = none, or not all, variables and units given.
 
 **FAQ**
-- *Column names are self-explanatory (e.g. `body_mass_g`).* That's good practice, but not an explanation — answer **No** unless explanations are given. Mention it in 3.13.
-- *Only some variables are explained.* **No**, and note it in 3.13.
-- *Every variable is described, but units are missing.* **No** — the form asks for units too. Note it in 3.13.
+- *Column names are self-explanatory (e.g. `body_mass_g`).* That's good practice, but not an explanation — answer **No** unless explanations are given.
+- *Only some variables are explained.* **No**.
+- *Every variable is described, but units are missing.* **No** — the form asks for units too..
 - *A variable has no unit (e.g. an ID, a category, a count).* That's fine — it only needs explaining (for categories, what the codes mean). Units are needed for measured quantities.
-- *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone. Note it in 3.13.
+- *Variables are described in the paper's methods, not the repo.* **No** — we're assessing whether the archive stands alone.
 
 ### 3.13 Comments about data
 Anything you think is important to note.
@@ -377,7 +376,7 @@ Anything you think is important to note.
 ## Section 4 — Is there a Code repository?
 
 ### 4.1 Is there a working reference to archived code in the MS? \*
-**What to do:** Search the manuscript for "code", "script", "software", and "GitHub", and read the Data/Code Availability or Open Research statement and the Supplementary list.
+**What to do:** Search the manuscript for "code", "script", "software", and read the Data/Code Availability or Open Research statement and the Supplementary list.
 
 | Option | Choose when… |
 |---|---|
@@ -386,11 +385,11 @@ Anything you think is important to note.
 | **No, no reference** | No mention of archived code, or "available on request". |
 
 **FAQ**
-- *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the MS. Say so in 5.12.
+- *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the MS.
 - *The paper only cites the R packages used (e.g. "analyses used lme4").* That is **not** archived analysis code → **No, no reference**.
-- *The paper says "code on GitHub" with no link.* **No, no reference**, and comment in 6.1 if you found it by searching.
-- *The link goes to an author's GitHub profile or lab page, not a specific repository.* **No, link(s) that doesn't work**, and explain in 6.1.
-- *The analysis was done entirely in point-and-click software (e.g. SPSS menus, Excel, JMP) so there is no code.* **No, no reference**, and say so in 6.1 so we can separate "no code exists" from "code not shared".
+- *The paper says "code on GitHub" with no link.* **No, no reference**.
+- *The link goes to an author's GitHub profile or lab page, not a specific repository.* **No, link(s) that doesn't work**.
+- *The analysis was done entirely in point-and-click software with no explanation of use archived (e.g. a list of SPSS menus clicked).* **No, no reference**.
 - *The data were on Dryad and the code is listed under "Software" on the same Dryad page.* **Yes** — Dryad publishes software files on Zenodo. Follow that link and assess the Zenodo record in Section 5.
 
 ➡️ **Yes** → Section 5. **Any "No"** → Section 6.
@@ -399,7 +398,7 @@ Anything you think is important to note.
 
 ## Section 5 — Code Repository
 
-> If code is spread across multiple repositories, assess the one prioritised under the rules in **3.2** (above) and explain in 5.12.
+> If code is spread across multiple repositories, assess the one prioritised under the rules in **3.2** (above).
 
 ### 5.1 What is the repository? \*
 See **3.3** (above). Answer for the **code**, even if it's the same repo as the data.
@@ -407,7 +406,7 @@ See **3.3** (above). Answer for the **code**, even if it's the same repo as the 
 The code list is the same as in 3.3, plus **Software Heritage** (archive.softwareheritage.org), which archives source code from GitHub and other platforms.
 
 **FAQ**
-- *Code uploaded alongside a Dryad dataset.* Select **Zenodo** — that is where Dryad actually publishes software files — and note the Dryad link in 5.12.
+- *Code uploaded alongside a Dryad dataset.* Select **Zenodo** — that is where Dryad actually publishes software files.
 
 ### 5.2 Paste URL of the repository
 Copy the landing-page URL from the browser address bar.
@@ -417,7 +416,7 @@ See **3.5** (above). A bare GitHub/GitLab repo is **No**; a Zenodo snapshot of i
 
 **FAQ**
 - *Software Heritage.* **Yes** — its identifiers (SWHIDs, starting `swh:1:`) are permanent. Paste the SWHID at 5.4.
-- *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 (as in 3.1) and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**. Either way, note it in 5.12.
+- *The paper links to GitHub, and the GitHub README has a Zenodo DOI badge.* Follow the badge. If it opens an archived snapshot of the code, assess that Zenodo record throughout Section 5 (as in 3.1) and answer **Yes** here. If the badge is broken, assess the GitHub repo and answer **No**.
 
 ### 5.4 If yes, what is the Permanent ID?
 Paste the DOI.
@@ -428,13 +427,12 @@ Paste the DOI.
 **FAQ**
 - *Where do I look on GitHub?* The "About" box on the right of the repo page shows the licence if GitHub detects one; otherwise check for a `LICENSE` file and the bottom of the README.
 - *Which licences count?* Any stated licence counts as **Yes**. The common software licences are **MIT**, **Apache-2.0**, **GPL-2.0/GPL-3.0**, **BSD-2/3-Clause**, **LGPL** and **AGPL**. Code is sometimes released under **CC0** or **CC-BY** — CC-BY isn't designed for software, but it is still a licence, so **Yes**.
-- *Zenodo.* Every open Zenodo record shows a licence on its landing page (the default is CC-BY 4.0), so this is usually **Yes**. Record which licence in 5.12 if it isn't a software licence.
+- *Zenodo.* Every open Zenodo record shows a licence on its landing page (the default is CC-BY 4.0), so this is usually **Yes**.
 - *Dryad.* Dryad's CC0 waiver applies to the **data** only. Code submitted through Dryad is published on Zenodo with its own licence (often MIT or GPL) — check the Zenodo record.
 - *One licence covers the whole repository (data and code).* **Yes** — answer the same way here as in 3.7.
 - *Different licences for data and code (e.g. CC-BY for data, MIT for code).* Answer 3.7 for the data licence and 5.5 for the code licence; both are **Yes**.
-- *The licence is only mentioned in the README, or only as a header in the scripts.* **Yes**, and note in 5.12 that there is no separate licence file.
+- *The licence is only mentioned in the README, or only as a header in the scripts.* **Yes**.
 - *An R package `DESCRIPTION` file with a `License:` field.* **Yes.**
-- *A custom licence or "free for academic use only".* **Yes** (a licence exists), but note in 5.12 that it is non-standard or restrictive.
 - *A public GitHub repo with no licence anywhere.* **No.** Being public is not the same as being licensed: without a licence, copyright law means others can view the code but not legally reuse it.
 - *Code in the journal's supplementary material.* Same rule as for data in 3.7: **Yes** only if a licence is stated for the supplement.
 
@@ -461,7 +459,7 @@ See **3.10** (above).
 **What to do:** Could you work out **what each script does** and **in what order to run them** *without* reading the paper?
 
 **FAQ**
-- *Scripts are numbered (`01_clean.R`, `02_models.R`) but there's no README.* A judgement call — if the order and purpose are genuinely obvious, **Yes**; otherwise **No**. Explain in 5.12.
+- *Scripts are numbered (`01_clean.R`, `02_models.R`) but there's no README.* A judgement call — if the order and purpose are genuinely obvious, **Yes**; otherwise **No**.
 - *There's a single, well-commented script.* **Yes.**
 - *The README says "run the code" and nothing else.* **No.**
 
@@ -470,15 +468,15 @@ See **3.10** (above).
 
 **FAQ**
 - *Where should I look?* README, top of scripts, `sessionInfo()` output, `renv.lock`, `environment.yml`, a Dockerfile, or the repository page.
-- *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. Note it in 5.12.
+- *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. 
 
 ### 5.11 Is there at least some information on version numbers of software packages? \*
-**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)?
+**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? Ee're not expecting you to work out every package that has been used in the MS.
 
 **FAQ**
 - *Which files count?* A README list, `sessionInfo()` output, `renv.lock`, `requirements.txt` (with versions), `environment.yml`, `DESCRIPTION`, or versions in script comments.
 - *`requirements.txt` lists packages without versions.* **No.**
-- *Only some packages have versions.* **Yes** (the question asks for "at least some"), and note it in 5.12.
+- *Only some packages have versions.* **Yes** (the question asks for "at least some").
 
 ### 5.12 Comments about code
 Anything you think is important to note.
@@ -490,4 +488,4 @@ Anything you think is important to note.
 ## Section 6 — Comments
 
 ### 6.1 General comments
-Anything that doesn't fit elsewhere, e.g. total time taken (in minutes).
+Anything that you think is important to note. 
