@@ -191,16 +191,16 @@ The Zoom chat or the dedicated Slack channel.
 **FAQ**
 - *Does the exact spelling matter?* Yes — use exactly the same name every time (e.g. always "Jo Smith", not sometimes "J. Smith"). Your points are counted by matching names.
 - *Why do you need my name?* So we can credit you (see [Contributions](#contributions)).
-- *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per manuscript.
+- *I'm assessing multiple papers — do I enter it every time?* Yes, one form submission per paper.
 
-### 1.2 What is the ID of the manuscript? \*
+### 1.2 What is the ID of the paper? \*
 **What to do:** Enter the paper ID exactly as it appears in your article set file (the `paper_id` column, e.g. `12_7`).
 
 **FAQ**
 - *Where do I find the ID?* In the `paper_id` column of your article set file, on the same row as the paper's DOI and title.
 - *What does the ID mean?* The first number is the journal and the second is the paper's place in that journal's random order, so `12_7` is the seventh paper drawn from journal 12.
 
-### 1.3 DOI of MS \*
+### 1.3 DOI of paper \*
 **What to do:** Enter the article DOI.
 
 **FAQ**
@@ -224,8 +224,8 @@ The Zoom chat or the dedicated Slack channel.
 
 ## Section 2 — Is there a Data repository?
 
-### 2.1 Is there a working reference to archived data in the MS? \*
-**What to do:** Search the manuscript using the browser search function for "data" and read the **Data Availability / Open Research statement**, the **Methods**, or the **Supplementary Material** list. Try every link given.
+### 2.1 Is there a working reference to archived data in the paper? \*
+**What to do:** Search the paper using the browser search function for "data" and read the **Data Availability / Open Research statement**, the **Methods**, or the **Supplementary Material** list. Try every link given.
 
 | Option | Choose when… |
 |---|---|
@@ -386,8 +386,8 @@ Anything you think is important to note.
 
 ## Section 4 — Is there a Code repository?
 
-### 4.1 Is there a working reference to archived code in the MS? \*
-**What to do:** Search the manuscript for "code", "script", "software", and read the Data/Code Availability or Open Research statement and the Supplementary list.
+### 4.1 Is there a working reference to archived code in the paper? \*
+**What to do:** Search the paper for "code", "script", "software", and read the Data/Code Availability or Open Research statement and the Supplementary list.
 
 | Option | Choose when… |
 |---|---|
@@ -396,7 +396,7 @@ Anything you think is important to note.
 | **No, no reference** | No mention of archived code, or "available on request". |
 
 **FAQ**
-- *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the MS.
+- *The data repository from Section 3 also contains code, but the paper never mentions code.* **Yes** — code is archived and reachable from a working reference in the paper.
 - *The paper only cites the R packages used (e.g. "analyses used lme4").* That is **not** archived analysis code → **No, no reference**.
 - *The paper says "code on GitHub" with no link.* **No, no reference**.
 - *The link goes to an author's GitHub profile or lab page, not a specific repository.* **No, link(s) that doesn't work**.
@@ -517,7 +517,7 @@ Tick all that apply.
 - *Only stated in the paper's methods.* **No** — we're assessing whether the archive stands alone. 
 
 ### 5.11 Is there at least some information on version numbers of software packages? \*
-**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? We're not expecting you to work out every package that has been used in the MS.
+**What to do:** Are versions given for **at least some** packages/libraries (e.g. *lme4 v1.1-35*)? We're not expecting you to work out every package that has been used in the paper.
 
 **FAQ**
 - *Which files count?* A README list, `sessionInfo()` output, `renv.lock`, `requirements.txt` (with versions), `environment.yml`, `DESCRIPTION`, or versions in script comments.
