@@ -233,6 +233,7 @@ The Zoom chat or the dedicated Slack channel.
 | **No, link(s) that doesn't work** | Data are referenced but the link is broken, leads to a 404, or a generic landing page with no way to find the dataset. |
 | **No, sensitive data so not shared** | The authors explicitly state data are withheld for ethical, legal, or conservation reasons (e.g. endangered species locations or human participants). |
 | **No, no reference** | No mention of archived data, *or* only "available from the authors on (reasonable) request". |
+| **No, it is a simulation article or coding package** | The article has no empirical data of its own: its results come only from simulations or models, or it introduces a software package or coding tool. You'll still assess the code in Section 4. |
 
 **FAQ**
 - *"Data available on request" — which option?* **No, no reference.** Data on request are not archived. Mention it in 6.1.
@@ -243,6 +244,11 @@ The Zoom chat or the dedicated Slack channel.
 - *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive. Quote the statement in 6.1.
 - *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**, and note in 3.13 that it is a reviewer link. If it no longer works, **No, link(s) that doesn't work**.
 - *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
+- *When should I choose "No, it is a simulation article or coding package"?* When the article has no empirical data of its own, e.g. an individual-based or population model, a theoretical study that relies on simulations, or an article introducing an R package, Python library or other software tool. 
+- *A simulation study that is also parameterised with, or tested against, empirical data (e.g. field measurements or a published dataset).* Assess that data as normal. Only choose the simulation option when there is no empirical data at all.
+- *A software or package article that includes a worked case study on real data.* Assess the case-study data as normal. Example or test datasets bundled inside the package don't count as the article's data, so a package article with only those is **No, it is a simulation article or coding package**.
+- *The simulation outputs (e.g. model runs) have been archived.* Still choose **No, it is a simulation article or coding package**.
+- *A purely mathematical or analytical theory article with no data and no code.* That should have been **No** at 1.4, so you shouldn't reach this question. If you have, go back and change 1.4.
 
 ➡️ **Yes** → Section 3. **Any "No"** → Section 4.
 
