@@ -4,7 +4,7 @@ Copyright (c) 2026 Edward R. Ivimey-Cook and Joel L. Pick
 
 The prose content of this repository — FAQ.md, README.md and the rendered
 site — and the data files in Data/ are licensed under the Creative Commons
-Attribution 4.0 International License. The paper metadata in Data/ comes
+Attribution 4.0 International License. The article metadata in Data/ comes
 from OpenAlex (https://openalex.org), which releases its data under CC0.
 
 You are free to:

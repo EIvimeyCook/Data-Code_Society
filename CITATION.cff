@@ -57,9 +57,10 @@ abstract: >-
   A question-by-question FAQ for the assessment form used at the SORTEE 2026
   conference hackathon, led by the SORTEE Advocacy Committee, on data and code
   availability and quality in journals published by ecology and evolution
-  societies. Covers how to judge whether a paper's data and code are archived,
+  societies. Covers how to judge whether an article's data and code are archived,
   accessible, licensed and documented, and how contributions are credited using
-  Dragon Kill Points.
+  Dragon Kill Points. Also holds the article lists and the R code used to draw
+  the sample of articles from OpenAlex.
 keywords:
   - open data
   - open code
@@ -71,13 +72,14 @@ keywords:
   - scholarly publishing
   - journal policy
   - SORTEE
-# Dual licensed: MIT for the site template and CSS; CC BY 4.0 for the guide
-# text. See LICENSE and LICENSE-data.md.
+# Dual licensed: MIT for the site template, CSS, JavaScript and R scripts;
+# CC BY 4.0 for the guide text and the data files. See LICENSE and
+# LICENSE-data.md.
 license:
   - MIT
   - CC-BY-4.0
-date-released: "2026-09-28"
-version: "1.0.0"
+date-released: "2026-10-11"
+version: "1.1.0"
 
 references:
   - type: article
