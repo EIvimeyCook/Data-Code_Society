@@ -217,6 +217,7 @@ The Zoom chat or the dedicated Slack channel.
 - *It's a review that includes a small quantitative analysis or a systematic literature search.* **Yes** — there is data behind it.
 - *It's a software article that introduces a package or tool (e.g. an R package) with no new analysis.* **No**.
 - *It's a methods or software article that also includes a new analysis (e.g. a new statistical method demonstrated on data or on simulations).* **Yes**. At 2.1, assess any real data as normal; if the analysis uses only simulated data, choose **No, no data directly associated with the article (e.g. a simulation article or software package)**.
+- *What counts as a new analysis?* The article reports results (figures, tables, estimates) from running code on data, real or simulated: e.g. a simulation study testing a method's bias or power, applying a package to a real dataset, or benchmarking several tools. Worked examples that only demonstrate how a package works don't count: e.g. installation steps, a few lines of example code, screenshots of an app, or a demonstration on a built-in dataset such as `iris`.
 - *It's a data paper (an article whose purpose is to describe a dataset).* **No**.
 - *A comment or reply that re-analyses the original article's data.* **Yes.** A comment with no new analysis is **No**.
 
