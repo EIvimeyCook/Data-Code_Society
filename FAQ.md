@@ -23,7 +23,8 @@ If you have any problems, check this FAQ first, then message one of the organise
 > - 📊 [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing) (view only): find your article set and your DKP
 > - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every article you assess
 > - ⚠️ [Article issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for articles you can't access or have a conflict of interest with
-> - 📋 [List of articles with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing).
+> - 📋 [List of articles with issues](https://docs.google.com/spreadsheets/d/11mONSJrb2C07NeqF1wBJxODaC4iV5HBYaD2DRpMVZA4/edit?usp=sharing): to reassign articles with issues.
+> - ✋✋✋ [ARTICLE SETS](https://drive.google.com/drive/folders/1Lut27ktdh6-s9QBc1FZLZAtPwQiUfLOU?usp=sharing): The folder with the articles for extraction.
 
 ---
 
