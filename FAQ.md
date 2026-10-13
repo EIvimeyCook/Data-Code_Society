@@ -201,7 +201,7 @@ The Zoom chat or the dedicated Slack channel.
 - *Where do I find the ID?* In the `article_id` column of your article set file, on the same row as the article's DOI and title.
 - *What does the ID mean?* The first number is the journal and the second is the article's place in that journal's random order, so `12_7` is the seventh article drawn from journal 12.
 
-### 1.3 DOI of article \*
+### 1.3 DOI of the article \*
 **What to do:** Enter the article DOI.
 
 **FAQ**
