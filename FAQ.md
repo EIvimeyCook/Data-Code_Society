@@ -1,6 +1,30 @@
 # 🐉 SORTEE 2026 Hackathon — Data & Code in Ecology and Evolution Society Journals: FAQ and Guide
 
-> **Quick links:** [Introduction](#introduction) · [Timeline](#timeline) · [Code of conduct](#code-of-conduct) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
+> **Quick links:** [Specific cases](#specific-cases-found-during-the-hackathon) · [Introduction](#introduction) · [Timeline](#timeline) · [Code of conduct](#code-of-conduct) · [Contributions](#contributions) · [Before you start](#before-you-start) · [Form flow](#how-the-form-flows) · [General FAQ](#general-faq) · [Section 1](#section-1--metadata) · [Section 2](#section-2--is-there-a-data-repository) · [Section 3](#section-3--data-repository) · [Section 4](#section-4--is-there-a-code-repository) · [Section 5](#section-5--code-repository) · [Section 6](#section-6--comments)
+
+---
+
+## List of edge cases found during the hackathon
+
+**Please read this first.** This list will be updated as people flag new edge cases.
+
+1. **Mistakes.** If you think you’ve made a mistake in an extraction, please let us know so we can correct it.
+
+2. **Unusual articles.** These are all articles from journals that have been identified as being associated with ecology and evolution societies, so even if the article seems unusual or out of scope, still assess it as best you can.
+
+3. **File formats.** When listing file types, a distinction needs to be made between data files, code files and metadata files. Only the formats of data files should be recorded in the data file type section (3.9), and only code files in the code file type section (5.7). Importantly, **don’t include the format of READMEs or other metadata files when recording file formats (3.9 and 5.7)**. They aren’t data or code files, even if they are stored in formats such as `.md`.
+
+4. **Links in the reference list.** If the article links to a repository, data or code through its own reference list (e.g. “Data from: [Title]”), that counts as a working reference with a link.
+
+5. **Links via another article.** A link that goes directly to the data, code or repository is fine, even if they were first published with an earlier study. But if the article only points to another article, which then links to the data, code or repository, that counts as **“No, no reference”**. If the other article were taken down, or if it is not open access, then there would be no way to find the data or code, so each article must stand on its own merit with its own link to its data and code.
+
+6. **Very large downloads.** If a download takes a long time or is very large (this depends on your internet speed), flag it on the [Article issue form](https://forms.gle/LnqXYE43wCtrMsGL9). We don't want you spending hours on one article!
+
+7. **Natural history observations.** Natural history notes, even with photos or videos of the organism or behaviour, aren’t expected to have data, so 1.4 = **No**. These often refer to single or few observations, and have no quantitative analysis (e.g. “we observed this animal did this behaviour” or “we found this plant here”).
+
+8. **Data in the article itself.** If the data are only in the article's own text or tables, answer 2.1 **“No, no reference”**: they aren’t archived. Data in the supplementary files still count as **“Yes”**.
+
+9. **A general database link.** If the data statement only links to a database's general website, answer 2.1 **“No, no reference”**. In this case, the link doesn't lead to the specific data used. If there is a description of the search used to get the data, this is likely to be **“No”**, but some judgment is needed. Online databases often change over time, so the same search may not give the same data later. Therefore, if there are just generic search terms, the answer would be **“No”**. If there is a version of a database or a date accessed that the paper links to, and you believe this identifies the exact same dataset that the paper used, then the answer would be **“Yes”**.
 
 ---
 
@@ -247,7 +271,7 @@ The Zoom chat or the dedicated Slack channel.
 - *Only some of the data are archived.* **Yes**.
 - *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive.
 - *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**. If it no longer works, **No, link(s) that doesn't work**.
-- *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
+- *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments. A link to the database's general website plus the search terms used is not a link to the specific data, so it is **No, no reference**.
 - *What counts as "No, no data directly associated with the article (e.g. a simulation article)"?* The article doesn't collect, compile or analyse any empirical (real-world) data. Typical examples are simulation or modelling studies, and software articles whose new analysis uses only simulated data. Their code is still assessed in Section 4.
 - *A simulation or model that is fitted to, or parameterised with, empirical data (e.g. field measurements or a published dataset).* The article contains data. Assess that data as normal.
 - *A software or package article with a new analysis on real data.* The article contains data. Assess that data as normal. Small example or test datasets that come bundled inside the package don't count, so if those are all there is, choose **No, no data directly associated with the article (e.g. a simulation article)**.

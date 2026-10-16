@@ -192,6 +192,7 @@ body {
 }
 .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.18); text-decoration: none; }
 .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,.6); }
+.btn-alert { background: #f2c46d; color: #3d2a06; }
 .hero-mark {
   position: absolute;
   right: 5%;
@@ -672,4 +673,48 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   a { color: inherit; }
   .footer { background: none; color: #000; margin-top: 24px; }
   .footer a, .footer-brand { color: #000; }
+}
+
+/* ================= edge cases (top of the FAQ) ================= */
+#specific-cases-found-during-the-hackathon::before { background: linear-gradient(180deg, var(--amber), var(--amber-ink)); }
+#specific-cases-found-during-the-hackathon + blockquote {
+  background: var(--amber-tint);
+  border: 1px solid var(--amber);
+  border-left: 4px solid var(--amber);
+}
+#specific-cases-found-during-the-hackathon + blockquote strong { color: var(--amber-ink); }
+#specific-cases-found-during-the-hackathon + blockquote + ol {
+  list-style: none;
+  counter-reset: edge;
+  padding: 0;
+  margin: 16px 0 8px;
+  display: grid;
+  gap: 10px;
+}
+#specific-cases-found-during-the-hackathon + blockquote + ol > li {
+  counter-increment: edge;
+  position: relative;
+  margin: 0;
+  padding: 14px 18px 14px 58px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--amber);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+#specific-cases-found-during-the-hackathon + blockquote + ol > li::before {
+  content: counter(edge);
+  position: absolute;
+  left: 16px; top: 13px;
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  background: var(--amber-ink);
+  color: var(--on-accent);
+  font-size: .85rem; font-weight: 700;
+  line-height: 28px; text-align: center;
+}
+.toc a[href="#specific-cases-found-during-the-hackathon"] { color: var(--amber-ink); font-weight: 500; border-left-color: var(--amber); }
+@media (max-width: 640px) {
+  #specific-cases-found-during-the-hackathon + blockquote + ol > li { padding-left: 52px; }
+  #specific-cases-found-during-the-hackathon + blockquote + ol > li::before { left: 12px; }
 }
