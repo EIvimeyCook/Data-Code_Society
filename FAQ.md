@@ -43,7 +43,7 @@ If you have any problems, check this FAQ first, then message one of the organise
 
 > **Key links**
 > 
-> - ✋ [Expression of Interest form](https://forms.gle/bA7D9yDXMz18Viom8): fill this in before you start
+> - ✋ [Expression of Interest form](https://forms.gle/bA7D9yDXMz18Viom8): fill this in before you start (We are no longer able to take any new EoIs!)
 > - 📊 [Expression of Interest sheet](https://docs.google.com/spreadsheets/d/1_Uxsps8yqHjhKl4gGOsFU5jT48kyc-Arl57u_1bD2pU/edit?usp=sharing) (view only): find your article set and your DKP
 > - 📝 [Extraction form](https://forms.gle/PnGqVbRk6bJ8Er1B8): fill this in once for every article you assess
 > - ⚠️ [Article issue form](https://forms.gle/LnqXYE43wCtrMsGL9): for articles you can't access or have a conflict of interest with
