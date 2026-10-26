@@ -4,9 +4,9 @@
 
 ---
 
-## List of edge cases found during the hackathon
+## Specific cases found during the hackathon
 
-**Please read this first.** This list will be updated as people flag new edge cases.
+**Please read this first.** This list will be updated as people flag new specific cases.
 
 1. **Mistakes.** If you think you’ve made a mistake in an extraction, please let us know so we can correct it.
 
@@ -24,7 +24,9 @@
 
 8. **Data in the article itself.** If the data are only in the article's own text or tables, answer 2.1 **“No, no reference”**: they aren’t archived. Data in the supplementary files still count as **“Yes”**.
 
-9. **A general database link.** If the data statement only links to a database's general website, answer 2.1 **“No, no reference”**. In this case, the link doesn't lead to the specific data used. If there is a description of the search used to get the data, this is likely to be **“No”**, but some judgment is needed. Online databases often change over time, so the same search may not give the same data later. Therefore, if there are just generic search terms, the answer would be **“No”**. If there is a version of a database or a date accessed that the paper links to, and you believe this identifies the exact same dataset that the paper used, then the answer would be **“Yes”**.
+9. **A general database link.** If the data statement only links to a database's general website, answer 2.1 **“No, no reference”**. The link only reaches the database's homepage and was never a link to the specific data used. This follows the existing 2.1 rule for data from public databases: **“Yes”** only if a working link or accession to the specific data used is given; otherwise **“No, no reference”**. If there is a description of the search used to get the data, this is likely to be **“No, no reference”**, but some judgment is needed. Online databases often change over time, so the same search may not give the same data later. Therefore, if there are just generic search terms, the answer would be **“No, no reference”**. If there is a version of a database or a date accessed that the paper links to, and you believe this identifies the exact same dataset that the paper used, then the answer would be **“Yes”**.
+
+10. **GenBank and other accession numbers.** If the article gives accession numbers (e.g. GenBank, SRA or BioProject numbers) and a link to the database, that is enough to find the data, even if the link only goes to the database's main page. Answer 2.1 **“Yes”**, choose **GenBank/NCBI etc** at 3.3, and answer 3.5 **“Yes”** (the accession number is the permanent ID). Unlike a general database link (case 9), accession numbers point to the exact records used.
 
 ---
 
@@ -271,7 +273,7 @@ The Zoom chat or the dedicated Slack channel.
 - *Only some of the data are archived.* **Yes**.
 - *The statement says data "will be made available" or "will be deposited upon publication", but there is no working link.* **No, no reference** — a promise is not an archive.
 - *The link is a private "reviewer" link (e.g. a Dryad or Figshare review URL) left in the published article.* If it still opens the dataset, **Yes**. If it no longer works, **No, link(s) that doesn't work**.
-- *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments. A link to the database's general website plus the search terms used is not a link to the specific data, so it is **No, no reference**.
+- *The data come entirely from an existing public database (e.g. GBIF, a previously published dataset) and the article cites it.* **Yes** if a working link/accession to the specific data used is given; otherwise **No, no reference**. Note it in the comments.
 - *What counts as "No, no data directly associated with the article (e.g. a simulation article)"?* The article doesn't collect, compile or analyse any empirical (real-world) data. Typical examples are simulation or modelling studies, and software articles whose new analysis uses only simulated data. Their code is still assessed in Section 4.
 - *A simulation or model that is fitted to, or parameterised with, empirical data (e.g. field measurements or a published dataset).* The article contains data. Assess that data as normal.
 - *A software or package article with a new analysis on real data.* The article contains data. Assess that data as normal. Small example or test datasets that come bundled inside the package don't count, so if those are all there is, choose **No, no data directly associated with the article (e.g. a simulation article)**.

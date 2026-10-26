@@ -101,6 +101,16 @@
       }
     }
 
+    // 6b. Edge cases section: whatever its heading says, point the hero button at it
+    //     and highlight it in the side contents.
+    var edge = main.querySelector('h2[id*="cases-found"]');
+    if (edge) {
+      var alertBtn = document.querySelector(".btn-alert");
+      if (alertBtn) alertBtn.setAttribute("href", "#" + edge.id);
+      var tocEdge = toc && toc.querySelector('a[href="#' + edge.id + '"]');
+      if (tocEdge) tocEdge.classList.add("toc-edge");
+    }
+
     // 7. Mermaid diagrams (```mermaid blocks): render with Mermaid from jsDelivr.
     //    GitHub renders the same blocks natively, so FAQ.md stays readable there.
     var blocks = [];

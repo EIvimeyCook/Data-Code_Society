@@ -675,15 +675,23 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   .footer a, .footer-brand { color: #000; }
 }
 
-/* ================= edge cases (top of the FAQ) ================= */
-#specific-cases-found-during-the-hackathon::before { background: linear-gradient(180deg, var(--amber), var(--amber-ink)); }
-#specific-cases-found-during-the-hackathon + blockquote {
+/* ================= edge cases (top of the FAQ) =================
+   Matches any h2 whose id contains "cases-found", so renaming the heading
+   ("Edge cases…", "List of edge cases…", "Specific cases…") keeps the styling. */
+h2[id*="cases-found"]::before { background: linear-gradient(180deg, var(--amber), var(--amber-ink)); }
+h2[id*="cases-found"] + p,
+h2[id*="cases-found"] + blockquote {
+  margin: 16px 0;
+  padding: 14px 18px;
   background: var(--amber-tint);
   border: 1px solid var(--amber);
   border-left: 4px solid var(--amber);
+  border-radius: 10px;
 }
-#specific-cases-found-during-the-hackathon + blockquote strong { color: var(--amber-ink); }
-#specific-cases-found-during-the-hackathon + blockquote + ol {
+h2[id*="cases-found"] + blockquote p { margin: 0; }
+h2[id*="cases-found"] + p strong,
+h2[id*="cases-found"] + blockquote strong { color: var(--amber-ink); }
+h2[id*="cases-found"] ~ ol:first-of-type {
   list-style: none;
   counter-reset: edge;
   padding: 0;
@@ -691,7 +699,7 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   display: grid;
   gap: 10px;
 }
-#specific-cases-found-during-the-hackathon + blockquote + ol > li {
+h2[id*="cases-found"] ~ ol:first-of-type > li {
   counter-increment: edge;
   position: relative;
   margin: 0;
@@ -702,7 +710,8 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
-#specific-cases-found-during-the-hackathon + blockquote + ol > li::before {
+h2[id*="cases-found"] ~ ol:first-of-type > li > p { margin: 0; }
+h2[id*="cases-found"] ~ ol:first-of-type > li::before {
   content: counter(edge);
   position: absolute;
   left: 16px; top: 13px;
@@ -713,8 +722,8 @@ figure.flow .labelBkg { fill: var(--surface) !important; background: var(--surfa
   font-size: .85rem; font-weight: 700;
   line-height: 28px; text-align: center;
 }
-.toc a[href="#specific-cases-found-during-the-hackathon"] { color: var(--amber-ink); font-weight: 500; border-left-color: var(--amber); }
+.toc a.toc-edge { color: var(--amber-ink); font-weight: 500; border-left-color: var(--amber); }
 @media (max-width: 640px) {
-  #specific-cases-found-during-the-hackathon + blockquote + ol > li { padding-left: 52px; }
-  #specific-cases-found-during-the-hackathon + blockquote + ol > li::before { left: 12px; }
+  h2[id*="cases-found"] ~ ol:first-of-type > li { padding-left: 52px; }
+  h2[id*="cases-found"] ~ ol:first-of-type > li::before { left: 12px; }
 }
