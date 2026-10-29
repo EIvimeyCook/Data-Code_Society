@@ -141,7 +141,7 @@ Each DKP is roughly **5 minutes** of work, so a full extraction (3 DKP) takes ab
 <!-- {% raw %} -->
 ```mermaid
 flowchart TD
-    S1["Section 1 · Metadata<br/>1.1 – 1.4"]
+    S1["Section 1 · Metadata<br/>1.1 – 1.5"]
     Q1{{"1.4 · Should there be<br/>data and/or code?"}}
     Q2{{"Section 2 · 2.1<br/>Working reference to archived data?"}}
     S3["Section 3 · Data repository<br/>3.1 – 3.13"]
@@ -248,7 +248,12 @@ The Zoom chat or the dedicated Slack channel.
 - *It's a data paper (an article whose purpose is to describe a dataset).* **No**.
 - *A comment or reply that re-analyses the original article's data.* **Yes.** A comment with no new analysis is **No**.
 
-➡️ **Yes** → Section 2. **No** → Section 6.
+### 1.5 Is this an early, un-typeset version (e.g., 'early view' or 'just accepted'). \*
+**What to do:** Answer **Yes** if the version of the article you are assessing is an early version that hasn't been typeset into the journal's final layout, e.g. it is labelled **"Early View"**, **"Just Accepted"**, **"Accepted Article"** or **"Accepted manuscript"**, or it looks like an author manuscript (double-spaced, line numbers, no journal layout). Answer **No** if it is the final published version in the journal's layout.
+
+> **Deviation from the pre-registration.** Question 1.5 was added to the form after the hackathon (October 2026) and was not in the pre-registered protocol. Articles assessed before it was added will be NA for 1.5.
+
+➡️ Based on your answer to **1.4**: **Yes** → Section 2. **No** → Section 6.
 
 ---
 
