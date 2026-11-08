@@ -35,6 +35,7 @@ The guide covers:
 
 | Section | What it covers |
 |---|---|
+| Specific cases | Rulings on cases flagged during the hackathon, updated as new ones come up (read this first) |
 | Introduction | What the hackathon is and how articles are allocated |
 | Timeline | Start (13 October 2026, 09:00 UTC) and close of data extraction (1 December 2026) |
 | Code of conduct | A short summary, pointing to the SORTEE Code of Conduct |
@@ -67,7 +68,7 @@ R/
 | File | Rows | What it contains |
 |---|---|---|
 | `Concensus_policy.csv` | 89 journals | Each journal's data and code policy and whether it has a data editor, as agreed by the Advocacy Committee before the hackathon. |
-| `publishers.csv` | 89 journals | Each journal's publisher, as recorded in OpenAlex. |
+| `publishers.csv` | 89 journals | Each journal's publisher, in two columns: `publisher_oa`, mostly as recorded in OpenAlex, and `publisher_dafnee`, a second name for the publisher that is often abbreviated and for some journals names a different organisation. |
 | `possible_comments.csv` | 76 items | Items whose titles look like comments, replies, introductions or obituaries. All but one were removed from the sampling frame. |
 | `total_papers_oct_rerun.csv` | 10,721 articles | Every research article published in the sample journals over the period, after removing comments, replies and duplicate DOIs: the sampling frame. |
 | `total_journals_oct_rerun.csv` | 89 journals | The number of articles each journal published per month, January to September 2026, with a total (matches `total_papers_oct_rerun.csv`). |
@@ -103,16 +104,23 @@ the journal's data and code policy (`Mandated`, `Encouraged`, `Neutral` or
 `No Policy`), each with a `_Reason` column for notes; and `Data_editor`
 (`Yes`/`No`), with notes in `DE_Reason`. `total_journals_oct_rerun.csv` has
 `journal`, a column per month (`Jan`–`Sep`) and `total`. `publishers.csv` has
-`display_name`, `issn_l`, `host_organization_name` (the publisher) and
-`host_organization` (its OpenAlex ID).
+`display_name`, `issn_l`, `publisher_oa` (the publisher, mostly as recorded in
+OpenAlex) and `publisher_dafnee` (a second name for the publisher, often
+abbreviated, e.g. `T&F`, `OUP`).
 
 **How the articles were pulled (`02_open_alex_pull.R`).** The script uses the
 [openalexR](https://cran.r-project.org/package=openalexR) package and needs a
-free OpenAlex API key. It:
+free OpenAlex API key. It also needs dplyr, purrr, stringr, tidyr, lubridate and
+readr, and R 4.1 or later. Run it in an interactive session from the project
+root (open `Data-Code_Society.Rproj`), because it prompts for the key and asks
+you to pick the matches for five journals. OpenAlex changes over time, so a
+re-run may not exactly reproduce the committed files. It:
 
 1. matches each journal title to an OpenAlex source, automatically and then by
    hand for five journals where OpenAlex's first match was wrong, and saves each
-   journal's publisher to `publishers.csv`;
+   journal's publisher to `publishers.csv` in the project root. The copy in
+   `Data/Raw/` was changed afterwards, outside the committed scripts: its
+   columns differ and it has no row for Primate Conservation;
 2. downloads every work from those journals with `type = "article"`, published
    in 2026 up to 30 September, indexed in Crossref, not retracted, with at least
    one author and an assigned topic (filters intended to exclude editorials and
@@ -132,7 +140,11 @@ period, which leaves 89.
 `set.seed(20261009)`, the articles in each journal are shuffled into a random
 order and numbered. Journals are numbered so that the ten with a data editor
 come first (1–10), and each article gets an `article_id` from its journal number and
-its place in the order. The output is `randomised_articles.csv`.
+its place in the order. The input is `Data/Raw/total_papers_oct_rerun.csv` and
+the output is `randomised_articles.csv`. Note: line 7 of the script still reads
+the old filename `total_articles_oct_rerun.csv`; change it to
+`total_papers_oct_rerun.csv` before running. With that change, and in a UTF-8
+locale, the script reproduces `randomised_articles.csv` exactly.
 
 **How the sample was drawn and split (`04_article_assignment.R`).** With
 `set.seed(20261010)`, the script takes the first 15 articles in each journal's
