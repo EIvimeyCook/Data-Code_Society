@@ -113,14 +113,14 @@ abbreviated, e.g. `T&F`, `OUP`).
 free OpenAlex API key. It also needs dplyr, purrr, stringr, tidyr, lubridate and
 readr, and R 4.1 or later. Run it in an interactive session from the project
 root (open `Data-Code_Society.Rproj`), because it prompts for the key and asks
-you to pick the matches for five journals. OpenAlex changes over time, so a
-re-run may not exactly reproduce the committed files. It:
+you to pick the matches for five journals. OpenAlex is updated continuously, so
+a re-run reflects OpenAlex on the day it is run. It:
 
 1. matches each journal title to an OpenAlex source, automatically and then by
    hand for five journals where OpenAlex's first match was wrong, and saves each
-   journal's publisher to `publishers.csv` in the project root. The copy in
-   `Data/Raw/` was changed afterwards, outside the committed scripts: its
-   columns differ and it has no row for Primate Conservation;
+   journal's publisher to `publishers.csv` in the project root. The curated
+   version used in the project is `Data/Raw/publishers.csv`, which covers the
+   89 journals in the sample and adds the `publisher_dafnee` column;
 2. downloads every work from those journals with `type = "article"`, published
    in 2026 up to 30 September, indexed in Crossref, not retracted, with at least
    one author and an assigned topic (filters intended to exclude editorials and
@@ -140,11 +140,10 @@ period, which leaves 89.
 `set.seed(20261009)`, the articles in each journal are shuffled into a random
 order and numbered. Journals are numbered so that the ten with a data editor
 come first (1–10), and each article gets an `article_id` from its journal number and
-its place in the order. The input is `Data/Raw/total_papers_oct_rerun.csv` and
-the output is `randomised_articles.csv`. Note: line 7 of the script still reads
-the old filename `total_articles_oct_rerun.csv`; change it to
-`total_papers_oct_rerun.csv` before running. With that change, and in a UTF-8
-locale, the script reproduces `randomised_articles.csv` exactly.
+its place in the order. The input is `Data/Raw/total_papers_oct_rerun.csv` (set
+the file name on line 7 to this before running) and the output is
+`randomised_articles.csv`. Run in a UTF-8 locale, the script reproduces
+`randomised_articles.csv` exactly.
 
 **How the sample was drawn and split (`04_article_assignment.R`).** With
 `set.seed(20261010)`, the script takes the first 15 articles in each journal's
